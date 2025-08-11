@@ -28,7 +28,7 @@ def main():
         sys.exit(1)
     
     # Find the most recent PDF report
-    pdf_files = glob.glob('SignalAI_Report_*.pdf')
+    pdf_files = glob.glob('reports/SignalAI_Report_*.pdf')
     if not pdf_files:
         print('⚠️ No PDF reports found, skipping welcome email')
         sys.exit(0)
