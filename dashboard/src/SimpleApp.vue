@@ -1343,7 +1343,7 @@ export default {
         
         try {
           // Use new historical data path structure
-          const response = await fetch(`/data/historical/${dateStr}/market_insights.json`)
+          const response = await fetch(`./data/historical/${dateStr}/market_insights.json`)
           if (response.ok) {
             const data = await response.json()
             if (data.summary) {
@@ -1371,7 +1371,7 @@ export default {
       isViewingHistorical.value = true
       
       try {
-        const response = await fetch(`/data/historical/${day.date}/market_insights.json`)
+        const response = await fetch(`./data/historical/${day.date}/market_insights.json`)
         if (response.ok) {
           const historicalData = await response.json()
           selectedHistoricalData.value = historicalData
@@ -1597,7 +1597,7 @@ export default {
         // If viewing historical data, try to load historical detailed analysis
         if (isViewingHistorical.value && selectedHistoricalDay.value) {
           ('📅 Loading historical detailed analysis for:', selectedHistoricalDay.value.date)
-          const historicalResponse = await fetch(`/data/historical/${selectedHistoricalDay.value.date}/detailed_analyses.json`)
+          const historicalResponse = await fetch(`./data/historical/${selectedHistoricalDay.value.date}/detailed_analyses.json`)
           if (historicalResponse.ok) {
             const historicalData = await historicalResponse.json()
             // Historical detailed_analyses.json is structured as {SYMBOL: analysis}
@@ -1608,7 +1608,7 @@ export default {
         
         // If no historical data found or viewing current data, use current detailed analysis
         if (!allDetailedData) {
-          const response = await fetch('/data/detailed_analyses.json')
+          const response = await fetch('./data/detailed_analyses.json')
           if (response.ok) {
             allDetailedData = await response.json()
             ('✅ Using current detailed analysis')
@@ -1779,7 +1779,7 @@ export default {
         // Load existing subscribers from JSON
         let subscribers = []
         try {
-          const response = await fetch('/data/subscribers.json')
+          const response = await fetch('./data/subscribers.json')
           if (response.ok) {
             subscribers = await response.json()
           }
@@ -1896,7 +1896,7 @@ export default {
       loading.value = true
       try {
         // Try to load market insights from search agent
-        const response = await fetch('/data/market_insights.json')
+        const response = await fetch('./data/market_insights.json')
         if (response.ok) {
           const data = await response.json()
           
@@ -1986,7 +1986,7 @@ export default {
 
     const loadCurrentReports = async () => {
       try {
-        const response = await fetch('/data/current_reports.json')
+        const response = await fetch('./data/current_reports.json')
         if (response.ok) {
           const data = await response.json()
           currentReports.value = data.current_reports || []
