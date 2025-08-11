@@ -29,41 +29,45 @@ Transform market noise into actionable trading insights using AI-powered agents 
 
 ## 🏗️ Architecture - Multi-Agent System
 
-Based on the proven **Digital Artisan's Forge** pattern with 4 specialized AI agents:
+Advanced 4-agent system with inter-agent communication for global market intelligence:
 
 ```
 ┌─────────────────┐    ┌─────────────────┐    ┌─────────────────┐    ┌─────────────────┐
-│  Market Data    │───▶│ News Synthesis  │───▶│ Signal Analysis │───▶│   Dashboard     │
-│     Agent       │    │     Agent       │    │     Agent       │    │     Agent       │
+│ Global Discovery│───▶│ Smart Search    │───▶│ Analysis        │───▶│   Dashboard     │
+│     Agent       │    │     Agent       │    │     Agent       │    │   Generator     │
 └─────────────────┘    └─────────────────┘    └─────────────────┘    └─────────────────┘
          │                       │                       │                       │
          ▼                       ▼                       ▼                       ▼
-   Real-time prices      Financial news         Trading signals        Beautiful UI
-   Volume analysis       Sentiment scores       Risk assessments       Mobile-ready
-   Technical levels      Market themes          Price targets          Auto-refresh
+   Global volume data     Trending assets      Detailed analysis      Vue 3 Dashboard
+   Regional highlights    Social sentiment     Trading signals        PDF Reports
+   Market drivers         Catalyst analysis    Risk assessments       Email delivery
 ```
 
 ### Agent Responsibilities:
 
-1. **Market Data Agent** 🔍
-   - Pulls real-time stock prices, volume, pre-market movers
-   - Uses Gemini's web search for current market data
-   - Identifies unusual trading activity
+1. **Global Discovery Agent** 🌍
+   - Finds most traded assets worldwide by volume
+   - Provides regional market highlights (Americas, Europe, Asia)
+   - Identifies global market drivers and catalysts
+   - Inter-agent communication for priority intelligence
 
-2. **News Synthesis Agent** 📰  
-   - Aggregates financial news from multiple sources
-   - Analyzes sentiment impact on stock prices
-   - Filters noise to highlight market-moving stories
+2. **Smart Search Agent** 🔍  
+   - Uses Global Discovery intelligence to focus on high-volume assets
+   - Discovers trending opportunities across all asset classes
+   - Analyzes social media buzz and retail interest
+   - Filters assets by actual trading volume
 
-3. **Signal Analysis Agent** 🎯
-   - Transforms data into actionable trading insights
-   - Provides "WHAT, WHY, SO WHAT" for each signal
-   - Generates confidence scores and price targets
+3. **Analysis Agent** 🎯
+   - Generates detailed technical and fundamental analysis
+   - Provides exact entry/exit prices and risk metrics
+   - Creates comprehensive trading setups with confidence scores
+   - Explains market dynamics in simple terms
 
-4. **Dashboard Agent** 📱
-   - Formats insights for beautiful Vue 3 dashboard
-   - Creates mobile-friendly, scannable layouts
-   - Optimizes for quick decision-making
+4. **Dashboard Generator** 📱
+   - Creates beautiful Vue 3 dashboard with real-time data
+   - Generates professional PDF reports
+   - Sends automated email delivery to subscribers
+   - Archives historical data for trend analysis
 
 ## 🚀 Quick Start
 
@@ -96,17 +100,19 @@ Add your Google Gemini API key:
 GOOGLE_API_KEY=your_actual_google_api_key_here
 ```
 
-### 3. Test the Agents
+### 3. Run Signal AI
 
 ```bash
-# Test all financial agents
-python financial_agents.py
+# Run complete market analysis with global intelligence
+python agents.py
 
-# Run complete pipeline
-python signal_pipeline.py --symbols AAPL,TSLA,NVDA
-
-# Pre-market mode (run 30 mins before market open)
-python signal_pipeline.py --premarket
+# This automatically:
+# - Discovers global volume leaders
+# - Analyzes trending assets across all categories
+# - Generates detailed trading insights
+# - Creates Vue dashboard data
+# - Generates PDF reports
+# - Emails reports to subscribers
 ```
 
 ### 4. Launch Dashboard
@@ -140,81 +146,87 @@ npm run dev
 
 ## ⚡ Usage Examples
 
-### Basic Analysis
+### Complete Market Analysis
 ```bash
-# Analyze top tech stocks
-python signal_pipeline.py --symbols AAPL,MSFT,GOOGL,NVDA
+# Run full global market analysis
+python agents.py
 
-# Get broader market view
-python signal_pipeline.py --symbols SPY,QQQ,IWM,VIX
+# This automatically:
+# ✅ Discovers most traded assets globally
+# ✅ Analyzes stocks, forex, crypto, commodities
+# ✅ Generates detailed trading insights
+# ✅ Creates interactive dashboard data
+# ✅ Produces professional PDF reports
+# ✅ Emails reports to subscribers
 ```
 
-### Pre-Market Intelligence
-```bash
-# Run 30 minutes before market open (8:30 AM EST)
-python signal_pipeline.py --premarket
+### Dashboard Features
+The Vue 3 dashboard provides:
+- **Real-time market data** from all agents
+- **Interactive asset analysis** with detailed modals
+- **Professional PDF reports** with exact entry/exit prices
+- **Historical data tracking** with daily archives
+- **Mobile-responsive design** for trading on-the-go
 
-# This generates insights for:
-# - Pre-market movers
-# - Overnight news impact  
-# - Day trading setups
-# - Risk events to watch
-```
-
-### Custom Symbol Lists
-```bash
-# Analyze your watchlist
-python signal_pipeline.py --symbols TSLA,AMD,CRM,PLTR,ROKU
-
-# Focus on specific sectors
-python signal_pipeline.py --symbols XLK,XLF,XLE,XLV  # Tech, Finance, Energy, Health
-```
+### Email & PDF Reports
+Professional reports include:
+- **Executive Summary** with market direction
+- **Asset Analysis** with exact trading levels
+- **Risk Metrics** and confidence scores  
+- **Technical Charts** and indicators
+- **Downloadable PDF** format for offline access
 
 ## 🔄 Automation & Scheduling
 
-### Pre-Market Automation (Recommended)
-Set up a cron job to run Signal AI 30 minutes before market open:
+### Automated Market Analysis
+Set up Signal AI to run automatically with cron jobs:
 
 ```bash
 # Edit crontab
 crontab -e
 
-# Add this line (runs at 8:30 AM EST, Monday-Friday)
-30 8 * * 1-5 cd /path/to/SIGNALAI && python signal_pipeline.py --premarket
+# Pre-market analysis (8:30 AM UTC, Monday-Friday)
+30 8 * * 1-5 cd /path/to/SIGNALAI && python agents.py
+
+# Market opening analysis (1:30 PM UTC during NY open)
+30 13 * * 1-5 cd /path/to/SIGNALAI && python agents.py
+
+# End-of-day analysis (9:30 PM UTC after NY close)  
+30 21 * * 1-5 cd /path/to/SIGNALAI && python agents.py
 ```
 
-### Continuous Updates
-For live trading during market hours:
+### Email Configuration
+For automated report delivery, add to `.env`:
 
-```bash
-# Update every 15 minutes during market hours (9:30 AM - 4:00 PM EST)
-*/15 9-16 * * 1-5 cd /path/to/SIGNALAI && python signal_pipeline.py
+```env
+GMAIL_EMAIL=your-email@gmail.com
+GMAIL_APP_PASSWORD=your-app-password
 ```
 
 ## 📝 Configuration
 
-### `signal_config.json` - Main Settings
-```json
-{
-  "default_symbols": ["AAPL", "TSLA", "NVDA", "MSFT", "SPY", "QQQ"],
-  "premarket_time": "08:30",
-  "refresh_interval": 15,
-  "trading_settings": {
-    "min_signal_strength": 70,
-    "max_risk_level": "high"
-  },
-  "notification_settings": {
-    "premarket_alert": true,
-    "high_signal_alert": true
-  }
-}
+### Environment Variables (`.env`)
+```env
+# Required - Google Gemini API
+GOOGLE_API_KEY=your_google_api_key_here
+GOOGLE_API_KEY_2=backup_api_key_optional
+
+# Optional - Email reports
+GMAIL_EMAIL=your-email@gmail.com
+GMAIL_APP_PASSWORD=your-gmail-app-password
+
+# Optional - Dashboard settings
+DASHBOARD_PORT=3001
+AUTO_REFRESH=true
 ```
 
-### Key Settings:
-- **default_symbols**: Stocks to analyze by default
-- **min_signal_strength**: Only show signals above this confidence level
-- **premarket_time**: When to run pre-market analysis
-- **notification_settings**: Email/webhook alerts
+### Agent Configuration
+The agents are fully automated with intelligent defaults:
+- **Global Discovery**: Finds most traded assets worldwide
+- **Smart Search**: Uses volume data for asset selection  
+- **Analysis**: Generates detailed insights for all asset types
+- **PDF Reports**: Automatic generation with professional formatting
+- **Email Delivery**: Automated subscriber management and delivery
 
 ## 🎯 Business Model & ROI
 
@@ -245,38 +257,43 @@ For live trading during market hours:
 ### Project Structure
 ```
 SIGNALAI/
-├── financial_agents.py        # Core AI agents
-├── signal_pipeline.py         # Main orchestrator
-├── signal_config.json         # Configuration
+├── agents.py                  # 4 AI agents with inter-communication
+├── pdf_report_generator.py    # Premium PDF report generation
 ├── requirements.txt           # Python dependencies
 ├── .env.example              # Environment template
-├── dashboard/                # Vue 3 frontend
+├── dashboard/                 # Vue 3 frontend
 │   ├── src/
-│   │   ├── App.vue          # Main dashboard component
+│   │   ├── SimpleApp.vue    # Main dashboard component
 │   │   ├── main.js          # Vue app entry
-│   │   └── style.css        # Global styles
+│   │   └── style.css        # Tailwind CSS styles
+│   ├── public/data/         # Real-time market data
+│   │   ├── market_insights.json
+│   │   ├── detailed_analyses.json
+│   │   ├── current_reports.json
+│   │   └── historical/      # Daily archived data
 │   ├── index.html           # HTML template
 │   └── package.json         # Node dependencies
-└── backups/                 # Historical insights
+├── reports/                   # Generated PDF reports
+└── backups/                   # Historical insights backup
 ```
 
 ### Adding New Features
 
-1. **New Agent**: Add to `financial_agents.py`
-2. **Dashboard Component**: Create in `dashboard/src/components/`
-3. **Configuration**: Update `signal_config.json`
-4. **Pipeline Step**: Modify `signal_pipeline.py`
+1. **New Agent**: Add to `agents.py` with inter-agent communication
+2. **Dashboard Component**: Create in `dashboard/src/`
+3. **PDF Templates**: Modify `pdf_report_generator.py`
+4. **Data Structure**: Update JSON schemas in `public/data/`
 
 ### Testing
 ```bash
-# Test individual agents
-python -c "from financial_agents import test_all_agents; test_all_agents()"
-
-# Test complete pipeline
-python signal_pipeline.py --symbols AAPL
+# Test complete system
+python agents.py
 
 # Test dashboard (in dashboard/ directory)
 npm run dev
+
+# Test PDF generation
+python pdf_report_generator.py
 ```
 
 ## 🚨 Error Handling
@@ -298,16 +315,19 @@ npm run dev
 ## 📈 Performance Metrics
 
 ### Agent Execution Times:
-- Market Data Agent: ~10-15 seconds
-- News Synthesis Agent: ~15-20 seconds  
-- Signal Analysis Agent: ~20-25 seconds
-- Dashboard Agent: ~5-10 seconds
+- Global Discovery Agent: ~10-15 seconds
+- Smart Search Agent: ~15-20 seconds  
+- Analysis Agent: ~20-25 seconds per asset
+- PDF Generation: ~10-15 seconds
+- Email Delivery: ~5-10 seconds per subscriber
 - **Total Pipeline**: ~60-90 seconds
 
-### Accuracy Targets:
-- Signal accuracy: >65% (target: 70%+)
-- News relevance: >80%
-- Market trend prediction: >60%
+### System Capabilities:
+- **Global Asset Discovery**: Covers 100+ assets across all major markets
+- **Analysis Speed**: Complete market scan in 60-90 seconds
+- **Data Coverage**: Stocks, forex, crypto, commodities in single run
+- **Report Generation**: Professional PDFs with exact trading levels
+- **Email Delivery**: Automated subscriber management and delivery
 
 ## 🔒 Security & Privacy
 
