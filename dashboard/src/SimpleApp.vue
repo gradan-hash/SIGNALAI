@@ -1596,13 +1596,13 @@ export default {
         
         // If viewing historical data, try to load historical detailed analysis
         if (isViewingHistorical.value && selectedHistoricalDay.value) {
-          ('📅 Loading historical detailed analysis for:', selectedHistoricalDay.value.date)
+          console.log('📅 Loading historical detailed analysis for:', selectedHistoricalDay.value.date)
           const historicalResponse = await fetch(`./data/historical/${selectedHistoricalDay.value.date}/detailed_analyses.json`)
           if (historicalResponse.ok) {
             const historicalData = await historicalResponse.json()
             // Historical detailed_analyses.json is structured as {SYMBOL: analysis}
             allDetailedData = historicalData
-            ('✅ Found historical detailed analysis for:', selectedHistoricalDay.value.date)
+            console.log('✅ Found historical detailed analysis for:', selectedHistoricalDay.value.date)
           }
         }
         
@@ -1611,7 +1611,7 @@ export default {
           const response = await fetch('./data/detailed_analyses.json')
           if (response.ok) {
             allDetailedData = await response.json()
-            ('✅ Using current detailed analysis')
+            console.log('✅ Using current detailed analysis')
           } else {
             throw new Error('Detailed analyses file not found')
           }
@@ -1632,7 +1632,7 @@ export default {
                 searchSymbol.includes(key.split(' ')[0].toUpperCase()) ||
                 allDetailedData[key].symbol?.toUpperCase().includes(searchSymbol)) {
               assetData = allDetailedData[key]
-              ('✅ Found detailed analysis using key:', key, 'for asset:', asset.symbol)
+              console.log('✅ Found detailed analysis using key:', key, 'for asset:', asset.symbol)
               break
             }
           }
@@ -1642,7 +1642,7 @@ export default {
             for (const [key, data] of Object.entries(allDetailedData)) {
               if (data.symbol && data.symbol.toUpperCase().includes(searchSymbol)) {
                 assetData = data
-                ('✅ Found detailed analysis by symbol value:', data.symbol, 'for asset:', asset.symbol)
+                console.log('✅ Found detailed analysis by symbol value:', data.symbol, 'for asset:', asset.symbol)
                 break
               }
             }
@@ -1656,8 +1656,8 @@ export default {
         }
       } catch (error) {
         console.error('Failed to load AI analysis:', error)
-        ('⚠️ AI analysis not available for:', asset.symbol)
-        ('💡 Run "python agents.py" to generate detailed analysis')
+        console.log('⚠️ AI analysis not available for:', asset.symbol)
+        console.log('💡 Run "python agents.py" to generate detailed analysis')
         // Show error message instead of mock data
         detailedAnalysis.value = {
           error: true,
@@ -1784,7 +1784,7 @@ export default {
             subscribers = await response.json()
           }
         } catch (e) {
-          ('No existing subscribers file')
+          console.log('No existing subscribers file')
         }
 
         // Check if email already exists
@@ -1990,10 +1990,10 @@ export default {
         if (response.ok) {
           const data = await response.json()
           currentReports.value = data.current_reports || []
-          ('✅ Current reports loaded:', currentReports.value.length)
+          console.log('✅ Current reports loaded:', currentReports.value.length)
         }
       } catch (error) {
-        ('Current reports not available')
+        console.log('Current reports not available')
       }
     }
 
