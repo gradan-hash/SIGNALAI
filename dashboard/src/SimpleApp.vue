@@ -119,7 +119,7 @@
                   type="email" 
                   placeholder="Enter your email"
                   required
-                  class="w-full px-3 py-2 text-xs bg-white/70 backdrop-blur-sm border border-purple-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent"
+                  class="w-full px-3 py-2 text-xs text-gray-800 bg-white/90 backdrop-blur-sm border border-purple-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent placeholder-gray-500"
                 >
               </div>
               <button 
