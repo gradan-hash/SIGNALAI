@@ -548,7 +548,7 @@
                       Preview
                     </button>
                     <a 
-                      :href="report.pdf_url" 
+                      :href="getPdfUrl(report.pdf_url)" 
                       :download="'SignalAI_Sample_Report_' + report.id + '.pdf'"
                       class="flex-1 px-3 py-2 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded text-sm font-medium hover:from-blue-700 hover:to-purple-700 transition-all text-center"
                     >
@@ -1979,9 +1979,15 @@ export default {
       loading.value = false
     }
 
+    const getPdfUrl = (pdfUrl) => {
+      // Build correct PDF URL based on environment
+      const baseUrl = import.meta.env.PROD ? '/SIGNALAI' : ''
+      return `${baseUrl}${pdfUrl}`
+    }
+
     const previewReport = (report) => {
       // Open PDF in new window for preview
-      window.open(report.pdf_url, '_blank')
+      window.open(getPdfUrl(report.pdf_url), '_blank')
     }
 
     const loadCurrentReports = async () => {
@@ -2030,6 +2036,7 @@ export default {
       showPricing,
       showReportsSidebar,
       previewReport,
+      getPdfUrl,
       filteredAssets,
       historicalData,
       selectedHistoricalDay,

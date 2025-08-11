@@ -38,7 +38,10 @@ jobs:
           cd dashboard
           npm run build
           # Copy reports to build directory
-          cp -r public/reports dist/reports
+          mkdir -p dist/reports
+          cp -r public/reports/* dist/reports/ 2>/dev/null || true
+          # Also copy any reports from main reports directory
+          cp -r ../reports/* dist/reports/ 2>/dev/null || true
           
       - name: Setup Pages
         uses: actions/configure-pages@v5
