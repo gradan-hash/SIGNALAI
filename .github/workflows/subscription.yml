@@ -1,0 +1,193 @@
+name: Add New Subscriber
+
+on:
+  repository_dispatch:
+    types: [new_subscription]
+
+jobs:
+  add-subscriber:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+          
+      - name: Install Python dependencies
+        run: |
+          pip install google-generativeai python-dotenv reportlab
+          
+      - name: Add email to subscribers.json
+        run: |
+          python3 -c "
+          import json
+          import time
+          
+          # Load existing subscribers
+          try:
+              with open('dashboard/public/data/subscribers.json', 'r') as f:
+                  subscribers = json.load(f)
+          except FileNotFoundError:
+              subscribers = []
+          
+          # Check if email already exists
+          email = '${{ github.event.client_payload.email }}'
+          if not any(sub['email'] == email for sub in subscribers):
+              # Add new subscriber
+              new_subscriber = {
+                  'email': email,
+                  'subscribed_at': '${{ github.event.client_payload.timestamp }}',
+                  'active': True,
+                  'id': int(time.time() * 1000)
+              }
+              subscribers.append(new_subscriber)
+              
+              # Save updated file
+              with open('dashboard/public/data/subscribers.json', 'w') as f:
+                  json.dump(subscribers, f, indent=2)
+                  
+              print(f'✅ Added new subscriber: {email}')
+              
+              # Mark as new subscriber for welcome email
+              with open('new_subscriber_email.txt', 'w') as f:
+                  f.write(email)
+          else:
+              print(f'📧 Email {email} already subscribed')
+          "
+          
+      - name: Commit and push changes
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          
+          # Add changes if any
+          git add dashboard/public/data/subscribers.json
+          
+          # Check if there are changes to commit
+          if ! git diff --staged --quiet; then
+            git commit -m "🔔 Add new subscriber: ${{ github.event.client_payload.email }}"
+            git push
+            echo "✅ Subscriber added and committed"
+          else
+            echo "📧 No changes to commit (email may already exist)"
+          fi
+          
+      - name: Send welcome email with current report
+        if: hashFiles('new_subscriber_email.txt') != ''
+        env:
+          GOOGLE_GENERATIVE_AI_API_KEY: ${{ secrets.GOOGLE_GENERATIVE_AI_API_KEY }}
+          GMAIL_EMAIL: ${{ secrets.GMAIL_EMAIL }}
+          GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
+        run: |
+          if [ -f "new_subscriber_email.txt" ]; then
+            NEW_EMAIL=$(cat new_subscriber_email.txt)
+            echo "📧 Sending welcome email to: $NEW_EMAIL"
+            
+            # Create a simple Python script to send welcome email
+            python3 -c "
+            import os
+            import sys
+            import smtplib
+            import glob
+            from email.mime.multipart import MIMEMultipart
+            from email.mime.text import MIMEText
+            from email.mime.base import MIMEBase
+            from email import encoders
+            from datetime import datetime
+            
+            # Get environment variables
+            gmail_email = os.getenv('GMAIL_EMAIL')
+            app_password = os.getenv('GMAIL_APP_PASSWORD')
+            new_email = '$NEW_EMAIL'
+            
+            if not gmail_email or not app_password:
+                print('❌ Gmail credentials not configured')
+                sys.exit(0)
+            
+            # Find the most recent PDF report
+            pdf_files = glob.glob('SignalAI_Report_*.pdf')
+            if not pdf_files:
+                print('⚠️ No PDF reports found, skipping welcome email')
+                sys.exit(0)
+            
+            # Get the most recent PDF
+            latest_pdf = max(pdf_files, key=os.path.getctime)
+            print(f'📄 Found latest report: {latest_pdf}')
+            
+            try:
+                # Create email message
+                msg = MIMEMultipart()
+                msg['From'] = f'Signal AI Team <{gmail_email}>'
+                msg['To'] = new_email
+                msg['Subject'] = f'🎉 Welcome to Signal AI - Your First Report Inside!'
+                
+                # Email body
+                body = f'''🎉 Welcome to Signal AI!
+                
+Thank you for subscribing to our daily market intelligence reports!
+
+As a welcome gift, we've attached your first Signal AI report. This comprehensive analysis includes:
+
+✅ Global Market Discovery - Top traded assets worldwide
+✅ Smart Search Intelligence - Trending opportunities  
+✅ Detailed Asset Analysis - Entry points, targets, and risks
+✅ Market Prediction - AI-powered outlook
+✅ Professional Trading Insights
+
+🔔 You'll receive fresh reports twice daily:
+• Pre-Market Intelligence (8:30 AM UTC)
+• Market Opening Intelligence (1:00 PM UTC)
+
+Generated: {datetime.now().strftime('%A, %B %d, %Y at %I:%M %p UTC')}
+
+Welcome to smarter trading!
+
+Best regards,
+Signal AI Team
+{gmail_email}
+
+---
+This report is for informational purposes only and should not be considered as financial advice.
+Always conduct your own research and consider consulting with a financial advisor.
+'''
+                
+                msg.attach(MIMEText(body, 'plain'))
+                
+                # Attach PDF
+                with open(latest_pdf, 'rb') as attachment:
+                    part = MIMEBase('application', 'octet-stream')
+                    part.set_payload(attachment.read())
+                    
+                encoders.encode_base64(part)
+                part.add_header(
+                    'Content-Disposition',
+                    f'attachment; filename={os.path.basename(latest_pdf)}'
+                )
+                msg.attach(part)
+                
+                # Send via SMTP
+                server = smtplib.SMTP('smtp.gmail.com', 587)
+                server.starttls()
+                server.login(gmail_email, app_password)
+                
+                text = msg.as_string()
+                server.sendmail(gmail_email, new_email, text)
+                server.quit()
+                
+                print(f'✅ Welcome email with PDF sent to {new_email}')
+                
+            except Exception as e:
+                print(f'❌ Failed to send welcome email: {e}')
+            "
+            
+            # Clean up
+            rm -f new_subscriber_email.txt
+          else
+            echo "📧 No new subscriber to send welcome email to"
+          fi

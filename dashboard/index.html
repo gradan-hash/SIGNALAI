@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Signal AI - Financial Intelligence Dashboard</title>
+    <meta name="description" content="AI-powered financial insights and trading signals for retail investors" />
+    
+    <!-- Tailwind CSS CDN for development -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Custom CSS -->
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+      
+      body {
+        font-family: 'Inter', sans-serif;
+      }
+      
+      /* Custom animations */
+      @keyframes pulse-glow {
+        0%, 100% { box-shadow: 0 0 5px rgba(168, 85, 247, 0.3); }
+        50% { box-shadow: 0 0 20px rgba(168, 85, 247, 0.6); }
+      }
+      
+      .pulse-glow {
+        animation: pulse-glow 2s ease-in-out infinite;
+      }
+      
+      /* Custom gradient backgrounds */
+      .gradient-bg {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      }
+      
+      .signal-gradient {
+        background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+      }
+    </style>
+  </head>
+  <body>
+    <div id="app"></div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

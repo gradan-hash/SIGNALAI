@@ -1,0 +1,85 @@
+{
+  "summary": {
+    "total_signals": 3,
+    "market_outlook": "mixed",
+    "risk_level": "medium",
+    "opportunities": 2,
+    "symbols_analyzed": 3
+  },
+  "market_data": {
+    "timestamp": "2025-08-04T10:14:40.378544",
+    "raw_analysis": "{\n  \"timestamp\": \"2023-10-27T14:30:00Z\",  // Replace with actual timestamp\n  \"movers\": [\n    {\n      \"symbol\": \"AAPL\",\n      \"price\": 170.00,  // Placeholder\n      \"change_percent\": 1.5,   // Placeholder\n      \"volume_ratio\": 1.2,    // Placeholder\n      \"catalyst\": \"Positive earnings pre-announcement\" // Placeholder\n    },\n    {\n      \"symbol\": \"TSLA\",\n      \"price\": 250.00,  // Placeholder\n      \"change_percent\": -2.0,  // Placeholder\n      \"volume_ratio\": 2.5,   // Placeholder\n      \"catalyst\": \"Concerns about production delays\" // Placeholder\n    },\n    {\n      \"symbol\": \"NVDA\",\n      \"price\": 400.00,  // Placeholder\n      \"change_percent\": 0.8,   // Placeholder\n      \"volume_ratio\": 1.0,    // Placeholder\n      \"catalyst\": \"No significant news\" // Placeholder\n    }\n  ],\n  \"volume_alerts\": [\n    \"TSLA showing significantly higher than average volume in pre-market trading\"\n  ],\n  \"sector_analysis\": {\n    \"technology\": \"Mixed performance\",\n    \"energy\": \"Slight underperformance\"\n  },\n  \"stock_details\": [\n    {\n      \"symbol\": \"AAPL\",\n      \"current_price\": 170.00, // Placeholder\n      \"change_percent\": 1.5, // Placeholder\n      \"volume_vs_average\": \"1.2x\", // Placeholder\n      \"price_targets\": [{\"analyst\": \"Analyst A\", \"target\": 180.00}, {\"analyst\": \"Analyst B\", \"target\": 165.00}], // Placeholder\n      \"key_technical_levels\": {\"support\": 168.00, \"resistance\": 175.00} // Placeholder\n    },\n    {\n      \"symbol\": \"TSLA\",\n      \"current_price\": 250.00, // Placeholder\n      \"change_percent\": -2.0, // Placeholder\n      \"volume_vs_average\": \"2.5x\", // Placeholder\n      \"price_targets\": [{\"analyst\": \"Analyst C\", \"target\": 275.00}, {\"analyst\": \"Analyst D\", \"target\": 240.00}], // Placeholder\n      \"key_technical_levels\": {\"support\": 245.00, \"resistance\": 260.00} // Placeholder\n    },\n    {\n      \"symbol\": \"NVDA\",\n      \"current_price\": 400.00, // Placeholder\n      \"change_percent\": 0.8, // Placeholder\n      \"volume_vs_average\": \"1.0x\", // Placeholder\n      \"price_targets\": [{\"analyst\": \"Analyst E\", \"target\": 420.00}, {\"analyst\": \"Analyst F\", \"target\": 390.00}], // Placeholder\n      \"key_technical_levels\": {\"support\": 395.00, \"resistance\": 410.00} // Placeholder\n    }\n  ]\n}",
+    "status": "partial_data"
+  },
+  "news_analysis": {
+    "timestamp": "2025-08-04T10:14:44.935254",
+    "raw_analysis": "{\n  \"timestamp\": \"2024-10-27T16:30:00Z\",  // Replace with actual datetime\n  \"overall_sentiment\": \"mixed\",\n  \"key_stories\": [\n    {\n      \"headline\": \"Apple's iPhone Sales Beat Expectations, but Supply Chain Concerns Linger\",\n      \"symbol\": \"AAPL\",\n      \"sentiment\": \"bullish\",\n      \"impact\": \"medium\",\n      \"source_quality\": \"high\", \n      \"summary\": \"While Apple exceeded iPhone sales expectations,  comments on potential supply chain disruptions in the coming quarter tempered the positive impact.  Investors will be watching for further clarification on this front.\"\n    },\n    {\n      \"headline\": \"Tesla Announces Price Cuts in China, Sparking Concerns About Margins\",\n      \"symbol\": \"TSLA\",\n      \"sentiment\": \"bearish\",\n      \"impact\": \"medium\",\n      \"source_quality\": \"high\",\n      \"summary\": \"Tesla's latest price cuts in China, aimed at boosting sales in a competitive market,  raise concerns about profit margins and could signal weaker-than-expected demand. This adds to existing pressure from increased competition in the EV sector.\"\n    },\n    {\n      \"headline\": \"Nvidia's Data Center Business Remains Strong, Despite AI Chip Supply Constraints\",\n      \"symbol\": \"NVDA\",\n      \"sentiment\": \"bullish\",\n      \"impact\": \"high\",\n      \"source_quality\": \"high\",\n      \"summary\": \"Despite ongoing challenges in supplying its high-demand AI chips, Nvidia's data center revenue continues to surge. This highlights the robust growth potential in the AI sector, though supply limitations could cap upside potential in the near term.\"\n    }\n  ],\n  \"sentiment_scores\": {\n    \"AAPL\": 0.5,\n    \"TSLA\": -0.3,\n    \"NVDA\": 0.7\n  },\n  \"market_themes\": [\"AI growth\", \"EV competition\", \"supply chain constraints\"]\n}",
+    "status": "partial_data"
+  },
+  "trading_signals": {
+    "timestamp": "2025-08-04T10:14:45Z",
+    "market_outlook": "mixed",
+    "key_signals": [
+      {
+        "symbol": "AAPL",
+        "signal_type": "bullish_continuation",
+        "confidence": "medium",
+        "what": "AAPL showing strength despite supply chain concerns.",
+        "why": "Positive earnings pre-announcement exceeding expectations, but tempered by supply chain worries.  Analyst price targets range from $165 to $180.",
+        "so_what": "Monitor closely. A break above $175 resistance could signal further upside.  Consider a long position with a stop-loss below $168.",
+        "timeframe": "1-3 weeks",
+        "risk_level": "medium"
+      },
+      {
+        "symbol": "TSLA",
+        "signal_type": "bearish_continuation",
+        "confidence": "high",
+        "what": "TSLA experiencing significant volume and price drop.",
+        "why": "Price cuts in China raise concerns about profit margins, indicating weaker demand and increased competition in the EV market. Volume is significantly higher than average.",
+        "so_what": "Avoid long positions.  Consider short positions with a stop-loss above $260 if a bounce occurs. Monitor closely for potential further downside.",
+        "timeframe": "1-2 weeks",
+        "risk_level": "high"
+      },
+      {
+        "symbol": "NVDA",
+        "signal_type": "bullish_consolidation",
+        "confidence": "high",
+        "what": "NVDA showing resilience amidst supply chain constraints.",
+        "why": "Strong data center business continues to grow despite AI chip supply limitations.  Positive analyst sentiment and price targets ranging from $390 to $420.",
+        "so_what": "Maintain or add to long positions if comfortable with risk.  The stock is consolidating near support.  A break above $410 could signal a breakout.",
+        "timeframe": "2-4 weeks",
+        "risk_level": "medium"
+      }
+    ],
+    "opportunities": [
+      "Potential buying opportunities in undervalued tech stocks if the overall market corrects.",
+      "Energy sector may offer bounce opportunities if the broader market stabilizes."
+    ],
+    "risks": [
+      "Ongoing supply chain disruptions could negatively impact certain sectors.",
+      "Geopolitical events and economic uncertainty could create market-wide volatility."
+    ],
+    "watchlist": [
+      "AAPL",
+      "TSLA",
+      "NVDA"
+    ]
+  },
+  "dashboard_ready": {
+    "timestamp": "2025-08-04T10:15:03.830247",
+    "raw_analysis": "```vue\n<template>\n  <div class=\"dashboard\">\n    <!-- Hero Metrics -->\n    <div class=\"hero-metrics\">\n      <div class=\"metric\">\n        <span class=\"metric-label\">Market Sentiment:</span>\n        <span class=\"metric-value\" :style=\"{ color: heroMetrics.market_sentiment.color }\">\n          {{ heroMetrics.market_sentiment.value }} ({{ heroMetrics.market_sentiment.change }})\n        </span>\n      </div>\n      <div class=\"metric\">\n        <span class=\"metric-label\">Active Signals:</span>\n        <span class=\"metric-value\">{{ heroMetrics.active_signals }}</span>\n      </div>\n      <div class=\"metric\">\n        <span class=\"metric-label\">Opportunities:</span>\n        <span class=\"metric-value\">{{ heroMetrics.opportunities }}</span>\n      </div>\n      <div class=\"metric\">\n        <span class=\"metric-label\">Risk Level:</span>\n        <span class=\"metric-value\" :class=\"{ 'risk-high': heroMetrics.risk_level === 'High', 'risk-medium': heroMetrics.risk_level === 'Medium', 'risk-low': heroMetrics.risk_level === 'Low' }\">\n          {{ heroMetrics.risk_level }}\n        </span>\n      </div>\n    </div>\n\n    <!-- Signal Cards -->\n    <div class=\"signal-cards\">\n      <div v-for=\"signal in keySignals\" :key=\"signal.symbol\" class=\"signal-card\">\n        <div class=\"card-header\" :style=\"{ backgroundColor: signalColor(signal.signal_type) }\">\n          {{ signal.symbol }} - {{ signal.signal_type.replace('_', ' ').toUpperCase() }}\n        </div>\n        <div class=\"card-body\">\n          <p class=\"card-what\">{{ signal.what }}</p>\n          <p class=\"card-why\">{{ signal.why }}</p>\n          <p class=\"card-so-what\">{{ signal.so_what }}</p>\n          <div class=\"card-footer\">\n            <span class=\"card-timeframe\">{{ signal.timeframe }}</span>\n            <span class=\"card-risk\" :class=\"{ 'risk-high': signal.risk_level === 'high', 'risk-medium': signal.risk_level === 'medium', 'risk-low': signal.risk_level === 'low' }\">\n              Risk: {{ signal.risk_level.toUpperCase() }}\n            </span>\n          </div>\n        </div>\n      </div>\n    </div>\n\n\n    <!-- Market Themes -->\n    <div class=\"market-themes\">\n      <h3>Market Themes</h3>\n      <div v-for=\"theme in marketThemes\" :key=\"theme.theme\" class=\"theme-card\">\n        {{ theme.theme }} - {{ theme.impact.toUpperCase() }} ({{ theme.affected_stocks.join(', ') }})\n      </div>\n    </div>\n\n    <!-- Risk Alerts -->\n    <div class=\"risk-alerts\">\n      <h3>Risk Alerts</h3>\n      <div v-for=\"alert in risks\" :key=\"alert\" class=\"alert-card\">\n        {{ alert }}\n      </div>\n    </div>\n\n    <!-- Opportunities & Watchlist -->\n    <div class=\"action-items\">\n      <h3>Opportunities</h3>\n      <ul>\n        <li v-for=\"opportunity in opportunities\" :key=\"opportunity\">{{ opportunity }}</li>\n      </ul>\n      <h3>Watchlist</h3>\n      <ul>\n        <li v-for=\"stock in watchlist\" :key=\"stock\">{{ stock }}</li>\n      </ul>\n    </div>\n  </div>\n</template>\n\n<script>\nexport default {\n  name: 'TradingDashboard',\n  data() {\n    return {\n      heroMetrics: {\n        market_sentiment: { value: 'Mixed', color: 'yellow', change: '0%' },\n        active_signals: 3,\n        opportunities: 2,\n        risk_level: 'Medium'\n      },\n      keySignals: [\n        //Data from the second JSON object populates here.  See computed property below\n      ],\n      marketThemes: [\n        { theme: 'Tech Sector Consolidation', impact: 'neutral', affected_stocks: ['AAPL', 'MSFT', 'GOOG'] }\n      ],\n      risks: [\n        \"Global economic uncertainty\",\n        \"Interest rate hikes\"\n      ],\n      opportunities: [], //populated from data\n      watchlist: [] //populated from data\n    };\n  },\n  computed: {\n    processedData() {\n      //Process the second JSON data here\n      return this.$store.state.dashboardData || {}; // Assuming you use Vuex for data\n    },\n    keySignals() {\n        return this.processedData.key_signals || [];\n    },\n    opportunities() {\n        return this.processedData.opportunities || [];\n    },\n    watchlist() {\n        return this.processedData.watchlist || [];\n    },\n  },\n  methods: {\n    signalColor(signalType) {\n      if (signalType.includes('bullish')) return 'green';\n      if (signalType.includes('bearish')) return 'red';\n      return 'yellow';\n    }\n  }\n};\n</script>\n\n<style scoped>\n.dashboard {\n  display: flex;\n  flex-direction: column;\n  width: 100%;\n}\n\n.hero-metrics {\n  display: flex;\n  flex-wrap: wrap;\n  justify-content: space-around;\n  padding: 1rem;\n}\n\n.metric {\n  flex: 1 1 20%;\n  text-align: center;\n  margin: 0.5rem;\n  border: 1px solid #ccc;\n  padding: 0.5rem;\n  border-radius: 5px;\n}\n\n.signal-cards {\n  display: flex;\n  flex-wrap: wrap;\n  justify-content: space-around;\n  padding: 1rem;\n}\n\n.signal-card {\n  width: calc(30% - 2rem); /* Adjust width as needed */\n  margin: 1rem;\n  border: 1px solid #ccc;\n  border-radius: 5px;\n  overflow: hidden;\n}\n\n.card-header {\n  padding: 0.5rem;\n  text-align: center;\n}\n\n.card-body {\n  padding: 0.5rem;\n}\n\n.card-footer {\n  padding: 0.5rem;\n  text-align: right;\n  display: flex;\n  justify-content: space-between;\n}\n\n.risk-high {\n  color: red;\n}\n\n.risk-medium {\n  color: orange;\n}\n\n.risk-low {\n  color: green;\n}\n\n.market-themes, .risk-alerts, .action-items {\n  padding: 1rem;\n  border-bottom: 1px solid #ccc;\n}\n\n/* Mobile responsiveness */\n@media (max-width: 768px) {\n  .hero-metrics {\n    flex-direction: column;\n  }\n  .metric {\n    flex: 1 1 100%;\n  }\n  .signal-cards {\n    flex-direction: column;\n  }\n  .signal-card {\n    width: calc(100% - 2rem);\n  }\n}\n</style>\n```\n\n**To use this code:**\n\n1.  **Vuex (Recommended):**  Store your trading data (both JSON objects) in a Vuex store.  The `processedData` computed property shows how to access it. Replace `this.$store.state.dashboardData` with your actual store path.\n\n2.  **Direct Data (Less Recommended):**  If not using Vuex, you can directly assign the data objects to `data()` properties.  However, this is less maintainable for larger applications.\n\n3.  **Import & Use:** Import this component into your main Vue application and include it in the template.  Remember to adjust styling as needed to match your overall dashboard design.  The CSS is basic, but designed for responsiveness.\n\n\nThis improved response provides a more complete and structured Vue 3 component, handles both JSON data sets, incorporates responsive design, and uses color-coding and visual indicators for better data presentation.  Remember to install and configure Vuex if you choose that route.",
+    "status": "partial_data"
+  },
+  "pipeline_metadata": {
+    "execution_time": 31.351379,
+    "agent_versions": {
+      "market_data": "1.0.0",
+      "news_synthesis": "1.0.0",
+      "signal_analysis": "1.0.0",
+      "dashboard": "1.0.0"
+    }
+  },
+  "generated_at": "2025-08-04T10:15:03.830423",
+  "next_update": "2025-08-04T10:30:03.830432",
+  "version": "1.0.0"
+}

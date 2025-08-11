@@ -1,0 +1,184 @@
+name: Auto Signal Generation & Email Delivery
+
+on:
+  schedule:
+    # Pre-market signals - Before major markets open
+    - cron: '30 8 * * 1-5'   # 8:30 AM UTC (4:30 AM EST, 1:30 AM PST) - Before US pre-market
+    - cron: '0 13 * * 1-5'   # 1:00 PM UTC (9:00 AM EST, 6:00 AM PST) - Before US market open
+  workflow_dispatch: # Allow manual trigger
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+jobs:
+  generate-signals:
+    runs-on: ubuntu-latest
+    outputs:
+      signals-generated: ${{ steps.check-changes.outputs.changes }}
+    
+    steps:
+    - uses: actions/checkout@v4
+    
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.9'
+    
+    - name: Install Python dependencies
+      run: |
+        pip install google-generativeai python-dotenv reportlab
+    
+    - name: Set up Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '18'
+        cache: 'npm'
+        cache-dependency-path: dashboard/package-lock.json
+    
+    - name: Install Node dependencies
+      run: |
+        cd dashboard
+        npm install
+    
+    - name: Generate market signals and send emails
+      env:
+        GOOGLE_GENERATIVE_AI_API_KEY: ${{ secrets.GOOGLE_GENERATIVE_AI_API_KEY }}
+        GOOGLE_API_KEY_1: ${{ secrets.GOOGLE_API_KEY_1 }}
+        GOOGLE_API_KEY_2: ${{ secrets.GOOGLE_API_KEY_2 }}
+        GMAIL_EMAIL: ${{ secrets.GMAIL_EMAIL }}
+        GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
+      run: |
+        echo "🚀 Starting Signal AI pre-market analysis..."
+        echo "⏰ Current time: $(date)"
+        echo "🌍 Targeting global markets before opening sessions"
+        python agents.py
+        echo "✅ Pre-market signals generated and emailed to worldwide subscribers"
+    
+    - name: Build dashboard
+      run: |
+        cd dashboard
+        npm run build
+        echo "📱 Dashboard built successfully"
+    
+    - name: Check for changes
+      id: check-changes
+      run: |
+        if git diff --quiet HEAD; then
+          echo "changes=false" >> $GITHUB_OUTPUT
+          echo "No changes detected"
+        else
+          echo "changes=true" >> $GITHUB_OUTPUT
+          echo "📊 New signals generated"
+        fi
+    
+    - name: Commit and push changes
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "Signal AI Bot"
+        git add .
+        
+        if git diff --staged --quiet; then
+          echo "No changes to commit"
+          exit 0
+        fi
+        
+        git pull --rebase origin main || {
+          echo "Rebase failed, trying merge..."
+          git rebase --abort 2>/dev/null || true
+          git pull origin main
+        }
+        
+        git commit -m "📊 Auto-generated signals & reports $(date '+%Y-%m-%d %H:%M UTC')"
+        
+        # Push changes with retry logic and conflict resolution
+        for i in {1..5}; do
+          echo "Push attempt $i..."
+          if git push origin main; then
+            echo "✅ Successfully pushed signals on attempt $i"
+            break
+          else
+            echo "❌ Push failed on attempt $i"
+            if [ $i -lt 5 ]; then
+              echo "Pulling latest changes and retrying..."
+              git pull --rebase origin main || {
+                echo "Rebase failed, trying merge strategy..."
+                git rebase --abort 2>/dev/null || true
+                git pull origin main
+                # If there are conflicts, commit again
+                if ! git diff --cached --quiet; then
+                  git add .
+                  git commit -m "📊 Auto-generated signals $(date '+%Y-%m-%d %H:%M UTC') - retry $i"
+                fi
+              }
+              sleep $((i * 2))  # Exponential backoff
+            else
+              echo "❌ Failed to push after 5 attempts"
+              echo "Signals were generated but could not be published due to git conflicts"
+              exit 1
+            fi
+          fi
+        done
+    
+    - name: Upload generated reports as artifact
+      if: always()
+      uses: actions/upload-artifact@v4
+      with:
+        name: signal-reports-${{ github.run_id }}
+        path: |
+          SignalAI_Report_*.pdf
+          dashboard/public/data/*.json
+        retention-days: 7
+        if-no-files-found: warn
+
+  deploy-dashboard:
+    needs: generate-signals
+    if: needs.generate-signals.outputs.signals-generated == 'true'
+    runs-on: ubuntu-latest
+    
+    permissions:
+      pages: write
+      id-token: write
+      contents: read
+    
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    
+    steps:
+    - uses: actions/checkout@v4
+      with:
+        ref: main
+    
+    - name: Set up Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '18'
+        cache: 'npm' 
+        cache-dependency-path: dashboard/package-lock.json
+    
+    - name: Pull latest changes
+      run: |
+        git pull origin main
+        echo "Latest signals data:"
+        ls -la dashboard/public/data/
+    
+    - name: Build dashboard with fresh signals
+      run: |
+        cd dashboard
+        npm install
+        npm run build
+        echo "📊 Dashboard built with fresh market signals"
+    
+    - name: Setup Pages
+      uses: actions/configure-pages@v4
+    
+    - name: Upload artifact
+      uses: actions/upload-pages-artifact@v3
+      with:
+        path: dashboard/dist
+    
+    - name: Deploy to GitHub Pages
+      id: deployment
+      uses: actions/deploy-pages@v4

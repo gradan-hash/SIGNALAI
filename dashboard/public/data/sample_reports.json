@@ -1,0 +1,79 @@
+{
+  "sample_reports": [
+    {
+      "id": 1,
+      "title": "Today's Market Intelligence",
+      "description": "Latest AI-powered market analysis with global discovery insights",
+      "date": "August 08, 2025",
+      "pdf_url": "/sample_reports/SignalAI_Sample_Report_1_20250808.pdf",
+      "market_direction": "Bullish",
+      "confidence": 82,
+      "opportunity_score": 78,
+      "total_assets": 25,
+      "key_highlights": [
+        "Market Direction: Bullish (82% confidence)",
+        "Top Catalyst: Tech earnings exceeding expectations",
+        "Volume Leaders: NVDA, AAPL, TSLA"
+      ],
+      "preview_available": true,
+      "download_size": "~2.5MB"
+    },
+    {
+      "id": 2,
+      "title": "Yesterday's Premium Report",
+      "description": "Professional market analysis with specific buy/sell recommendations",
+      "date": "August 07, 2025",
+      "pdf_url": "/sample_reports/SignalAI_Sample_Report_2_20250807.pdf",
+      "market_direction": "Bearish",
+      "confidence": 75,
+      "opportunity_score": 65,
+      "total_assets": 28,
+      "key_highlights": [
+        "Market Direction: Bearish (75% confidence)",
+        "Top Catalyst: Interest rate policy uncertainty",
+        "Volume Leaders: TSLA, BTC, AAPL"
+      ],
+      "preview_available": true,
+      "download_size": "~2.5MB"
+    },
+    {
+      "id": 3,
+      "title": "Weekly Market Outlook",
+      "description": "Comprehensive weekly analysis covering all major asset classes",
+      "date": "August 05, 2025",
+      "pdf_url": "/sample_reports/SignalAI_Sample_Report_3_20250805.pdf",
+      "market_direction": "Sideways",
+      "confidence": 91,
+      "opportunity_score": 85,
+      "total_assets": 26,
+      "key_highlights": [
+        "Market Direction: Sideways (91% confidence)",
+        "Top Catalyst: Awaiting Fed policy signals",
+        "Volume Leaders: BTC, ETH, NVDA"
+      ],
+      "preview_available": true,
+      "download_size": "~2.5MB"
+    },
+    {
+      "id": 4,
+      "title": "Last Week's Performance",
+      "description": "Historical analysis showing prediction accuracy and market moves",
+      "date": "August 01, 2025",
+      "pdf_url": "/sample_reports/SignalAI_Sample_Report_4_20250801.pdf",
+      "market_direction": "Sideways",
+      "confidence": 91,
+      "opportunity_score": 85,
+      "total_assets": 26,
+      "key_highlights": [
+        "Market Direction: Sideways (91% confidence)",
+        "Top Catalyst: Awaiting Fed policy signals",
+        "Volume Leaders: BTC, ETH, NVDA"
+      ],
+      "preview_available": true,
+      "download_size": "~2.5MB"
+    }
+  ],
+  "total_reports": 4,
+  "generated_at": "2025-08-08T21:19:34.087664",
+  "description": "Professional market analysis reports showcasing Signal AI's premium intelligence"
+}

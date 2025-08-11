@@ -1,0 +1,130 @@
+{
+  "current_reports": [
+    {
+      "id": 6,
+      "title": "Today's Market Intelligence",
+      "description": "Latest AI-powered market analysis with global discovery insights",
+      "date": "August 11, 2025",
+      "pdf_url": "/reports/SignalAI_Report_20250811_0904.pdf",
+      "market_direction": "Sideways",
+      "confidence": 65,
+      "total_assets": 20,
+      "opportunity_score": 60,
+      "key_highlights": [
+        "Market Direction: Sideways (65% confidence)",
+        "Top Catalyst: Upcoming key inflation data (e.g., PCE price index, July 2024 CPI); further commentary from Federal Reserve officials; Q2 corporate earnings season outlooks (starting mid-July).",
+        "Assets Analyzed: 20 across all categories"
+      ],
+      "preview_available": true,
+      "download_size": "~2.5MB",
+      "generated_time": "09:04 UTC",
+      "is_current": true,
+      "generated_at": "2025-08-11T08:58:57.460515"
+    },
+    {
+      "id": 5,
+      "title": "Today's Market Intelligence",
+      "description": "Latest AI-powered market analysis with global discovery insights",
+      "date": "August 10, 2025",
+      "pdf_url": "/reports/SignalAI_Report_20250810_1956.pdf",
+      "market_direction": "Bullish",
+      "confidence": 70,
+      "total_assets": 21,
+      "opportunity_score": 70,
+      "key_highlights": [
+        "Market Direction: Bullish (70% confidence)",
+        "Top Catalyst: US Non-Farm Payrolls (NFP) report (June 7th), followed by the Consumer Price Index (CPI) data (June 12th) and the Federal Open Market Committee (FOMC) meeting (June 11-12th).",
+        "Assets Analyzed: 21 across all categories"
+      ],
+      "preview_available": true,
+      "download_size": "~2.5MB",
+      "generated_time": "19:56 UTC",
+      "is_current": false,
+      "generated_at": "2025-08-10T19:50:06.703132"
+    },
+    {
+      "id": 1,
+      "title": "Today's Market Intelligence",
+      "description": "Latest AI-powered market analysis with global discovery insights",
+      "date": "August 10, 2025",
+      "pdf_url": "/reports/SignalAI_Report_20250810_1805.pdf",
+      "market_direction": "Volatile",
+      "confidence": 70,
+      "opportunity_score": 65,
+      "total_assets": 20,
+      "key_highlights": [
+        "Market Direction: Volatile (70% confidence)",
+        "Top Catalyst: Global market volatility and tech sector movements",
+        "Assets Analyzed: 20 across all categories"
+      ],
+      "preview_available": true,
+      "download_size": "~2.5MB",
+      "generated_time": "18:05 UTC",
+      "is_current": false
+    },
+    {
+      "id": 2,
+      "title": "Market Report - August 09, 2025",
+      "description": "Professional market analysis from August 09, 2025",
+      "date": "August 09, 2025",
+      "pdf_url": "/reports/SignalAI_Report_20250809_2333.pdf",
+      "market_direction": "Bullish",
+      "confidence": 65,
+      "opportunity_score": 75,
+      "total_assets": 19,
+      "key_highlights": [
+        "Market Direction: Bullish (65% confidence)",
+        "Top Catalyst: Confirmation of disinflationary trends",
+        "Assets Analyzed: 19 across all categories"
+      ],
+      "preview_available": true,
+      "download_size": "~2.5MB",
+      "generated_time": "23:33 UTC",
+      "is_current": false
+    },
+    {
+      "id": 3,
+      "title": "Market Report - August 09, 2025",
+      "description": "Comprehensive market analysis from August 09, 2025",
+      "date": "August 09, 2025",
+      "pdf_url": "/reports/Comprehensive_Signal_AI_Report_20250809_2259.pdf",
+      "market_direction": "Bullish",
+      "confidence": 65,
+      "opportunity_score": 75,
+      "total_assets": 19,
+      "key_highlights": [
+        "Market Direction: Bullish (65% confidence)",
+        "Top Catalyst: Technology sector momentum",
+        "Assets Analyzed: 19 across all categories"
+      ],
+      "preview_available": true,
+      "download_size": "~2.5MB",
+      "generated_time": "22:59 UTC",
+      "is_current": false
+    },
+    {
+      "id": 4,
+      "title": "Market Report - August 08, 2025",
+      "description": "Professional market analysis from August 08, 2025",
+      "date": "August 08, 2025",
+      "pdf_url": "/reports/SignalAI_Report_20250808_2120.pdf",
+      "market_direction": "Bullish",
+      "confidence": 65,
+      "opportunity_score": 75,
+      "total_assets": 19,
+      "key_highlights": [
+        "Market Direction: Bullish (65% confidence)",
+        "Top Catalyst: Strong earnings expectations",
+        "Assets Analyzed: 19 across all categories"
+      ],
+      "preview_available": true,
+      "download_size": "~2.5MB",
+      "generated_time": "21:20 UTC",
+      "is_current": false
+    }
+  ],
+  "total_reports": 6,
+  "generated_at": "2025-08-11T09:04:11.880142",
+  "description": "Current market analysis reports with real-time insights",
+  "data_source": "live_market_analysis"
+}

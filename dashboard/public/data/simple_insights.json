@@ -1,0 +1,50 @@
+{
+  "timestamp": "2025-08-07T21:27:10.137273",
+  "explanations": [
+    {
+      "symbol": "AAPL",
+      "current_move": "up 2.3%",
+      "why_simple": "Investors are reacting positively to Apple's recent earnings report and strong future outlook.",
+      "explanation": "Apple beat expectations on earnings and sales, showing they're still making lots of money.  Analysts are predicting continued growth, making investors more confident.  This is driving up the price.",
+      "what_it_means": "The stock price is going up because people want to buy it. If you own it, you're making money. If you don't, it might be getting more expensive.",
+      "action": "watch",
+      "confidence": "medium",
+      "risk": "medium",
+      "timestamp": "2025-08-07T21:26:53.146692"
+    },
+    {
+      "symbol": "TSLA",
+      "current_move": "unknown",
+      "why_simple": "Unable to analyze TSLA right now",
+      "explanation": "Error: Expecting property name enclosed in double quotes: line 3 column 31 (char 52)",
+      "what_it_means": "Try again later",
+      "action": "wait",
+      "confidence": "low",
+      "risk": "unknown",
+      "timestamp": "2025-08-07T21:26:56.883880"
+    },
+    {
+      "symbol": "NVDA",
+      "current_move": "up 2.3%",
+      "why_simple": "Good news about future sales and strong demand for their chips is boosting investor confidence.",
+      "explanation": "Nvidia, a major chip maker, recently reported strong earnings.  Investors are excited about the future growth of the company, driving up the stock price. This positive outlook often leads to increased trading volume.",
+      "what_it_means": "Investors who already own NVDA are seeing their investment increase in value. For those who don't own it, the price is higher now.",
+      "action": "watch",
+      "confidence": "medium",
+      "risk": "medium",
+      "timestamp": "2025-08-07T21:27:04.988832"
+    },
+    {
+      "symbol": "MSFT",
+      "current_move": "up 2.3%",
+      "why_simple": "Investors are reacting positively to Microsoft's recent earnings report and AI advancements.",
+      "explanation": "Microsoft's better-than-expected earnings showed strong growth in cloud computing and AI.  This positive news boosted investor confidence, leading to a price increase.  Positive news generally pushes stock prices up.",
+      "what_it_means": "For traders, this means the stock is currently performing well.  However, remember that markets can change quickly.",
+      "action": "watch",
+      "confidence": "medium",
+      "risk": "medium",
+      "timestamp": "2025-08-07T21:27:10.137254"
+    }
+  ],
+  "summary": "Analyzed 4 stocks"
+}
