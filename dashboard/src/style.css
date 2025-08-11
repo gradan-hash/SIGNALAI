@@ -1,4 +1,7 @@
 /* Signal AI Dashboard Global Styles */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 /* Reset and base styles */
 * {
