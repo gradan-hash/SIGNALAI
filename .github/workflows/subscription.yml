@@ -1,4 +1,4 @@
-name: Add New Subscriber
+name: Add New Subscriber v2
 
 on:
   repository_dispatch:
