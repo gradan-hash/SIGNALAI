@@ -1413,7 +1413,7 @@ export default {
           
           assetCategories.value.forEach(category => {
             const targetType = categoryMap[category.id]
-            category.count = assets.filter(asset => asset.asset_type === targetType).length
+            category.count = allAssets.value.filter(asset => asset.asset_type === targetType).length
           })
           
           // Update last update time
