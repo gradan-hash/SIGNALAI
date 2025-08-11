@@ -1844,13 +1844,20 @@ export default {
       subscriptionMessage.value = ''
 
       try {
+        const token = import.meta.env.VITE_GITHUB_TOKEN
+        
+        if (!token) {
+          throw new Error('GitHub token not configured')
+        }
+
         // Trigger GitHub Actions workflow to update subscribers.json
         const response = await fetch('https://api.github.com/repos/gradan-hash/SIGNALAI/dispatches', {
           method: 'POST',
           headers: {
             'Accept': 'application/vnd.github.v3+json',
-            'Authorization': `Bearer ${import.meta.env.VITE_GITHUB_TOKEN}`,
-            'Content-Type': 'application/json'
+            'Authorization': `Bearer ${token}`,
+            'Content-Type': 'application/json',
+            'User-Agent': 'SignalAI-Dashboard'
           },
           body: JSON.stringify({
             event_type: 'new_subscription',
@@ -1866,7 +1873,8 @@ export default {
           subscriptionSuccess.value = true
           subscriptionEmail.value = ''
         } else {
-          throw new Error(`GitHub API error: ${response.status}`)
+          const errorText = await response.text()
+          throw new Error(`GitHub API error: ${response.status} - ${errorText}`)
         }
         
       } catch (error) {
