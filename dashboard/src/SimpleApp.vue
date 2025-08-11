@@ -1153,7 +1153,7 @@ export default {
   setup() {
     const loading = ref(false)
     const sidebarOpen = ref(false)
-    const activeCategory = ref('stocks')
+    const activeCategory = ref('forex')
     const allAssets = ref([])
     const lastUpdate = ref('Loading...')
     const marketSummary = ref('Mixed market conditions with selective opportunities')
@@ -1179,10 +1179,10 @@ export default {
     const showReportsSidebar = ref(false)
     const isSubscribing = ref(false)
 
-    // Asset categories
+    // Asset categories (Forex first - people like forex!)
     const assetCategories = ref([
-      { id: 'stocks', name: 'Stocks', icon: '📈', count: 0 },
       { id: 'forex', name: 'Forex', icon: '💱', count: 0 },
+      { id: 'stocks', name: 'Stocks', icon: '📈', count: 0 },
       { id: 'crypto', name: 'Crypto', icon: '₿', count: 0 },
       { id: 'commodities', name: 'Commodities', icon: '🏅', count: 0 }
     ])
@@ -1299,7 +1299,7 @@ export default {
         const match = priceText.toString().match(pattern)
         if (match) {
           const price = parseFloat(match[1])
-          if (priceText.includes('$') || price > 10) {
+          if (priceText.toString().includes('$') || price > 10) {
             return `$${price.toFixed(2)}`
           } else {
             return `$${price.toFixed(4)}`
@@ -1357,16 +1357,13 @@ export default {
                 key_catalyst: data.summary.key_catalyst || 'Market analysis',
                 available: true
               })
-              (`✅ Loaded historical data for ${dateStr}: ${data.summary.market_direction}`)
             }
           }
         } catch (error) {
-          (`📅 Historical data not available for ${dateStr}`)
         }
       }
       
       historicalData.value = historical // Keep chronological order (today first)
-      (`📊 Loaded ${historical.length} days of historical data`)
     }
 
     const viewHistoricalDay = async (day) => {
