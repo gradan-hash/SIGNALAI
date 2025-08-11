@@ -1,6 +1,27 @@
 {
   "current_reports": [
     {
+      "id": 7,
+      "title": "Market Opening Intelligence",
+      "description": "Latest AI-powered market analysis with global discovery insights",
+      "date": "August 11, 2025",
+      "pdf_url": "/reports/SignalAI_Report_20250811_1352.pdf",
+      "market_direction": "Bullish",
+      "confidence": 70,
+      "total_assets": 20,
+      "opportunity_score": 70,
+      "key_highlights": [
+        "Market Direction: Bullish (70% confidence)",
+        "Top Catalyst: Friday's Personal Consumption Expenditures (PCE) inflation data, the Federal Reserve's preferred inflation gauge. A benign or cooler-than-expected reading would significantly bolster hopes for rate cuts and likely propel indices to new highs, particularly the S&P 500 and Nasdaq. Conversely, an uptick could trigger profit-taking.",
+        "Assets Analyzed: 20 across all categories"
+      ],
+      "preview_available": true,
+      "download_size": "~2.5MB",
+      "generated_time": "13:52 UTC",
+      "is_current": true,
+      "generated_at": "2025-08-11T13:47:11.501895"
+    },
+    {
       "id": 6,
       "title": "Today's Market Intelligence",
       "description": "Latest AI-powered market analysis with global discovery insights",
@@ -18,7 +39,7 @@
       "preview_available": true,
       "download_size": "~2.5MB",
       "generated_time": "09:04 UTC",
-      "is_current": true,
+      "is_current": false,
       "generated_at": "2025-08-11T08:58:57.460515"
     },
     {
@@ -123,8 +144,8 @@
       "is_current": false
     }
   ],
-  "total_reports": 6,
-  "generated_at": "2025-08-11T09:04:11.880142",
+  "total_reports": 7,
+  "generated_at": "2025-08-11T13:52:50.043804",
   "description": "Current market analysis reports with real-time insights",
   "data_source": "live_market_analysis"
 }
