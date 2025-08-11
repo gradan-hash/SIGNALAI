@@ -1849,7 +1849,7 @@ export default {
           method: 'POST',
           headers: {
             'Accept': 'application/vnd.github.v3+json',
-            'Authorization': 'Bearer ghp_YOUR_GITHUB_TOKEN_HERE', // You'll need to replace this
+            'Authorization': `Bearer ${import.meta.env.VITE_GITHUB_TOKEN}`,
             'Content-Type': 'application/json'
           },
           body: JSON.stringify({

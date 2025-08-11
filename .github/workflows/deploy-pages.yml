@@ -41,6 +41,8 @@ jobs:
         npm install
     
     - name: Build dashboard
+      env:
+        VITE_GITHUB_TOKEN: ${{ secrets.VITE_GITHUB_TOKEN }}
       run: |
         cd dashboard
         npm run build
