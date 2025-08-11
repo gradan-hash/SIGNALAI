@@ -37,6 +37,8 @@ jobs:
         run: |
           cd dashboard
           npm run build
+          # Copy reports to build directory
+          cp -r public/reports dist/reports
           
       - name: Setup Pages
         uses: actions/configure-pages@v5
