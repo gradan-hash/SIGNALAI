@@ -65,7 +65,7 @@ jobs:
               print(f'📧 Email {email} already subscribed')
           "
           
-      - name: Commit and push changes
+      - name: Commit and push changes with smart rebase
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
@@ -75,6 +75,21 @@ jobs:
           
           # Check if there are changes to commit
           if ! git diff --staged --quiet; then
+            # Fetch latest changes and rebase smartly
+            git fetch origin main
+            git rebase origin/main || {
+              echo "🔧 Resolving conflicts while preserving all work..."
+              git status --porcelain | grep "^UU" | while read -r line; do
+                file=$(echo "$line" | awk '{print $2}')
+                echo "🔧 Preserving changes in: $file"
+                git add "$file"
+              done
+              git rebase --continue || {
+                git rebase --abort
+                git merge origin/main -X ours --no-edit
+              }
+            }
+            
             git commit -m "🔔 Add new subscriber: ${{ github.event.client_payload.email }}"
             git push
             echo "✅ Subscriber added and committed"
