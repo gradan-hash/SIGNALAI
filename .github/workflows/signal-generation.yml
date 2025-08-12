@@ -1,7 +1,11 @@
 name: Auto Signal Generation & Email Delivery
 
 on:
-  workflow_dispatch: # Manual trigger only - no automatic emails
+  schedule:
+    # Pre-market signals - Before major markets open
+    - cron: '30 8 * * 1-5'   # 8:30 AM UTC (4:30 AM EST, 1:30 AM PST) - Before US pre-market
+    - cron: '0 13 * * 1-5'   # 1:00 PM UTC (9:00 AM EST, 6:00 AM PST) - Before US market open
+  workflow_dispatch: # Allow manual trigger
 
 permissions:
   contents: write
