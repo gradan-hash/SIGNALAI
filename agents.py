@@ -15,7 +15,7 @@ import shutil
 import requests
 import smtplib
 from datetime import datetime, timedelta
-from typing import List, Dict, Any
+from typing import List, Dict, Any, Optional
 from dotenv import load_dotenv
 import google.generativeai as genai
 from email.mime.text import MIMEText
@@ -29,39 +29,37 @@ load_dotenv()
 api_key = os.getenv('GOOGLE_API_KEY_2') or os.getenv('GOOGLE_API_KEY')
 genai.configure(api_key=api_key)
 
-# Alpha Vantage API keys for real market data (multiple keys for higher limits)
-ALPHA_VANTAGE_API_KEYS = [
-    "Y1E0SFES4O0ATXVZ",  # Key 1 - 25 requests/day
-    "QEAE2D1SZUNB85O4",  # Key 2 - 25 requests/day  
-    "XAG63SKT2UM5JICF",  # Key 3 - 25 requests/day
-]
-# Total: 75 requests/day = Multiple full runs possible!
+# Twelve Data API key for real market data (800 requests/day, 8 requests/minute)
+TWELVE_DATA_API_KEY = "75f27ed4144449b1a06748691a937a63"
+TWELVE_DATA_BASE_URL = "https://api.twelvedata.com"
+# Total: 800 requests/day, 8 requests/minute = Much higher limits!
 
 import random
 import time
 from datetime import datetime, date
 
-# Key rotation and rate limiting
-current_key_index = 0
-key_request_counts = {i: 0 for i in range(len(ALPHA_VANTAGE_API_KEYS))}  # Track requests per key
+# Twelve Data rate limiting (8 requests/minute, 800/day)
+twelve_data_request_count = 0
+twelve_data_minute_requests = []  # Track requests per minute
 last_reset_date = str(date.today())  # Track when counters were last reset
-MAX_REQUESTS_PER_KEY = 20  # Conservative limit per key (5 buffer from 25)
-MAX_TOTAL_REQUESTS_PER_RUN = 30  # Total requests per run (allows 2 runs per day)
+MAX_REQUESTS_PER_MINUTE = 7  # Conservative limit (1 buffer from 8)
+MAX_REQUESTS_PER_DAY = 750  # Conservative daily limit (50 buffer from 800)
+RATE_LIMIT_DELAY = 8  # Seconds between requests (7.5 seconds = 8 requests/minute)
 
 # Use Gemini 2.5 Flash - optimized for real market data prompting  
 model = genai.GenerativeModel('gemini-2.5-flash')
 print(f"🔍 Using Gemini 2.5 Flash optimized for market analysis, API key ending in ...{api_key[-4:]}")
-print(f"📊 Alpha Vantage: 3 API keys configured for {len(ALPHA_VANTAGE_API_KEYS) * 25} total daily requests")
+print(f"📊 Twelve Data: 800 requests/day, 8 requests/minute configured")
 
 def reset_daily_counters():
     """Reset request counters if it's a new day"""
-    global last_reset_date, key_request_counts
+    global last_reset_date, twelve_data_request_count
     today = str(date.today())
     if today != last_reset_date:
-        print(f"🔄 New day detected! Resetting API request counters...")
-        key_request_counts = {i: 0 for i in range(len(ALPHA_VANTAGE_API_KEYS))}
+        print(f"🔄 New day detected! Resetting Twelve Data request counters...")
+        twelve_data_request_count = 0
         last_reset_date = today
-        print(f"📊 Fresh limits: {MAX_REQUESTS_PER_KEY} requests per key, {len(ALPHA_VANTAGE_API_KEYS) * MAX_REQUESTS_PER_KEY} total")
+        print(f"📊 Fresh limits: {MAX_REQUESTS_PER_DAY} requests per day, {MAX_REQUESTS_PER_MINUTE} per minute")
 
 def get_next_alpha_vantage_key():
     """
@@ -101,157 +99,120 @@ def get_next_alpha_vantage_key():
     print("⚠️ All keys at limit, falling back to AI data generation")
     return None
 
-def get_real_market_data_single_key(symbol: str, asset_type: str, api_key: str) -> Dict[str, Any]:
+def get_twelve_data_quote(symbol: str, asset_type: str) -> Optional[Dict[str, Any]]:
     """
-    Get real market data using a single API key
-    Returns data, "RATE_LIMITED", or None
+    Get real market data from Twelve Data API with rate limiting
+    Returns formatted data or None if failed
     """
+    global twelve_data_request_count, twelve_data_minute_requests
+    
+    # Check rate limits
+    reset_daily_counters()
+    
+    if twelve_data_request_count >= MAX_REQUESTS_PER_DAY:
+        print(f"⚠️ Daily limit reached ({twelve_data_request_count}/{MAX_REQUESTS_PER_DAY}), switching to AI fallback")
+        return None
+    
+    # Check minute limit
+    now = time.time()
+    twelve_data_minute_requests = [req_time for req_time in twelve_data_minute_requests if now - req_time < 60]
+    
+    if len(twelve_data_minute_requests) >= MAX_REQUESTS_PER_MINUTE:
+        wait_time = 60 - (now - twelve_data_minute_requests[0]) + 1
+        print(f"⚠️ Minute limit reached, waiting {wait_time:.0f} seconds...")
+        time.sleep(wait_time)
+        return get_twelve_data_quote(symbol, asset_type)
+    
     try:
+        # Add delay to respect rate limits
+        time.sleep(RATE_LIMIT_DELAY)
         
-        base_url = "https://www.alphavantage.co/query"
-        
-        # Special handling for XAUUSD (Gold) - treat as stock symbol
-        if symbol in ["XAU/USD", "XAUUSD"]:
-            symbol = "XAUUSD"
-            asset_type = "stock"
-        
-        # Map our asset types to Alpha Vantage functions
+        # Format symbol for Twelve Data
         if asset_type == "forex":
-            # For forex pairs like EUR/USD - use FREE endpoint
-            function = "FX_DAILY"
-            from_symbol = symbol[:3]  # EUR
-            to_symbol = symbol[4:] if "/" in symbol else symbol[3:]  # USD
-            params = {
-                "function": function,
-                "from_symbol": from_symbol,
-                "to_symbol": to_symbol,
-                "apikey": api_key
-            }
-        elif asset_type == "crypto":
-            # For crypto like BTC, ETH
-            function = "CURRENCY_EXCHANGE_RATE"
-            params = {
-                "function": function,
-                "from_currency": symbol,
-                "to_currency": "USD",
-                "apikey": api_key
-            }
-        else:  # stocks, commodities
-            function = "GLOBAL_QUOTE"
-            params = {
-                "function": function,
-                "symbol": symbol,
-                "apikey": api_key
-            }
+            # Special handling for XAUUSD (Gold) - keep slash format
+            if symbol in ["XAUUSD", "XAU/USD"]:
+                symbol = "XAU/USD"  # Twelve Data format for gold
+            # For other forex pairs, ensure they have slash format
+            elif "/" not in symbol and len(symbol) == 6:
+                # Convert EURUSD to EUR/USD format
+                symbol = f"{symbol[:3]}/{symbol[3:]}"
         
-        print(f"📡 Fetching real {asset_type} data for {symbol} from Alpha Vantage...")
-        response = requests.get(base_url, params=params, timeout=10)
+        # Make API request
+        url = f"{TWELVE_DATA_BASE_URL}/quote"
+        params = {
+            "symbol": symbol,
+            "apikey": TWELVE_DATA_API_KEY
+        }
+        
+        print(f"📡 Fetching real {asset_type} data for {symbol} from Twelve Data...")
+        response = requests.get(url, params=params, timeout=10)
         data = response.json()
         
-        # Check for API limit/error responses
-        if "Information" in data or "Error Message" in data:
-            error_msg = data.get("Information", data.get("Error Message", "Unknown error"))
-            if "rate limit" in error_msg.lower() or "api key" in error_msg.lower():
-                print(f"⚠️ API key limit hit for {symbol}, trying next key...")
-                return "RATE_LIMITED"  # Special return to try next key
-            else:
-                print(f"⚠️ API error for {symbol}: {error_msg}")
-                return None
+        # Check for errors
+        if "error" in data:
+            print(f"❌ Twelve Data API error: {data['error']}")
+            return None
         
-        # Parse the response based on asset type
-        if asset_type == "forex":
-            time_series = data.get("Time Series FX (Daily)", {})
-            if time_series:
-                latest_time = max(time_series.keys())
-                latest_data = time_series[latest_time]
-                current_price = float(latest_data["4. close"])
-                prev_close = float(latest_data["1. open"])
-                change = current_price - prev_close
-                change_percent = (change / prev_close) * 100
-                
-                return {
-                    "current_price": f"{current_price:.4f}",
-                    "percentage_change": f"{change_percent:+.2f}%",
-                    "last_updated": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
-                    "data_quality": "real_market_data",
-                    "source": "Alpha Vantage"
-                }
+        if "status" in data and data["status"] == "error":
+            print(f"❌ Twelve Data error: {data.get('message', 'Unknown error')}")
+            return None
         
-        elif asset_type == "crypto":
-            exchange_data = data.get("Realtime Currency Exchange Rate", {})
-            if exchange_data:
-                current_price = float(exchange_data["5. Exchange Rate"])
-                # For crypto, we'll calculate a simple percentage change
-                change_percent = 0.0  # Alpha Vantage exchange rate doesn't provide previous day data
-                
-                return {
-                    "current_price": f"${current_price:,.2f}",
-                    "percentage_change": f"{change_percent:+.2f}%",
-                    "last_updated": exchange_data["6. Last Refreshed"],
-                    "data_quality": "real_market_data", 
-                    "source": "Alpha Vantage"
-                }
+        # Record successful request
+        twelve_data_request_count += 1
+        twelve_data_minute_requests.append(time.time())
+        print(f"📊 Request recorded: {twelve_data_request_count}/{MAX_REQUESTS_PER_DAY} daily, {len(twelve_data_minute_requests)}/{MAX_REQUESTS_PER_MINUTE} per minute")
         
-        else:  # stocks
-            quote = data.get("Global Quote", {})
-            if quote:
-                current_price = float(quote["05. price"])
-                change_percent = float(quote["10. change percent"].replace("%", ""))
-                
-                return {
-                    "current_price": f"${current_price:.2f}",
-                    "percentage_change": f"{change_percent:+.2f}%",
-                    "last_updated": quote["07. latest trading day"],
-                    "data_quality": "real_market_data",
-                    "source": "Alpha Vantage"
-                }
-        
-        # If we get here, the API response was unexpected
-        print(f"⚠️ Unexpected Alpha Vantage response for {symbol}: {data}")
-        return None
+        # Parse response
+        if not data or "symbol" not in data:
+            print(f"⚠️ Invalid response format from Twelve Data for {symbol}")
+            return None
             
+        # Extract data
+        current_price = float(data.get("close", 0))
+        previous_close = float(data.get("previous_close", current_price))
+        
+        # Calculate change
+        change = current_price - previous_close
+        change_percent = (change / previous_close * 100) if previous_close != 0 else 0.0
+        
+        # Format price based on asset type
+        if asset_type == "forex":
+            price_str = f"{current_price:.4f}"
+        else:
+            price_str = f"${current_price:.2f}"
+        
+        # Return formatted data
+        formatted_data = {
+            "current_price": price_str,
+            "percentage_change": f"{change_percent:+.2f}%",
+            "last_updated": data.get("datetime", datetime.now().strftime("%Y-%m-%d %H:%M:%S")),
+            "data_quality": "real_market_data",
+            "source": "Twelve Data"
+        }
+        
+        print(f"✅ Got real data for {symbol}: {price_str} ({change_percent:+.2f}%)")
+        return formatted_data
+        
     except Exception as e:
-        print(f"❌ Error fetching real market data for {symbol}: {str(e)}")
+        print(f"❌ Error fetching data for {symbol}: {str(e)}")
         return None
 
 def get_real_market_data(symbol: str, asset_type: str) -> Dict[str, Any]:
     """
-    Try to get real market data using all available API keys before falling back to AI
+    Get real market data from Twelve Data API
+    Returns real data or None if API fails
     """
-    # Reset daily counters if needed
-    reset_daily_counters()
-    
     print(f"📡 Fetching real {asset_type} data for {symbol}...")
     
-    # Try each key until one works or we exhaust all keys
-    for attempt, key_index in enumerate(range(len(ALPHA_VANTAGE_API_KEYS))):
-        # Check if this key has requests remaining
-        if key_request_counts[key_index] >= MAX_REQUESTS_PER_KEY:
-            print(f"🔑 Key {key_index + 1} at limit, trying next...")
-            continue
-            
-        # Use this key
-        api_key = ALPHA_VANTAGE_API_KEYS[key_index]
-        key_request_counts[key_index] += 1
-        
-        key_num = key_index + 1
-        remaining = MAX_REQUESTS_PER_KEY - key_request_counts[key_index]
-        print(f"🔑 Trying API Key {key_num} (Request {key_request_counts[key_index]}/{MAX_REQUESTS_PER_KEY}, {remaining} remaining)")
-        
-        result = get_real_market_data_single_key(symbol, asset_type, api_key)
-        
-        if result == "RATE_LIMITED":
-            print(f"⚠️ Key {key_num} hit rate limit, trying next key...")
-            continue
-        elif result is not None:
-            print(f"✅ Success with Key {key_num}!")
-            return result
-        else:
-            print(f"❌ Key {key_num} failed with API error")
-            continue
+    # Try Twelve Data API
+    result = get_twelve_data_quote(symbol, asset_type)
     
-    print(f"⚠️ All keys exhausted for {symbol}, falling back to AI data")
-    return None
+    if result is not None:
+        print(f"✅ Success with Twelve Data API!")
+        return result
+    else:
+        print(f"⚠️ Twelve Data API failed for {symbol}, falling back to AI data")
+        return None
 
 def generate_intelligent_market_data(asset_symbol: str, asset_type: str = "stock") -> Dict[str, Any]:
     """
@@ -261,7 +222,7 @@ def generate_intelligent_market_data(asset_symbol: str, asset_type: str = "stock
     import random
     from datetime import datetime
     
-    # 🎯 FIRST: Try to get REAL market data from Alpha Vantage
+    # 🎯 FIRST: Try to get REAL market data from Twelve Data
     real_data = get_real_market_data(asset_symbol, asset_type)
     if real_data:
         print(f"✅ Using REAL market data for {asset_symbol}")
