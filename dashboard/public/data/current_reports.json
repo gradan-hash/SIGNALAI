@@ -1,6 +1,48 @@
 {
   "current_reports": [
     {
+      "id": 10,
+      "title": "Today's Market Intelligence",
+      "description": "Latest AI-powered market analysis with global discovery insights",
+      "date": "August 12, 2025",
+      "pdf_url": "/reports/SignalAI_Report_20250812_1704.pdf",
+      "market_direction": "Volatile",
+      "confidence": 70,
+      "total_assets": 18,
+      "opportunity_score": 65,
+      "key_highlights": [
+        "Market Direction: Volatile (70% confidence)",
+        "Top Catalyst: May CPI Report & FOMC Meeting (Interest Rate Decision, Dot Plot, Powell's Press Conference) on June 12th.",
+        "Assets Analyzed: 18 across all categories"
+      ],
+      "preview_available": true,
+      "download_size": "~2.5MB",
+      "generated_time": "17:04 UTC",
+      "is_current": true,
+      "generated_at": "2025-08-12T17:04:33.224798"
+    },
+    {
+      "id": 9,
+      "title": "Today's Market Intelligence",
+      "description": "Latest AI-powered market analysis with global discovery insights",
+      "date": "August 12, 2025",
+      "pdf_url": "/reports/SignalAI_Report_20250812_1600.pdf",
+      "market_direction": "Sideways",
+      "confidence": 68,
+      "total_assets": 20,
+      "opportunity_score": 70,
+      "key_highlights": [
+        "Market Direction: Sideways (68% confidence)",
+        "Top Catalyst: US PCE Inflation data (Friday, May 31st)",
+        "Assets Analyzed: 20 across all categories"
+      ],
+      "preview_available": true,
+      "download_size": "~2.5MB",
+      "generated_time": "16:00 UTC",
+      "is_current": false,
+      "generated_at": "2025-08-12T15:55:18.881422"
+    },
+    {
       "id": 8,
       "title": "Pre-Market Intelligence",
       "description": "Latest AI-powered market analysis with global discovery insights",
@@ -18,7 +60,7 @@
       "preview_available": true,
       "download_size": "~2.5MB",
       "generated_time": "09:03 UTC",
-      "is_current": true,
+      "is_current": false,
       "generated_at": "2025-08-12T08:57:11.809372"
     },
     {
@@ -165,8 +207,8 @@
       "is_current": false
     }
   ],
-  "total_reports": 8,
-  "generated_at": "2025-08-12T09:03:41.097331",
+  "total_reports": 10,
+  "generated_at": "2025-08-12T17:04:55.486691",
   "description": "Current market analysis reports with real-time insights",
   "data_source": "live_market_analysis"
 }

@@ -1179,12 +1179,12 @@ export default {
     const showReportsSidebar = ref(false)
     const isSubscribing = ref(false)
 
-    // Asset categories (Forex first - people like forex!)
+    // Asset categories (Forex-heavy focus - 66% forex pairs!)
     const assetCategories = ref([
       { id: 'forex', name: 'Forex', icon: '💱', count: 0 },
       { id: 'stocks', name: 'Stocks', icon: '📈', count: 0 },
-      { id: 'crypto', name: 'Crypto', icon: '₿', count: 0 },
-      { id: 'commodities', name: 'Commodities', icon: '🏅', count: 0 }
+      { id: 'crypto', name: 'Crypto', icon: '₿', count: 0 }
+      // Removed commodities - premium API required
     ])
 
     // Market prediction (AI generated - no hardcoding!)
@@ -1199,12 +1199,12 @@ export default {
     const filteredAssets = computed(() => {
       if (activeCategory.value === 'all') return allAssets.value
       
-      // Map category IDs to asset types
+      // Map category IDs to asset types (forex-heavy focus)
       const categoryMap = {
         'stocks': 'stock',
         'forex': 'forex', 
-        'crypto': 'crypto',
-        'commodities': 'commodity'
+        'crypto': 'crypto'
+        // Removed commodities - premium API required
       }
       
       const targetType = categoryMap[activeCategory.value]
@@ -1403,12 +1403,12 @@ export default {
             topStory.value = historicalData.market_discovery.top_story
           }
           
-          // Update category counts
+          // Update category counts (forex-heavy)
           const categoryMap = {
             'stocks': 'stock',
             'forex': 'forex', 
-            'crypto': 'crypto',
-            'commodities': 'commodity'
+            'crypto': 'crypto'
+            // Removed commodities - premium API required
           }
           
           assetCategories.value.forEach(category => {
@@ -1460,12 +1460,12 @@ export default {
           topStory.value = data.market_discovery.top_story
         }
         
-        // Restore category counts
+        // Restore category counts (forex-heavy)
         const categoryMap = {
           'stocks': 'stock',
           'forex': 'forex', 
-          'crypto': 'crypto',
-          'commodities': 'commodity'
+          'crypto': 'crypto'
+          // Removed commodities - premium API required
         }
         
         const assets = allAssets.value
@@ -1947,12 +1947,12 @@ export default {
             loadHistoricalData()
           }
           
-          // Update category counts with correct mapping
+          // Update category counts with correct mapping (forex-heavy)
           const categoryMap = {
             'stocks': 'stock',
             'forex': 'forex', 
-            'crypto': 'crypto',
-            'commodities': 'commodity'
+            'crypto': 'crypto'
+            // Removed commodities - premium API required
           }
           
           assetCategories.value.forEach(category => {

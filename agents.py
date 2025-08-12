@@ -136,6 +136,11 @@ def get_twelve_data_quote(symbol: str, asset_type: str) -> Optional[Dict[str, An
             elif "/" not in symbol and len(symbol) == 6:
                 # Convert EURUSD to EUR/USD format
                 symbol = f"{symbol[:3]}/{symbol[3:]}"
+        elif asset_type == "crypto":
+            # Crypto should already be in BTC/USD format from our updated lists
+            # But handle legacy BTC format just in case
+            if "/" not in symbol and symbol in ["BTC", "ETH", "SOL"]:
+                symbol = f"{symbol}/USD"
         
         # Make API request
         url = f"{TWELVE_DATA_BASE_URL}/quote"
@@ -442,8 +447,8 @@ Return this exact JSON structure:
   "global_discovery": {{
     "timestamp": "{current_time}",
     "most_traded_stocks": ["AAPL", "TSLA", "NVDA", "MSFT", "GOOGL", "AMZN", "META"],
-    "hottest_forex": ["XAU/USD", "EUR/USD", "GBP/USD", "USD/JPY", "USD/CHF", "AUD/USD"], 
-    "trending_crypto": ["BTC", "ETH", "BNB", "XRP", "ADA", "SOL", "DOGE"],
+    "hottest_forex": ["XAU/USD", "EUR/USD", "USD/JPY", "GBP/USD", "AUD/USD", "USD/CAD", "USD/CHF", "NZD/USD", "EUR/GBP", "EUR/JPY", "GBP/JPY", "XAG/USD"], 
+    "trending_crypto": ["BTC/USD", "ETH/USD", "SOL/USD"],
     "active_commodities": ["Gold", "Silver", "Crude Oil", "Natural Gas"],
     "market_drivers": ["Central bank policy decisions", "Tech earnings season", "Geopolitical developments"],
     "volume_leaders": ["AAPL", "BTC", "EUR/USD", "TSLA", "ETH", "Gold", "NVDA", "GBP/USD", "XRP", "Silver"],
@@ -505,16 +510,16 @@ Replace the example values with realistic varied selections. Return ONLY the JSO
         random.seed(datetime.now().hour + datetime.now().minute // 15)
         
         stock_pool = ["NVDA", "TSLA", "AAPL", "MSFT", "GOOGL", "AMZN", "META", "NFLX", "AVGO", "AMD", "CRM", "ADBE", "ORCL", "INTC"]
-        crypto_pool = ["BTC", "ETH", "BNB", "XRP", "ADA", "SOL", "DOGE", "DOT", "MATIC", "AVAX", "LINK", "UNI", "LTC", "BCH"] 
-        forex_pool = ["XAU/USD", "EUR/USD", "GBP/USD", "USD/JPY", "USD/CHF", "AUD/USD", "USD/CAD", "NZD/USD", "EUR/GBP", "EUR/JPY", "GBP/JPY"]
+        crypto_pool = ["BTC/USD", "ETH/USD", "SOL/USD"]  # Only free tier cryptos with correct format 
+        forex_pool = ["XAU/USD", "EUR/USD", "USD/JPY", "GBP/USD", "AUD/USD", "USD/CAD", "USD/CHF", "NZD/USD", "EUR/GBP", "EUR/JPY", "GBP/JPY", "XAG/USD", "EUR/CHF", "GBP/CHF", "AUD/JPY"]
         commodity_pool = ["Gold", "Silver", "Crude Oil", "Natural Gas", "Copper", "Wheat", "Corn", "Coffee", "Sugar", "Cotton"]
         
         return {
             "global_discovery": {
                 "timestamp": current_time,
-                "most_traded_stocks": random.sample(stock_pool, 7),
-                "hottest_forex": random.sample(forex_pool, 5), 
-                "trending_crypto": random.sample(crypto_pool, 7),
+                "most_traded_stocks": random.sample(stock_pool, 3),  # Reduced to 3 stocks
+                "hottest_forex": random.sample(forex_pool, 12),  # More forex pairs 
+                "trending_crypto": crypto_pool,  # All 3 available cryptos
                 "active_commodities": random.sample(commodity_pool, 4),
                 "market_drivers": [
                     "Central bank policy expectations driving currency markets",
@@ -647,30 +652,36 @@ PRIORITIZE assets from the global discovery data - those are what users actually
         
         result = json.loads(response_text)
         
-        # Ensure we have assets but let AI decide what they are
-        if not result.get("trending_stocks") or len(result["trending_stocks"]) < 3:
-            result["trending_stocks"] = ["AAPL", "TSLA", "NVDA", "MSFT", "GOOGL"]
-        if not result.get("forex_pairs") or len(result["forex_pairs"]) < 3:
-            result["forex_pairs"] = ["XAU/USD", "EUR/USD", "GBP/USD", "USD/JPY", "USD/CAD", "AUD/USD"] 
-        if not result.get("cryptocurrencies") or len(result["cryptocurrencies"]) < 3:
-            result["cryptocurrencies"] = ["BTC", "ETH", "SOL", "ADA", "MATIC"]
-        if not result.get("commodities") or len(result["commodities"]) < 2:
-            result["commodities"] = ["XAUUSD", "XTIUSD", "XAGUSD", "NATGAS"]
+        # FORCE OUR FOREX-HEAVY PORTFOLIO - Override AI completely
+        # Core assets that ALWAYS get included (Twelve Data free tier optimized)
+        CORE_FOREX_PAIRS = ["XAU/USD", "EUR/USD", "USD/JPY", "GBP/USD", "AUD/USD", "USD/CAD", "USD/CHF", "NZD/USD", "EUR/GBP", "EUR/JPY", "GBP/JPY", "XAG/USD"]
+        CORE_STOCKS = ["AAPL", "NVDA", "TSLA"]  
+        CORE_CRYPTO = ["BTC/USD", "ETH/USD", "SOL/USD"]
+        
+        # ALWAYS use our core assets - AI is just for context
+        result["forex_pairs"] = CORE_FOREX_PAIRS  # 12 forex pairs - ALWAYS
+        result["trending_stocks"] = CORE_STOCKS   # 3 top stocks - ALWAYS  
+        result["cryptocurrencies"] = CORE_CRYPTO  # 3 working cryptos - ALWAYS
+        result["commodities"] = []  # None - premium required
             
         result["discovered_at"] = datetime.now().isoformat()
         return result
         
     except Exception as e:
-        # Guaranteed fallback - NEVER empty
+        # GUARANTEED FOREX-HEAVY FALLBACK - NEVER empty
+        CORE_FOREX_PAIRS = ["XAU/USD", "EUR/USD", "USD/JPY", "GBP/USD", "AUD/USD", "USD/CAD", "USD/CHF", "NZD/USD", "EUR/GBP", "EUR/JPY", "GBP/JPY", "XAG/USD"]
+        CORE_STOCKS = ["AAPL", "NVDA", "TSLA"]  
+        CORE_CRYPTO = ["BTC/USD", "ETH/USD", "SOL/USD"]
+        
         return {
-            "trending_stocks": ["AAPL", "TSLA", "NVDA", "MSFT", "GOOGL"],
-            "forex_pairs": ["XAU/USD", "EUR/USD", "GBP/USD", "USD/JPY", "USD/CAD", "AUD/USD"],
-            "cryptocurrencies": ["BTC", "ETH", "SOL", "ADA", "MATIC"],
-            "commodities": ["XAUUSD", "XTIUSD", "XAGUSD", "NATGAS", "COPPER"],
-            "market_summary": "Markets showing mixed sentiment with selective opportunities",
-            "top_story": "Investors monitoring economic indicators and corporate earnings",
-            "volume_leaders": ["AAPL", "TSLA", "BTC"],
-            "social_trending": ["NVDA", "ETH", "TSLA"],
+            "trending_stocks": CORE_STOCKS,  # Always 3 top stocks
+            "forex_pairs": CORE_FOREX_PAIRS, # Always 12 forex pairs - FOREX HEAVY!
+            "cryptocurrencies": CORE_CRYPTO, # Always 3 working cryptos with correct format
+            "commodities": [],  # Always empty - premium required
+            "market_summary": "Forex-focused analysis with major currency pairs and precious metals",
+            "top_story": "Global forex markets showing activity across major and cross pairs",
+            "volume_leaders": ["XAU/USD", "EUR/USD", "BTC/USD", "USD/JPY", "AAPL"],
+            "social_trending": ["XAU/USD", "NVDA", "BTC/USD"],
             "discovered_at": datetime.now().isoformat()
         }
 
