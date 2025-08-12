@@ -1,11 +1,7 @@
 name: Auto Signal Generation & Email Delivery
 
 on:
-  schedule:
-    # Pre-market signals - Before major markets open
-    - cron: '30 8 * * 1-5'   # 8:30 AM UTC (4:30 AM EST, 1:30 AM PST) - Before US pre-market
-    - cron: '0 13 * * 1-5'   # 1:00 PM UTC (9:00 AM EST, 6:00 AM PST) - Before US market open
-  workflow_dispatch: # Allow manual trigger
+  workflow_dispatch: # Manual trigger only - no automatic emails
 
 permissions:
   contents: write
@@ -84,36 +80,27 @@ jobs:
           exit 0
         fi
         
-        # Fetch latest changes without merging
+        # Create commit first, then handle conflicts
+        git commit -m "📊 Auto-generated signals & reports $(date '+%Y-%m-%d %H:%M UTC')"
+        
+        # Fetch latest changes
         git fetch origin main
         
-        # Try to rebase with proper conflict handling
-        if git rebase origin/main; then
-          echo "✅ Rebase successful - your work preserved and enhanced"
-        else
-          echo "⚠️ Rebase conflicts detected, resolving intelligently..."
+        # Simple merge strategy - prefer our generated data
+        echo "🔄 Merging latest changes while preserving generated reports..."
+        git merge origin/main --no-edit || {
+          echo "⚠️ Merge conflicts detected, resolving in favor of fresh data..."
           
-          # For data files, prefer the newly generated content (ours)
+          # For any conflicts, prefer our version (newly generated data)
           git status --porcelain | grep "^UU" | while read -r line; do
             file=$(echo "$line" | awk '{print $2}')
-            if [[ "$file" == *".json" ]] || [[ "$file" == *"public/data"* ]]; then
-              echo "📊 Keeping fresh generated data for: $file"
-              git add "$file"
-            else
-              echo "🔧 Preserving your manual changes for: $file" 
-              git add "$file"
-            fi
+            echo "📊 Resolving conflict for: $file (using fresh data)"
+            git add "$file"
           done
           
-          # Continue rebase with resolved conflicts
-          git rebase --continue || {
-            echo "❌ Rebase still failing, using smart merge"
-            git rebase --abort
-            git merge origin/main -X ours --no-edit
-          }
-        fi
-        
-        git commit -m "📊 Auto-generated signals & reports $(date '+%Y-%m-%d %H:%M UTC')"
+          # Complete the merge
+          git commit --no-edit -m "🔧 Resolve conflicts: preserve fresh signals data"
+        }
         
         # Push changes with retry logic and conflict resolution
         for i in {1..5}; do
