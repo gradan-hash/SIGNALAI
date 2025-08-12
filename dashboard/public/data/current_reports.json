@@ -1,6 +1,27 @@
 {
   "current_reports": [
     {
+      "id": 8,
+      "title": "Pre-Market Intelligence",
+      "description": "Latest AI-powered market analysis with global discovery insights",
+      "date": "August 12, 2025",
+      "pdf_url": "/reports/SignalAI_Report_20250812_0903.pdf",
+      "market_direction": "Bullish",
+      "confidence": 70,
+      "total_assets": 23,
+      "opportunity_score": 70,
+      "key_highlights": [
+        "Market Direction: Bullish (70% confidence)",
+        "Top Catalyst: Continued positive sentiment and investment flow into AI-related technologies, following Nvidia's exceptional earnings report.",
+        "Assets Analyzed: 23 across all categories"
+      ],
+      "preview_available": true,
+      "download_size": "~2.5MB",
+      "generated_time": "09:03 UTC",
+      "is_current": true,
+      "generated_at": "2025-08-12T08:57:11.809372"
+    },
+    {
       "id": 7,
       "title": "Market Opening Intelligence",
       "description": "Latest AI-powered market analysis with global discovery insights",
@@ -18,7 +39,7 @@
       "preview_available": true,
       "download_size": "~2.5MB",
       "generated_time": "13:52 UTC",
-      "is_current": true,
+      "is_current": false,
       "generated_at": "2025-08-11T13:47:11.501895"
     },
     {
@@ -144,8 +165,8 @@
       "is_current": false
     }
   ],
-  "total_reports": 7,
-  "generated_at": "2025-08-11T13:52:50.043804",
+  "total_reports": 8,
+  "generated_at": "2025-08-12T09:03:41.097331",
   "description": "Current market analysis reports with real-time insights",
   "data_source": "live_market_analysis"
 }
