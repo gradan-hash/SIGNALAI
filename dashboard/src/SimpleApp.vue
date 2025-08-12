@@ -3,7 +3,7 @@
     <!-- Mobile Menu Button -->
     <button 
       @click="sidebarOpen = !sidebarOpen"
-      class="md:hidden fixed top-2 right-4 z-50 bg-white/90 backdrop-blur-sm border border-gray-200 rounded-lg p-2 shadow-lg hover:scale-105 transition-all duration-200"
+      class="md:hidden fixed top-2 right-2 z-50 bg-white/90 backdrop-blur-sm border border-gray-200 rounded-lg p-2 shadow-lg hover:scale-105 transition-all duration-200"
     >
       <svg class="w-4 h-4 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
@@ -14,12 +14,12 @@
       <!-- Sidebar -->
       <aside 
         :class="[
-          'fixed md:static inset-y-0 left-0 z-40 w-80 transform transition-all duration-300 ease-in-out md:translate-x-0',
+          'fixed md:static inset-y-0 left-0 z-40 w-80 transform transition-transform duration-300 ease-out md:translate-x-0 overflow-y-auto',
           sidebarOpen ? 'translate-x-0' : '-translate-x-full'
         ]"
-        style="background: linear-gradient(135deg, rgba(255,255,255,0.9) 0%, rgba(255,255,255,0.85) 50%, rgba(248,250,252,0.8) 80%, rgba(248,250,252,0.6) 90%, rgba(248,250,252,0.3) 95%, transparent 100%); backdrop-filter: blur(12px);"
+        style="background: linear-gradient(135deg, rgba(255,255,255,0.95) 0%, rgba(255,255,255,0.9) 50%, rgba(248,250,252,0.85) 100%); backdrop-filter: blur(8px);"
       >
-        <div class="p-6">
+        <div class="p-6 h-full flex flex-col overflow-y-auto">
           <!-- Logo -->
           <div class="mb-8">
             <div class="flex items-center gap-3 mb-2">
@@ -40,16 +40,16 @@
           </div>
 
           <!-- Asset Categories -->
-          <div class="space-y-3 mb-8">
+          <div class="space-y-3 mb-8 flex-shrink-0">
             <button 
               v-for="category in assetCategories" 
               :key="category.id"
               @click="() => { activeCategory = category.id; sidebarOpen = false }"
               :class="[
-                'group w-full text-left p-4 rounded-2xl transition-all duration-300 flex items-center space-x-3 hover:scale-105 hover:shadow-lg',
+                'group w-full text-left p-4 rounded-2xl transition-colors duration-200 flex items-center space-x-3 md:hover:scale-105 md:hover:shadow-lg min-h-[60px]',
                 activeCategory === category.id 
                   ? 'bg-gradient-to-r from-blue-500 to-purple-600 text-white shadow-lg shadow-blue-500/25' 
-                  : 'bg-white/70 backdrop-blur-sm text-gray-700 hover:bg-white/90 border border-gray-200/50'
+                  : 'bg-white/70 backdrop-blur-sm text-gray-700 md:hover:bg-white/90 border border-gray-200/50'
               ]"
             >
               <div :class="[
@@ -75,7 +75,7 @@
           </div>
 
           <!-- Market Summary -->
-          <div class="bg-gradient-to-br from-emerald-50 to-teal-100 rounded-2xl p-5 border border-emerald-200/50 mb-6 shadow-sm">
+          <div class="bg-gradient-to-br from-emerald-50 to-teal-100 rounded-2xl p-5 border border-emerald-200/50 mb-6 shadow-sm flex-shrink-0">
             <div class="flex items-center gap-2 mb-3">
               <div class="w-8 h-8 bg-gradient-to-br from-emerald-500 to-teal-600 rounded-xl flex items-center justify-center">
                 <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 24 24">
@@ -88,7 +88,7 @@
           </div>
 
           <!-- Top Story -->
-          <div class="bg-gradient-to-br from-orange-50 to-red-100 rounded-2xl p-5 border border-orange-200/50 shadow-sm">
+          <div class="bg-gradient-to-br from-orange-50 to-red-100 rounded-2xl p-5 border border-orange-200/50 shadow-sm flex-shrink-0">
             <div class="flex items-center gap-2 mb-3">
               <div class="w-8 h-8 bg-gradient-to-br from-orange-500 to-red-600 rounded-xl flex items-center justify-center">
                 <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 24 24">
@@ -101,7 +101,7 @@
           </div>
 
           <!-- Email Subscription -->
-          <div class="bg-gradient-to-br from-purple-50 to-indigo-100 rounded-2xl p-5 border border-purple-200/50 shadow-sm mt-6">
+          <div class="bg-gradient-to-br from-purple-50 to-indigo-100 rounded-2xl p-5 border border-purple-200/50 shadow-sm mt-6 flex-shrink-0">
             <div class="flex items-center gap-2 mb-3">
               <div class="w-8 h-8 bg-gradient-to-br from-purple-500 to-indigo-600 rounded-xl flex items-center justify-center">
                 <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 24 24">
@@ -154,8 +154,8 @@
             <div class="flex items-center gap-3">
               <!-- Mobile Brand Logo -->
               <div class="md:hidden flex items-center gap-1">
-                <div class="w-4 h-4 bg-gradient-to-br from-blue-600 to-purple-600 rounded flex items-center justify-center">
-                  <svg class="w-2 h-2 text-white" fill="currentColor" viewBox="0 0 24 24">
+                <div class="w-3 h-3 bg-gradient-to-br from-blue-600 to-purple-600 rounded flex items-center justify-center">
+                  <svg class="w-1.5 h-1.5 text-white" fill="currentColor" viewBox="0 0 24 24">
                     <path d="M13 10V3L4 14h7v7l9-11h-7z"/>
                   </svg>
                 </div>
@@ -385,7 +385,7 @@
               <div 
                 v-for="asset in filteredAssets" 
                 :key="asset.symbol"
-                class="group bg-white/80 backdrop-blur-sm rounded-2xl shadow-lg border border-gray-200/50 p-4 hover:shadow-xl hover:scale-[1.02] transition-all duration-300 cursor-pointer hover:bg-white/95 relative overflow-hidden"
+                class="group bg-white/80 backdrop-blur-sm rounded-2xl shadow-lg border border-gray-200/50 p-4 md:hover:shadow-xl md:hover:scale-[1.02] transition-shadow duration-200 cursor-pointer md:hover:bg-white/95 relative overflow-hidden active:scale-[0.98]"
                 @click="viewAssetDetails(asset)"
               >
                 <!-- Subtle gradient background -->
