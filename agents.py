@@ -29,17 +29,246 @@ load_dotenv()
 api_key = os.getenv('GOOGLE_API_KEY_2') or os.getenv('GOOGLE_API_KEY')
 genai.configure(api_key=api_key)
 
+# Alpha Vantage API keys for real market data (multiple keys for higher limits)
+ALPHA_VANTAGE_API_KEYS = [
+    "Y1E0SFES4O0ATXVZ",  # Key 1 - 25 requests/day
+    "QEAE2D1SZUNB85O4",  # Key 2 - 25 requests/day  
+    "XAG63SKT2UM5JICF",  # Key 3 - 25 requests/day
+]
+# Total: 75 requests/day = Multiple full runs possible!
+
+import random
+import time
+from datetime import datetime, date
+
+# Key rotation and rate limiting
+current_key_index = 0
+key_request_counts = {i: 0 for i in range(len(ALPHA_VANTAGE_API_KEYS))}  # Track requests per key
+last_reset_date = str(date.today())  # Track when counters were last reset
+MAX_REQUESTS_PER_KEY = 20  # Conservative limit per key (5 buffer from 25)
+MAX_TOTAL_REQUESTS_PER_RUN = 30  # Total requests per run (allows 2 runs per day)
+
 # Use Gemini 2.5 Flash - optimized for real market data prompting  
 model = genai.GenerativeModel('gemini-2.5-flash')
 print(f"🔍 Using Gemini 2.5 Flash optimized for market analysis, API key ending in ...{api_key[-4:]}")
+print(f"📊 Alpha Vantage: 3 API keys configured for {len(ALPHA_VANTAGE_API_KEYS) * 25} total daily requests")
+
+def reset_daily_counters():
+    """Reset request counters if it's a new day"""
+    global last_reset_date, key_request_counts
+    today = str(date.today())
+    if today != last_reset_date:
+        print(f"🔄 New day detected! Resetting API request counters...")
+        key_request_counts = {i: 0 for i in range(len(ALPHA_VANTAGE_API_KEYS))}
+        last_reset_date = today
+        print(f"📊 Fresh limits: {MAX_REQUESTS_PER_KEY} requests per key, {len(ALPHA_VANTAGE_API_KEYS) * MAX_REQUESTS_PER_KEY} total")
+
+def get_next_alpha_vantage_key():
+    """
+    Smart key rotation with rate limiting for 2 daily runs
+    - Distributes requests across 3 keys 
+    - Tracks usage to prevent hitting limits
+    - Reserves capacity for 2 daily runs
+    """
+    global current_key_index, key_request_counts
+    
+    # Reset counters if new day
+    reset_daily_counters()
+    
+    # Check total requests across all keys
+    total_requests_today = sum(key_request_counts.values())
+    if total_requests_today >= MAX_TOTAL_REQUESTS_PER_RUN:
+        print(f"⚠️ Approaching daily limit ({total_requests_today}/{MAX_TOTAL_REQUESTS_PER_RUN}), switching to AI fallback")
+        return None
+    
+    # Find a key that hasn't hit its limit
+    attempts = 0
+    while attempts < len(ALPHA_VANTAGE_API_KEYS):
+        if key_request_counts[current_key_index] < MAX_REQUESTS_PER_KEY:
+            key = ALPHA_VANTAGE_API_KEYS[current_key_index] 
+            key_request_counts[current_key_index] += 1
+            
+            key_num = current_key_index + 1
+            remaining = MAX_REQUESTS_PER_KEY - key_request_counts[current_key_index]
+            print(f"🔑 Using API Key {key_num} (Request {key_request_counts[current_key_index]}/{MAX_REQUESTS_PER_KEY}, {remaining} remaining)")
+            
+            current_key_index = (current_key_index + 1) % len(ALPHA_VANTAGE_API_KEYS)
+            return key
+        
+        current_key_index = (current_key_index + 1) % len(ALPHA_VANTAGE_API_KEYS)
+        attempts += 1
+    
+    print("⚠️ All keys at limit, falling back to AI data generation")
+    return None
+
+def get_real_market_data_single_key(symbol: str, asset_type: str, api_key: str) -> Dict[str, Any]:
+    """
+    Get real market data using a single API key
+    Returns data, "RATE_LIMITED", or None
+    """
+    try:
+        
+        base_url = "https://www.alphavantage.co/query"
+        
+        # Special handling for XAUUSD (Gold) - treat as stock symbol
+        if symbol in ["XAU/USD", "XAUUSD"]:
+            symbol = "XAUUSD"
+            asset_type = "stock"
+        
+        # Map our asset types to Alpha Vantage functions
+        if asset_type == "forex":
+            # For forex pairs like EUR/USD - use FREE endpoint
+            function = "FX_DAILY"
+            from_symbol = symbol[:3]  # EUR
+            to_symbol = symbol[4:] if "/" in symbol else symbol[3:]  # USD
+            params = {
+                "function": function,
+                "from_symbol": from_symbol,
+                "to_symbol": to_symbol,
+                "apikey": api_key
+            }
+        elif asset_type == "crypto":
+            # For crypto like BTC, ETH
+            function = "CURRENCY_EXCHANGE_RATE"
+            params = {
+                "function": function,
+                "from_currency": symbol,
+                "to_currency": "USD",
+                "apikey": api_key
+            }
+        else:  # stocks, commodities
+            function = "GLOBAL_QUOTE"
+            params = {
+                "function": function,
+                "symbol": symbol,
+                "apikey": api_key
+            }
+        
+        print(f"📡 Fetching real {asset_type} data for {symbol} from Alpha Vantage...")
+        response = requests.get(base_url, params=params, timeout=10)
+        data = response.json()
+        
+        # Check for API limit/error responses
+        if "Information" in data or "Error Message" in data:
+            error_msg = data.get("Information", data.get("Error Message", "Unknown error"))
+            if "rate limit" in error_msg.lower() or "api key" in error_msg.lower():
+                print(f"⚠️ API key limit hit for {symbol}, trying next key...")
+                return "RATE_LIMITED"  # Special return to try next key
+            else:
+                print(f"⚠️ API error for {symbol}: {error_msg}")
+                return None
+        
+        # Parse the response based on asset type
+        if asset_type == "forex":
+            time_series = data.get("Time Series FX (Daily)", {})
+            if time_series:
+                latest_time = max(time_series.keys())
+                latest_data = time_series[latest_time]
+                current_price = float(latest_data["4. close"])
+                prev_close = float(latest_data["1. open"])
+                change = current_price - prev_close
+                change_percent = (change / prev_close) * 100
+                
+                return {
+                    "current_price": f"{current_price:.4f}",
+                    "percentage_change": f"{change_percent:+.2f}%",
+                    "last_updated": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
+                    "data_quality": "real_market_data",
+                    "source": "Alpha Vantage"
+                }
+        
+        elif asset_type == "crypto":
+            exchange_data = data.get("Realtime Currency Exchange Rate", {})
+            if exchange_data:
+                current_price = float(exchange_data["5. Exchange Rate"])
+                # For crypto, we'll calculate a simple percentage change
+                change_percent = 0.0  # Alpha Vantage exchange rate doesn't provide previous day data
+                
+                return {
+                    "current_price": f"${current_price:,.2f}",
+                    "percentage_change": f"{change_percent:+.2f}%",
+                    "last_updated": exchange_data["6. Last Refreshed"],
+                    "data_quality": "real_market_data", 
+                    "source": "Alpha Vantage"
+                }
+        
+        else:  # stocks
+            quote = data.get("Global Quote", {})
+            if quote:
+                current_price = float(quote["05. price"])
+                change_percent = float(quote["10. change percent"].replace("%", ""))
+                
+                return {
+                    "current_price": f"${current_price:.2f}",
+                    "percentage_change": f"{change_percent:+.2f}%",
+                    "last_updated": quote["07. latest trading day"],
+                    "data_quality": "real_market_data",
+                    "source": "Alpha Vantage"
+                }
+        
+        # If we get here, the API response was unexpected
+        print(f"⚠️ Unexpected Alpha Vantage response for {symbol}: {data}")
+        return None
+            
+    except Exception as e:
+        print(f"❌ Error fetching real market data for {symbol}: {str(e)}")
+        return None
+
+def get_real_market_data(symbol: str, asset_type: str) -> Dict[str, Any]:
+    """
+    Try to get real market data using all available API keys before falling back to AI
+    """
+    # Reset daily counters if needed
+    reset_daily_counters()
+    
+    print(f"📡 Fetching real {asset_type} data for {symbol}...")
+    
+    # Try each key until one works or we exhaust all keys
+    for attempt, key_index in enumerate(range(len(ALPHA_VANTAGE_API_KEYS))):
+        # Check if this key has requests remaining
+        if key_request_counts[key_index] >= MAX_REQUESTS_PER_KEY:
+            print(f"🔑 Key {key_index + 1} at limit, trying next...")
+            continue
+            
+        # Use this key
+        api_key = ALPHA_VANTAGE_API_KEYS[key_index]
+        key_request_counts[key_index] += 1
+        
+        key_num = key_index + 1
+        remaining = MAX_REQUESTS_PER_KEY - key_request_counts[key_index]
+        print(f"🔑 Trying API Key {key_num} (Request {key_request_counts[key_index]}/{MAX_REQUESTS_PER_KEY}, {remaining} remaining)")
+        
+        result = get_real_market_data_single_key(symbol, asset_type, api_key)
+        
+        if result == "RATE_LIMITED":
+            print(f"⚠️ Key {key_num} hit rate limit, trying next key...")
+            continue
+        elif result is not None:
+            print(f"✅ Success with Key {key_num}!")
+            return result
+        else:
+            print(f"❌ Key {key_num} failed with API error")
+            continue
+    
+    print(f"⚠️ All keys exhausted for {symbol}, falling back to AI data")
+    return None
 
 def generate_intelligent_market_data(asset_symbol: str, asset_type: str = "stock") -> Dict[str, Any]:
     """
-    Use AI to generate intelligent, dynamic market data based on current context
-    No hardcoded prices - let the agents be smart about market conditions
+    Get REAL market data first from Alpha Vantage, fallback to AI-generated if needed
+    Prioritizes real prices over fake ones for accurate analysis
     """
     import random
     from datetime import datetime
+    
+    # 🎯 FIRST: Try to get REAL market data from Alpha Vantage
+    real_data = get_real_market_data(asset_symbol, asset_type)
+    if real_data:
+        print(f"✅ Using REAL market data for {asset_symbol}")
+        return real_data
+    
+    # 🤖 FALLBACK: Use AI generation only if real data fails
+    print(f"⚠️ Real data failed, falling back to AI generation for {asset_symbol}")
     
     try:
         # Let AI generate realistic current market context
@@ -252,7 +481,7 @@ Return this exact JSON structure:
   "global_discovery": {{
     "timestamp": "{current_time}",
     "most_traded_stocks": ["AAPL", "TSLA", "NVDA", "MSFT", "GOOGL", "AMZN", "META"],
-    "hottest_forex": ["EUR/USD", "GBP/USD", "USD/JPY", "USD/CHF", "AUD/USD"], 
+    "hottest_forex": ["XAU/USD", "EUR/USD", "GBP/USD", "USD/JPY", "USD/CHF", "AUD/USD"], 
     "trending_crypto": ["BTC", "ETH", "BNB", "XRP", "ADA", "SOL", "DOGE"],
     "active_commodities": ["Gold", "Silver", "Crude Oil", "Natural Gas"],
     "market_drivers": ["Central bank policy decisions", "Tech earnings season", "Geopolitical developments"],
@@ -316,7 +545,7 @@ Replace the example values with realistic varied selections. Return ONLY the JSO
         
         stock_pool = ["NVDA", "TSLA", "AAPL", "MSFT", "GOOGL", "AMZN", "META", "NFLX", "AVGO", "AMD", "CRM", "ADBE", "ORCL", "INTC"]
         crypto_pool = ["BTC", "ETH", "BNB", "XRP", "ADA", "SOL", "DOGE", "DOT", "MATIC", "AVAX", "LINK", "UNI", "LTC", "BCH"] 
-        forex_pool = ["EUR/USD", "GBP/USD", "USD/JPY", "USD/CHF", "AUD/USD", "USD/CAD", "NZD/USD", "EUR/GBP", "EUR/JPY", "GBP/JPY"]
+        forex_pool = ["XAU/USD", "EUR/USD", "GBP/USD", "USD/JPY", "USD/CHF", "AUD/USD", "USD/CAD", "NZD/USD", "EUR/GBP", "EUR/JPY", "GBP/JPY"]
         commodity_pool = ["Gold", "Silver", "Crude Oil", "Natural Gas", "Copper", "Wheat", "Corn", "Coffee", "Sugar", "Cotton"]
         
         return {
@@ -461,7 +690,7 @@ PRIORITIZE assets from the global discovery data - those are what users actually
         if not result.get("trending_stocks") or len(result["trending_stocks"]) < 3:
             result["trending_stocks"] = ["AAPL", "TSLA", "NVDA", "MSFT", "GOOGL"]
         if not result.get("forex_pairs") or len(result["forex_pairs"]) < 3:
-            result["forex_pairs"] = ["EUR/USD", "GBP/USD", "USD/JPY", "USD/CAD", "AUD/USD"] 
+            result["forex_pairs"] = ["XAU/USD", "EUR/USD", "GBP/USD", "USD/JPY", "USD/CAD", "AUD/USD"] 
         if not result.get("cryptocurrencies") or len(result["cryptocurrencies"]) < 3:
             result["cryptocurrencies"] = ["BTC", "ETH", "SOL", "ADA", "MATIC"]
         if not result.get("commodities") or len(result["commodities"]) < 2:
@@ -474,7 +703,7 @@ PRIORITIZE assets from the global discovery data - those are what users actually
         # Guaranteed fallback - NEVER empty
         return {
             "trending_stocks": ["AAPL", "TSLA", "NVDA", "MSFT", "GOOGL"],
-            "forex_pairs": ["EUR/USD", "GBP/USD", "USD/JPY", "USD/CAD", "AUD/USD"],
+            "forex_pairs": ["XAU/USD", "EUR/USD", "GBP/USD", "USD/JPY", "USD/CAD", "AUD/USD"],
             "cryptocurrencies": ["BTC", "ETH", "SOL", "ADA", "MATIC"],
             "commodities": ["XAUUSD", "XTIUSD", "XAGUSD", "NATGAS", "COPPER"],
             "market_summary": "Markets showing mixed sentiment with selective opportunities",
