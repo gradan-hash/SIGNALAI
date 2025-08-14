@@ -2,6 +2,27 @@
   "current_reports": [
     {
       "id": 11,
+      "title": "Market Opening Intelligence",
+      "description": "Latest AI-powered market analysis with global discovery insights",
+      "date": "August 14, 2025",
+      "pdf_url": "/reports/SignalAI_Report_20250814_1343.pdf",
+      "market_direction": "Bullish",
+      "confidence": 82,
+      "total_assets": 18,
+      "opportunity_score": 85,
+      "key_highlights": [
+        "Market Direction: Bullish (82% confidence)",
+        "Top Catalyst: NVIDIA's blowout Q1 earnings report and strong forward guidance, reinforcing the AI growth narrative.",
+        "Assets Analyzed: 18 across all categories"
+      ],
+      "preview_available": true,
+      "download_size": "~2.5MB",
+      "generated_time": "13:43 UTC",
+      "is_current": true,
+      "generated_at": "2025-08-14T13:38:11.917611"
+    },
+    {
+      "id": 11,
       "title": "Pre-Market Intelligence",
       "description": "Latest AI-powered market analysis with global discovery insights",
       "date": "August 14, 2025",
@@ -18,7 +39,7 @@
       "preview_available": true,
       "download_size": "~2.5MB",
       "generated_time": "09:04 UTC",
-      "is_current": true,
+      "is_current": false,
       "generated_at": "2025-08-14T08:59:21.817557"
     },
     {
@@ -188,30 +209,10 @@
       "generated_time": "19:56 UTC",
       "is_current": false,
       "generated_at": "2025-08-10T19:50:06.703132"
-    },
-    {
-      "id": 1,
-      "title": "Market Report - August 10, 2025",
-      "description": "Professional market analysis from August 10, 2025",
-      "date": "August 10, 2025",
-      "pdf_url": "/reports/SignalAI_Report_20250810_1805.pdf",
-      "market_direction": "Volatile",
-      "confidence": 70,
-      "opportunity_score": 65,
-      "total_assets": 20,
-      "key_highlights": [
-        "Market Direction: Volatile (70% confidence)",
-        "Top Catalyst: Global market volatility and tech sector movements",
-        "Assets Analyzed: 20 across all categories"
-      ],
-      "preview_available": true,
-      "download_size": "~2.5MB",
-      "generated_time": "18:05 UTC",
-      "is_current": false
     }
   ],
   "total_reports": 10,
-  "generated_at": "2025-08-14T09:04:56.437322",
+  "generated_at": "2025-08-14T13:43:49.433106",
   "description": "Current market analysis reports with real-time insights",
   "data_source": "live_market_analysis"
 }

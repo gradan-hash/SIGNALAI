@@ -2,12 +2,12 @@
   "AAPL": {
     "symbol": "AAPL",
     "asset_type": "stock",
-    "current_price": "$182.50",
-    "price_change_24h": "+0.75%",
-    "price_change_7d": "+2.1%",
-    "price_change_30d": "+5.5%",
-    "volume_24h": "78.2M",
-    "market_cap": "2.83T",
+    "current_price": "$178.50",
+    "price_change_24h": "+0.8%",
+    "price_change_7d": "+2.5%",
+    "price_change_30d": "+6.0%",
+    "volume_24h": "65.5M",
+    "market_cap": "2.78T",
     "technical_indicators": {
       "rsi": 68,
       "macd": "bullish",
@@ -17,110 +17,109 @@
         "sma_200": "above"
       },
       "support_levels": [
-        "$178.90",
-        "$175.20",
-        "$171.00"
+        "$175.00",
+        "$172.50",
+        "$168.00"
       ],
       "resistance_levels": [
-        "$185.30",
-        "$188.00",
-        "$190.50"
+        "$180.00",
+        "$183.50",
+        "$185.00"
       ],
       "trend": "bullish"
     },
     "price_history": [
       {
         "time": "9:00",
-        "price": 181.8,
-        "volume": 980000
+        "price": 177.8,
+        "volume": 5200000
       },
       {
         "time": "10:00",
-        "price": 182.1,
-        "volume": 1250000
+        "price": 178.1,
+        "volume": 6100000
       },
       {
         "time": "11:00",
-        "price": 182.8,
-        "volume": 1500000
+        "price": 178.65,
+        "volume": 7300000
       },
       {
         "time": "12:00",
-        "price": 182.4,
-        "volume": 1100000
+        "price": 178.3,
+        "volume": 5800000
       },
       {
         "time": "13:00",
-        "price": 183.1,
-        "volume": 1750000
+        "price": 179.1,
+        "volume": 8500000
       },
       {
         "time": "14:00",
-        "price": 182.9,
-        "volume": 1400000
+        "price": 178.85,
+        "volume": 7100000
       },
       {
         "time": "15:00",
-        "price": 182.5,
-        "volume": 1600000
+        "price": 178.5,
+        "volume": 6900000
       }
     ],
     "trading_signals": {
       "primary_signal": "BUY",
-      "signal_strength": "Medium-Strong",
-      "entry_price": "$182.50",
-      "stop_loss": "$179.00",
-      "take_profit": "$190.00",
-      "risk_reward_ratio": "1:2.14",
+      "signal_strength": "Strong",
+      "entry_price": "$178.00",
+      "stop_loss": "$174.00",
+      "take_profit": "$188.00",
+      "risk_reward_ratio": "1:2.5",
       "time_horizon": "Medium-term"
     },
     "risk_metrics": {
-      "volatility": "Medium-Low",
-      "beta": "1.15",
+      "volatility": "Medium",
+      "beta": "1.25",
       "correlation_with_market": "High",
       "liquidity": "Very High",
       "risk_score": 5
     },
     "fundamental_analysis": {
-      "sector": "Technology - Consumer Electronics",
-      "market_position": "Global Market Leader in consumer electronics and services",
-      "key_metrics": "Strong revenue growth, high profitability, robust cash flow, increasing services revenue",
-      "competitive_advantages": "Powerful brand loyalty, integrated ecosystem (hardware, software, services), global supply chain, innovation leadership",
-      "main_risks": "Regulatory scrutiny, geopolitical tensions impacting supply chain/sales, intense competition, reliance on iPhone sales"
+      "sector": "Technology",
+      "market_position": "Global Leader",
+      "key_metrics": "Robust free cash flow, strong brand loyalty",
+      "competitive_advantages": "Ecosystem lock-in, global brand recognition, innovation pipeline",
+      "main_risks": "Supply chain disruptions, regulatory scrutiny, competition in new markets"
     },
     "news_sentiment": {
       "overall_sentiment": "Positive",
       "sentiment_score": 0.82,
       "key_news_factors": [
-        "Innovation in AI/Vision Pro",
-        "Services revenue growth",
-        "Strong iPhone demand in key markets",
-        "Share buyback program"
+        "Strong iPhone sales",
+        "Growth in Services",
+        "AI integration updates"
       ],
       "social_media_buzz": "Very High"
     },
-    "detailed_explanation": "Apple Inc. exhibits strong fundamental metrics driven by its robust ecosystem and consistent innovation. Technical indicators suggest a bullish trend, supported by positive market sentiment and strategic initiatives like AI integration and services expansion. Despite potential regulatory headwinds and geopolitical risks, AAPL continues to demonstrate resilience and growth potential.",
-    "trading_recommendation": "Accumulate AAPL shares on dips, targeting upside towards key resistance levels. Maintain a medium-term outlook.",
-    "key_levels_to_watch": "Monitor $185.30 resistance for a breakout, with immediate support at $178.90.",
+    "detailed_explanation": "Strong financials and dominant market position underpin its value, with new product cycles and services growth providing future catalysts.",
+    "trading_recommendation": "Accumulate on dips for long-term growth",
+    "key_levels_to_watch": "Monitor $180 for breakout, $175 for support confirmation",
     "scenario_analysis": {
-      "bullish_case": "Successful launch of new products/AI integration, robust global economic growth, and continued services segment expansion drive AAPL towards new all-time highs above $200.",
-      "bearish_case": "Significant regulatory intervention, severe global economic downturn impacting consumer spending, or major supply chain disruptions lead to a price correction towards $165-$170.",
-      "base_case": "Steady revenue growth from core products and services, continued share buybacks, and moderate market appreciation result in gradual price appreciation within the $180-$195 range."
+      "bullish_case": "Successful new product launches and services expansion exceed expectations, driving significant price appreciation.",
+      "bearish_case": "Economic slowdown impacting consumer spending, increased regulatory pressures, or competitive threats lead to earnings decline.",
+      "base_case": "Steady growth driven by continued innovation and services monetization, with market fluctuations."
     },
-    "generated_at": "2025-08-14T08:59:36.686157",
+    "generated_at": "2025-08-14T13:38:22.891112",
     "analysis_type": "detailed"
   },
   "NVDA": {
     "symbol": "NVDA",
     "asset_type": "stock",
-    "current_price": "$1050.50",
-    "price_change_24h": "+2.8%",
-    "price_change_7d": "+9.5%",
-    "price_change_30d": "+28.3%",
+    "current_price": "$870.50",
+    "price_change_24h": "+1.5%",
+    "price_change_7d": "+4.2%",
+    "price_change_30d": "+18.5%",
     "volume_24h": "45.7M",
-    "market_cap": "2.6T",
+    "market_cap": "2.14T",
     "technical_indicators": {
-      "rsi": 70,
+      "rsi": 68,
       "macd": "bullish",
       "moving_averages": {
         "sma_20": "above",
@@ -128,61 +127,172 @@
         "sma_200": "above"
       },
       "support_levels": [
-        "$1030.20",
-        "$1015.00",
-        "$990.75"
+        "$850.00",
+        "$835.00",
+        "$810.00"
       ],
       "resistance_levels": [
-        "$1070.00",
-        "$1095.50",
-        "$1120.00"
+        "$885.00",
+        "$900.00",
+        "$920.00"
       ],
       "trend": "bullish"
     },
     "price_history": [
       {
         "time": "9:00",
-        "price": 1040.2,
-        "volume": 250000
+        "price": 860.2,
+        "volume": 120000
       },
       {
         "time": "10:00",
-        "price": 1045.8,
-        "volume": 310000
+        "price": 865.5,
+        "volume": 150000
       },
       {
         "time": "11:00",
-        "price": 1048.1,
-        "volume": 280000
+        "price": 868.9,
+        "volume": 180000
       },
       {
         "time": "12:00",
-        "price": 1046.9,
-        "volume": 220000
+        "price": 867.1,
+        "volume": 140000
       },
       {
         "time": "13:00",
-        "price": 1052.3,
-        "volume": 350000
+        "price": 872.4,
+        "volume": 210000
       },
       {
         "time": "14:00",
-        "price": 1051.1,
-        "volume": 290000
+        "price": 871.0,
+        "volume": 190000
       },
       {
         "time": "15:00",
-        "price": 1050.5,
-        "volume": 320000
+        "price": 870.5,
+        "volume": 220000
       }
     ],
     "trading_signals": {
       "primary_signal": "BUY",
       "signal_strength": "Strong",
-      "entry_price": "$1050.00",
-      "stop_loss": "$1010.00",
-      "take_profit": "$1120.00",
-      "risk_reward_ratio": "1:1.75",
+      "entry_price": "$870.00",
+      "stop_loss": "$830.00",
+      "take_profit": "$950.00",
+      "risk_reward_ratio": "1:2",
+      "time_horizon": "Medium-term"
+    },
+    "risk_metrics": {
+      "volatility": "High",
+      "beta": "1.7",
+      "correlation_with_market": "High",
+      "liquidity": "High",
+      "risk_score": 7
+    },
+    "fundamental_analysis": {
+      "sector": "Technology",
+      "market_position": "Leader",
+      "key_metrics": "Exceptional revenue and earnings growth, high margins",
+      "competitive_advantages": "AI chip market dominance, CUDA ecosystem, R&D leadership",
+      "main_risks": "Competition, supply chain risks, valuation concerns, regulatory scrutiny"
+    },
+    "news_sentiment": {
+      "overall_sentiment": "Strongly Positive",
+      "sentiment_score": 0.88,
+      "key_news_factors": [
+        "AI leadership",
+        "Strong earnings beats",
+        "Data center growth",
+        "New product launches"
+      ],
+      "social_media_buzz": "Very High"
+    },
+    "detailed_explanation": "NVIDIA demonstrates robust technical and fundamental strength, underpinned by its dominant position in AI and data center markets. Recent earnings have surpassed expectations, driving significant price appreciation and positive market sentiment. While valuation remains a key discussion point, the company's innovation pipeline and strategic growth initiatives support a continued bullish outlook.",
+    "trading_recommendation": "Maintain or initiate long positions, mindful of potential short-term volatility and managing risk around key support levels.",
+    "key_levels_to_watch": "Monitor the $900 psychological resistance level for continued upward momentum and $850 support for pullbacks.",
+    "scenario_analysis": {
+      "bullish_case": "Continued AI adoption and strong data center demand drive further upside, potentially pushing towards $1000+ per share.",
+      "bearish_case": "Broader market correction, increased competition, or regulatory headwinds could trigger a significant pullback towards $750-$800 levels.",
+      "base_case": "Steady appreciation driven by earnings growth and sustained AI leadership, with occasional pullbacks, targeting $950-$980 in the medium term."
+    },
+    "generated_at": "2025-08-14T13:38:38.098769",
+    "analysis_type": "detailed"
+  },
+  "TSLA": {
+    "symbol": "TSLA",
+    "asset_type": "stock",
+    "current_price": "$185.50",
+    "price_change_24h": "+3.2%",
+    "price_change_7d": "+7.5%",
+    "price_change_30d": "+18.0%",
+    "volume_24h": "120.5M",
+    "market_cap": "588.2B",
+    "technical_indicators": {
+      "rsi": 68,
+      "macd": "bullish",
+      "moving_averages": {
+        "sma_20": "above",
+        "sma_50": "above",
+        "sma_200": "below"
+      },
+      "support_levels": [
+        "$178.00",
+        "$172.50",
+        "$165.00"
+      ],
+      "resistance_levels": [
+        "$190.00",
+        "$195.00",
+        "$200.00"
+      ],
+      "trend": "bullish"
+    },
+    "price_history": [
+      {
+        "time": "9:00",
+        "price": 182.0,
+        "volume": 8500000
+      },
+      {
+        "time": "10:00",
+        "price": 183.5,
+        "volume": 12000000
+      },
+      {
+        "time": "11:00",
+        "price": 184.8,
+        "volume": 10500000
+      },
+      {
+        "time": "12:00",
+        "price": 184.2,
+        "volume": 9000000
+      },
+      {
+        "time": "13:00",
+        "price": 185.9,
+        "volume": 15000000
+      },
+      {
+        "time": "14:00",
+        "price": 185.7,
+        "volume": 13000000
+      },
+      {
+        "time": "15:00",
+        "price": 185.5,
+        "volume": 11500000
+      }
+    ],
+    "trading_signals": {
+      "primary_signal": "BUY",
+      "signal_strength": "Strong",
+      "entry_price": "$185.00",
+      "stop_loss": "$175.00",
+      "take_profit": "$200.00",
+      "risk_reward_ratio": "1:1.5",
       "time_horizon": "Medium-term"
     },
     "risk_metrics": {
@@ -190,379 +300,45 @@
       "beta": "1.8",
       "correlation_with_market": "High",
       "liquidity": "Very High",
-      "risk_score": 7
-    },
-    "fundamental_analysis": {
-      "sector": "Technology (Semiconductors / AI)",
-      "market_position": "Dominant Leader",
-      "key_metrics": "Exceptional earnings growth, strong revenue diversification, high R&D investment",
-      "competitive_advantages": "Pioneering AI chip technology, robust ecosystem (CUDA), strong brand recognition, high barriers to entry",
-      "main_risks": "Increased competition, geopolitical tensions (supply chain), reliance on a few large customers, regulatory scrutiny, valuation concerns"
-    },
-    "news_sentiment": {
-      "overall_sentiment": "Very Positive",
-      "sentiment_score": 0.85,
-      "key_news_factors": [
-        "AI leadership",
-        "Record earnings",
-        "Product innovations",
-        "Data center expansion"
-      ],
-      "social_media_buzz": "Very High"
-    },
-    "detailed_explanation": "Exceptional technical and fundamental strength driven by AI market dominance and robust financial performance. NVDA continues to benefit from insatiable demand for its AI computing platforms.",
-    "trading_recommendation": "Strong buy signal with potential for significant upside; maintain tight stop-loss due to high volatility.",
-    "key_levels_to_watch": "Watch $1070 resistance for breakout, and $1010 support for re-entry opportunities.",
-    "scenario_analysis": {
-      "bullish_case": "Continued AI sector growth and market share expansion propel price towards new all-time highs, potentially reaching $1200+.",
-      "bearish_case": "Broader market correction, increased competition, or unexpected regulatory hurdles lead to a significant pullback towards $950 or lower.",
-      "base_case": "Steady appreciation fueled by sustained demand for AI infrastructure, with periods of consolidation around key technical levels."
-    },
-    "generated_at": "2025-08-14T08:59:49.998709",
-    "analysis_type": "detailed"
-  },
-  "TSLA": {
-    "symbol": "TSLA",
-    "asset_type": "stock",
-    "current_price": "$178.50",
-    "price_change_24h": "+1.8%",
-    "price_change_7d": "-3.2%",
-    "price_change_30d": "-8.5%",
-    "volume_24h": "125.7M",
-    "market_cap": "570.3B",
-    "technical_indicators": {
-      "rsi": 45,
-      "macd": "neutral",
-      "moving_averages": {
-        "sma_20": "below",
-        "sma_50": "below",
-        "sma_200": "below"
-      },
-      "support_levels": [
-        "$175.00",
-        "$170.00",
-        "$165.00"
-      ],
-      "resistance_levels": [
-        "$182.00",
-        "$188.00",
-        "$195.00"
-      ],
-      "trend": "bearish"
-    },
-    "price_history": [
-      {
-        "time": "9:00",
-        "price": 175.0,
-        "volume": 15000000
-      },
-      {
-        "time": "10:00",
-        "price": 176.2,
-        "volume": 18000000
-      },
-      {
-        "time": "11:00",
-        "price": 177.5,
-        "volume": 20000000
-      },
-      {
-        "time": "12:00",
-        "price": 177.0,
-        "volume": 16000000
-      },
-      {
-        "time": "13:00",
-        "price": 178.8,
-        "volume": 22000000
-      },
-      {
-        "time": "14:00",
-        "price": 178.1,
-        "volume": 19000000
-      },
-      {
-        "time": "15:00",
-        "price": 178.5,
-        "volume": 25000000
-      }
-    ],
-    "trading_signals": {
-      "primary_signal": "HOLD",
-      "signal_strength": "Moderate",
-      "entry_price": "$170.00",
-      "stop_loss": "$165.00",
-      "take_profit": "$190.00",
-      "risk_reward_ratio": "1:4",
-      "time_horizon": "Short-term"
-    },
-    "risk_metrics": {
-      "volatility": "Very High",
-      "beta": "2.0",
-      "correlation_with_market": "High",
-      "liquidity": "Very High",
       "risk_score": 8
     },
     "fundamental_analysis": {
-      "sector": "Automotive & Energy",
-      "market_position": "Innovation Leader & EV Dominance",
-      "key_metrics": "Strong revenue growth, improving margins, FCF variability, high R&D spend",
-      "competitive_advantages": "Brand recognition, Supercharger network, technology stack (Autopilot, AI), vertical integration",
-      "main_risks": "Increased competition, regulatory headwinds, reliance on Elon Musk, demand fluctuations, geopolitical risks, valuation concerns"
+      "sector": "Automotive and Energy",
+      "market_position": "Industry Disruptor and Leader",
+      "key_metrics": "Strong revenue growth, improving margins, high capital expenditures",
+      "competitive_advantages": "Brand strength, integrated ecosystem, innovation in EV and AI",
+      "main_risks": "Increased competition, regulatory scrutiny, demand fluctuations, reliance on Elon Musk"
     },
     "news_sentiment": {
-      "overall_sentiment": "Mixed",
+      "overall_sentiment": "Mixed to Positive",
       "sentiment_score": 0.55,
       "key_news_factors": [
-        "Q1 earnings miss",
-        "Robotaxi announcement",
-        "Layoffs",
-        "China sales concerns",
-        "FSD developments"
+        "Gigafactory expansion",
+        "FSD developments",
+        "Quarterly delivery numbers",
+        "Cybertruck production ramp"
       ],
       "social_media_buzz": "Very High"
     },
-    "detailed_explanation": "TSLA is navigating a challenging market environment with recent declines in sales and increased competition. While long-term innovation prospects like Robotaxis offer potential upside, near-term demand and profitability remain key concerns.",
-    "trading_recommendation": "Monitor for clearer trend reversal; current outlook suggests caution.",
-    "key_levels_to_watch": "Watch $170 support for hold, $182 resistance for breakout.",
+    "detailed_explanation": "TSLA shows signs of recovery from recent lows, with positive technical indicators aligning with anticipation for upcoming product milestones. Fundamental growth drivers remain strong, but macro-economic factors and competitive landscape require monitoring.",
+    "trading_recommendation": "Accumulate on dips with a long-term outlook, or consider short-to-medium term positions with tight risk management.",
+    "key_levels_to_watch": "Monitor the $190 resistance level for a decisive breakout, and $175 as critical support.",
     "scenario_analysis": {
-      "bullish_case": "Successful Robotaxi launch & FSD adoption, significant cost reductions, renewed demand growth in key markets.",
-      "bearish_case": "Further slowdown in EV demand, intensified competition, regulatory setbacks, supply chain disruptions, Elon Musk-related controversies.",
-      "base_case": "Modest recovery as market conditions stabilize, but growth remains tempered by competitive pressures and economic uncertainty."
+      "bullish_case": "Successful Cybertruck ramp-up, significant FSD breakthroughs, and continued strong delivery growth drive stock towards $220-$250.",
+      "bearish_case": "Worsening global economic conditions, increased EV competition, or regulatory setbacks could push price back to $160-$150.",
+      "base_case": "Gradual appreciation as production stabilizes and new models gain traction, targeting $200-$210 in the medium term."
     },
-    "generated_at": "2025-08-14T09:00:10.279461",
+    "generated_at": "2025-08-14T13:38:51.309437",
     "analysis_type": "detailed"
   },
   "XAU/USD": {
     "symbol": "XAU/USD",
-    "asset_type": "forex_commodity",
-    "current_price": "$2355.75",
-    "price_change_24h": "+0.85%",
-    "price_change_7d": "+2.1%",
-    "price_change_30d": "+5.5%",
-    "volume_24h": "1.2M contracts",
-    "market_cap": "14.7T",
-    "technical_indicators": {
-      "rsi": 68,
-      "macd": "bullish_momentum",
-      "moving_averages": {
-        "sma_20": "above",
-        "sma_50": "above",
-        "sma_200": "above"
-      },
-      "support_levels": [
-        "$2320.00",
-        "$2285.00",
-        "$2250.00"
-      ],
-      "resistance_levels": [
-        "$2370.00",
-        "$2395.00",
-        "$2420.00"
-      ],
-      "trend": "strong_bullish"
-    },
-    "price_history": [
-      {
-        "time": "9:00",
-        "price": 2348.5,
-        "volume": 120000
-      },
-      {
-        "time": "10:00",
-        "price": 2351.2,
-        "volume": 150000
-      },
-      {
-        "time": "11:00",
-        "price": 2354.1,
-        "volume": 180000
-      },
-      {
-        "time": "12:00",
-        "price": 2353.8,
-        "volume": 140000
-      },
-      {
-        "time": "13:00",
-        "price": 2356.2,
-        "volume": 210000
-      },
-      {
-        "time": "14:00",
-        "price": 2355.9,
-        "volume": 190000
-      },
-      {
-        "time": "15:00",
-        "price": 2355.75,
-        "volume": 220000
-      }
-    ],
-    "trading_signals": {
-      "primary_signal": "BUY",
-      "signal_strength": "Strong",
-      "entry_price": "$2350.00",
-      "stop_loss": "$2320.00",
-      "take_profit": "$2400.00",
-      "risk_reward_ratio": "1:1.67",
-      "time_horizon": "Short-to-Medium-term"
-    },
-    "risk_metrics": {
-      "volatility": "Medium-High",
-      "beta": "-0.25",
-      "correlation_with_market": "Low (Inverse)",
-      "liquidity": "Very High",
-      "risk_score": 5
-    },
-    "fundamental_analysis": {
-      "sector": "Precious Metals Commodity",
-      "market_position": "Global safe-haven asset, store of value",
-      "key_metrics": "Real interest rates, US Dollar index (DXY), geopolitical tensions, inflation expectations, central bank purchases",
-      "competitive_advantages": "Intrinsic value, inflation hedge, portfolio diversification",
-      "main_risks": "Sustained US Dollar strength, aggressive rate hikes, de-escalation of geopolitical conflicts"
-    },
-    "news_sentiment": {
-      "overall_sentiment": "Positive",
-      "sentiment_score": 0.65,
-      "key_news_factors": [
-        "Geopolitical uncertainty",
-        "Persistent inflation concerns",
-        "Anticipation of Fed rate cuts",
-        "Strong central bank demand"
-      ],
-      "social_media_buzz": "Medium-High"
-    },
-    "detailed_explanation": "Gold continues to benefit from safe-haven demand amidst global uncertainties and expectations of dovish central bank policies. Technical indicators support further upside.",
-    "trading_recommendation": "Maintain long positions or consider new entries on dips, with an eye on key resistance levels.",
-    "key_levels_to_watch": "Monitor $2370.00 for a potential breakout towards new highs; $2320.00 acts as crucial support.",
-    "scenario_analysis": {
-      "bullish_case": "Escalating geopolitical tensions or unexpected economic slowdowns could drive safe-haven flows, pushing price towards $2450.00 and beyond.",
-      "bearish_case": "Stronger than expected economic data leading to hawkish central bank shifts, or a significant de-escalation of global conflicts, could see price retest $2280.00.",
-      "base_case": "Gradual appreciation as inflation remains sticky and US dollar experiences mild weakness, with price consolidating between $2320.00 and $2400.00."
-    },
-    "generated_at": "2025-08-14T09:00:28.986382",
-    "analysis_type": "detailed"
-  },
-  "EUR/USD": {
-    "symbol": "EUR/USD",
     "asset_type": "forex",
-    "current_price": "$1.0850",
-    "price_change_24h": "+0.25%",
-    "price_change_7d": "+0.80%",
-    "price_change_30d": "+1.50%",
-    "volume_24h": "700B",
-    "market_cap": "Not Applicable for Forex",
-    "technical_indicators": {
-      "rsi": 62,
-      "macd": "Bullish Crossover",
-      "moving_averages": {
-        "sma_20": "above",
-        "sma_50": "above",
-        "sma_200": "above"
-      },
-      "support_levels": [
-        "$1.0780",
-        "$1.0720",
-        "$1.0650"
-      ],
-      "resistance_levels": [
-        "$1.0900",
-        "$1.0950",
-        "$1.1020"
-      ],
-      "trend": "Bullish"
-    },
-    "price_history": [
-      {
-        "time": "9:00",
-        "price": 1.0835,
-        "volume": 1500000000
-      },
-      {
-        "time": "10:00",
-        "price": 1.0842,
-        "volume": 1800000000
-      },
-      {
-        "time": "11:00",
-        "price": 1.0855,
-        "volume": 2200000000
-      },
-      {
-        "time": "12:00",
-        "price": 1.085,
-        "volume": 1600000000
-      },
-      {
-        "time": "13:00",
-        "price": 1.0865,
-        "volume": 2500000000
-      },
-      {
-        "time": "14:00",
-        "price": 1.0858,
-        "volume": 2000000000
-      },
-      {
-        "time": "15:00",
-        "price": 1.085,
-        "volume": 2300000000
-      }
-    ],
-    "trading_signals": {
-      "primary_signal": "BUY",
-      "signal_strength": "Moderate",
-      "entry_price": "$1.0845",
-      "stop_loss": "$1.0790",
-      "take_profit": "$1.0950",
-      "risk_reward_ratio": "1:2",
-      "time_horizon": "Short-term to Medium-term"
-    },
-    "risk_metrics": {
-      "volatility": "Medium",
-      "beta": "Not Applicable for Forex",
-      "correlation_with_market": "Influenced by USD/Global Risk Sentiment",
-      "liquidity": "Extremely High",
-      "risk_score": 5
-    },
-    "fundamental_analysis": {
-      "sector": "Macroeconomics (G10 Currencies)",
-      "market_position": "N/A for Currency Pair (Major Pair)",
-      "key_metrics": "ECB vs. Fed monetary policy divergence; Eurozone inflation data; US labor market strength.",
-      "competitive_advantages": "Higher EU interest rate expectations relative to US, improved Eurozone economic outlook.",
-      "main_risks": "Geopolitical instability (e.g., Ukraine), sudden shifts in central bank rhetoric, global recession fears."
-    },
-    "news_sentiment": {
-      "overall_sentiment": "Neutral to Slightly Positive",
-      "sentiment_score": 0.6,
-      "key_news_factors": [
-        "Recent Eurozone inflation ease",
-        "Fed hawkish pause signals",
-        "ECB hawkish stance",
-        "Strong US jobs data"
-      ],
-      "social_media_buzz": "Medium"
-    },
-    "detailed_explanation": "EUR/USD shows a mild bullish technical outlook supported by price trading above key moving averages. Fundamental drivers indicate a cautious optimism for the Euro, especially if the ECB remains hawkish while the Fed signals a pause. However, strong US economic data could cap upside.",
-    "trading_recommendation": "Consider a short-term buy on pullbacks towards support, targeting resistance levels, with tight risk management due to sensitivity to economic data releases.",
-    "key_levels_to_watch": "Watch $1.0900 resistance for a breakout, and $1.0780 support for breakdown risks.",
-    "scenario_analysis": {
-      "bullish_case": "Higher-than-expected Eurozone inflation and continued hawkish ECB rhetoric, combined with softer US economic data, could push EUR/USD towards $1.1000 and beyond.",
-      "bearish_case": "Stronger-than-expected US inflation/jobs data, reigniting Fed rate hike expectations, or significant geopolitical tensions impacting Europe, could drive EUR/USD back towards $1.0700.",
-      "base_case": "EUR/USD remains range-bound between $1.0750 and $1.0900, reacting to economic data releases from both regions and central bank commentary, with a slight bullish bias."
-    },
-    "generated_at": "2025-08-14T09:00:45.130457",
-    "analysis_type": "detailed"
-  },
-  "USD/JPY": {
-    "symbol": "USD/JPY",
-    "asset_type": "forex",
-    "current_price": "$150.25",
-    "price_change_24h": "+0.8%",
-    "price_change_7d": "+1.5%",
-    "price_change_30d": "+3.2%",
-    "volume_24h": "Estimated $700B",
+    "current_price": "$2050.50",
+    "price_change_24h": "+0.65%",
+    "price_change_7d": "+1.8%",
+    "price_change_30d": "+4.5%",
+    "volume_24h": "55.8B",
     "market_cap": "N/A",
     "technical_indicators": {
       "rsi": 68,
@@ -573,106 +349,327 @@
         "sma_200": "above"
       },
       "support_levels": [
-        "$149.80",
-        "$149.20",
-        "$148.50"
+        "$2020.00",
+        "$2005.00",
+        "$1980.00"
       ],
       "resistance_levels": [
-        "$150.50",
-        "$151.00",
-        "$151.50"
+        "$2065.00",
+        "$2080.00",
+        "$2100.00"
       ],
       "trend": "bullish"
     },
     "price_history": [
       {
         "time": "9:00",
-        "price": 148.5,
-        "volume": 1200
+        "price": 2038.5,
+        "volume": 120000
       },
       {
         "time": "10:00",
-        "price": 149.2,
-        "volume": 1500
+        "price": 2042.2,
+        "volume": 150000
       },
       {
         "time": "11:00",
-        "price": 150.1,
-        "volume": 1800
+        "price": 2045.1,
+        "volume": 180000
       },
       {
         "time": "12:00",
-        "price": 149.8,
-        "volume": 1400
+        "price": 2043.8,
+        "volume": 140000
       },
       {
         "time": "13:00",
-        "price": 151.2,
-        "volume": 2100
+        "price": 2047.2,
+        "volume": 210000
       },
       {
         "time": "14:00",
-        "price": 150.9,
-        "volume": 1900
+        "price": 2049.9,
+        "volume": 190000
       },
       {
         "time": "15:00",
-        "price": 150.25,
-        "volume": 2200
+        "price": 2050.5,
+        "volume": 220000
       }
     ],
     "trading_signals": {
       "primary_signal": "BUY",
       "signal_strength": "Strong",
-      "entry_price": "$150.20",
-      "stop_loss": "$149.50",
-      "take_profit": "$151.50",
-      "risk_reward_ratio": "1:1.8",
-      "time_horizon": "Short-term"
+      "entry_price": "$2050.00",
+      "stop_loss": "$2030.00",
+      "take_profit": "$2090.00",
+      "risk_reward_ratio": "1:2",
+      "time_horizon": "Medium-term"
+    },
+    "risk_metrics": {
+      "volatility": "Medium",
+      "beta": "N/A",
+      "correlation_with_market": "Inverse with equities",
+      "liquidity": "High",
+      "risk_score": 6
+    },
+    "fundamental_analysis": {
+      "sector": "Commodities / Precious Metals",
+      "market_position": "Global Safe-Haven Asset",
+      "key_metrics": "Inflation outlook, Geopolitical risk, USD strength, Real interest rates",
+      "competitive_advantages": "Store of value, inflation hedge, uncorrelated asset",
+      "main_risks": "Strong USD, Rising real interest rates, Easing geopolitical tensions"
+    },
+    "news_sentiment": {
+      "overall_sentiment": "Positive",
+      "sentiment_score": 0.78,
+      "key_news_factors": [
+        "Geopolitical tensions",
+        "Persistent inflation",
+        "Central bank dovish pivot expectations"
+      ],
+      "social_media_buzz": "High"
+    },
+    "detailed_explanation": "Strong technical outlook with persistent inflation concerns and geopolitical uncertainty driving continued demand for safe-haven assets.",
+    "trading_recommendation": "Consider entry at current levels with defined risk management, capitalizing on macro tailwinds.",
+    "key_levels_to_watch": "Watch $2080 resistance for breakout confirmation towards the all-time high of $2150.",
+    "scenario_analysis": {
+      "bullish_case": "Escalating geopolitical conflicts and renewed inflation fears push prices towards new all-time highs above $2150.",
+      "bearish_case": "Stronger-than-expected US economic data leading to higher real interest rates and a sustained rally in the US Dollar could pressure prices towards $2000.",
+      "base_case": "Gradual appreciation driven by ongoing safe-haven demand and moderate inflation concerns, trading within the $2030-$2100 range."
+    },
+    "generated_at": "2025-08-14T13:39:09.049333",
+    "analysis_type": "detailed"
+  },
+  "EUR/USD": {
+    "symbol": "EUR/USD",
+    "asset_type": "forex",
+    "current_price": "$1.0850",
+    "price_change_24h": "+0.18%",
+    "price_change_7d": "+0.55%",
+    "price_change_30d": "+1.30%",
+    "volume_24h": "Highly Liquid (Trillions Daily)",
+    "market_cap": "Not Applicable (Forex)",
+    "technical_indicators": {
+      "rsi": 62,
+      "macd": "bullish",
+      "moving_averages": {
+        "sma_20": "above",
+        "sma_50": "above",
+        "sma_200": "above"
+      },
+      "support_levels": [
+        "$1.0790",
+        "$1.0740",
+        "$1.0680"
+      ],
+      "resistance_levels": [
+        "$1.0880",
+        "$1.0920",
+        "$1.0980"
+      ],
+      "trend": "bullish"
+    },
+    "price_history": [
+      {
+        "time": "9:00",
+        "price": 1.0825,
+        "volume": 120000
+      },
+      {
+        "time": "10:00",
+        "price": 1.0835,
+        "volume": 150000
+      },
+      {
+        "time": "11:00",
+        "price": 1.0845,
+        "volume": 180000
+      },
+      {
+        "time": "12:00",
+        "price": 1.083,
+        "volume": 140000
+      },
+      {
+        "time": "13:00",
+        "price": 1.086,
+        "volume": 210000
+      },
+      {
+        "time": "14:00",
+        "price": 1.0855,
+        "volume": 190000
+      },
+      {
+        "time": "15:00",
+        "price": 1.085,
+        "volume": 220000
+      }
+    ],
+    "trading_signals": {
+      "primary_signal": "BUY",
+      "signal_strength": "Moderate",
+      "entry_price": "$1.0845",
+      "stop_loss": "$1.0795",
+      "take_profit": "$1.0945",
+      "risk_reward_ratio": "1:2",
+      "time_horizon": "Short-to-Medium-term"
+    },
+    "risk_metrics": {
+      "volatility": "Medium",
+      "beta": "Not Applicable (Forex)",
+      "correlation_with_market": "Influenced by relative economic performance and central bank policies",
+      "liquidity": "Extremely High",
+      "risk_score": 7
+    },
+    "fundamental_analysis": {
+      "sector": "Currency Pair",
+      "market_position": "Major Global Currency Pair",
+      "key_metrics": "Interest rate differentials, GDP growth, inflation, employment data, central bank policy (ECB & Fed)",
+      "competitive_advantages": "N/A (Forex)",
+      "main_risks": "Divergence in monetary policy, unexpected economic data, geopolitical events, global risk sentiment shifts"
+    },
+    "news_sentiment": {
+      "overall_sentiment": "Cautiously Positive",
+      "sentiment_score": 0.68,
+      "key_news_factors": [
+        "Favorable Eurozone economic data",
+        "ECB's inflation outlook",
+        "USD weakness expectation"
+      ],
+      "social_media_buzz": "Moderate"
+    },
+    "detailed_explanation": "The EUR/USD pair is exhibiting a bullish bias, supported by recent positive economic indicators from the Eurozone and a perceived hawkish stance from the European Central Bank. Technical analysis reinforces this upward momentum, though the pair approaches key resistance levels. Global sentiment regarding the USD's near-term trajectory also plays a significant role.",
+    "trading_recommendation": "Consider long positions on strategic pullbacks, aiming for the next resistance levels. Implement strict risk management given potential volatility around economic data releases.",
+    "key_levels_to_watch": "Watch the $1.0880 and $1.0920 resistance levels. A sustained break above these could pave the way for a test of $1.0980. Support around $1.0790 is crucial for maintaining the current trend.",
+    "scenario_analysis": {
+      "bullish_case": "Stronger-than-expected Eurozone economic growth, combined with continued hawkish signals from the ECB and a weakening USD due to dovish Fed expectations, could push EUR/USD towards $1.10 - $1.11.",
+      "bearish_case": "Unexpectedly soft Eurozone data, a more hawkish shift from the Fed, or significant risk-off sentiment globally could see EUR/USD retreat towards $1.07 - $1.06.",
+      "base_case": "Gradual appreciation towards $1.09 with periods of consolidation, driven by moderate economic improvements and ongoing interest rate differentials."
+    },
+    "generated_at": "2025-08-14T13:39:27.350975",
+    "analysis_type": "detailed"
+  },
+  "USD/JPY": {
+    "symbol": "USD/JPY",
+    "asset_type": "forex",
+    "current_price": "$155.50",
+    "price_change_24h": "+0.35%",
+    "price_change_7d": "+1.28%",
+    "price_change_30d": "+3.65%",
+    "volume_24h": "7500B",
+    "market_cap": "N/A",
+    "technical_indicators": {
+      "rsi": 68,
+      "macd": "bullish",
+      "moving_averages": {
+        "sma_20": "above",
+        "sma_50": "above",
+        "sma_200": "above"
+      },
+      "support_levels": [
+        "$153.20",
+        "$150.80",
+        "$148.50"
+      ],
+      "resistance_levels": [
+        "$157.00",
+        "$158.50",
+        "$160.00"
+      ],
+      "trend": "bullish"
+    },
+    "price_history": [
+      {
+        "time": "9:00",
+        "price": 154.55,
+        "volume": 120000
+      },
+      {
+        "time": "10:00",
+        "price": 154.9,
+        "volume": 150000
+      },
+      {
+        "time": "11:00",
+        "price": 155.25,
+        "volume": 180000
+      },
+      {
+        "time": "12:00",
+        "price": 155.05,
+        "volume": 140000
+      },
+      {
+        "time": "13:00",
+        "price": 155.7,
+        "volume": 210000
+      },
+      {
+        "time": "14:00",
+        "price": 155.45,
+        "volume": 190000
+      },
+      {
+        "time": "15:00",
+        "price": 155.5,
+        "volume": 220000
+      }
+    ],
+    "trading_signals": {
+      "primary_signal": "BUY",
+      "signal_strength": "Strong",
+      "entry_price": "$155.30",
+      "stop_loss": "$153.00",
+      "take_profit": "$160.00",
+      "risk_reward_ratio": "1:2.04",
+      "time_horizon": "Medium-term"
     },
     "risk_metrics": {
       "volatility": "Medium-High",
       "beta": "N/A",
-      "correlation_with_market": "Influenced by risk sentiment",
+      "correlation_with_market": "Influenced by macro-data",
       "liquidity": "Very High",
       "risk_score": 7
     },
     "fundamental_analysis": {
-      "sector": "Currency",
-      "market_position": "Major Pair",
-      "key_metrics": "Interest rate differentials, economic growth, inflation",
-      "competitive_advantages": "N/A (fundamental drivers)",
-      "main_risks": "Monetary policy divergence, geopolitical events, global economic slowdown"
+      "sector": "Global Macro",
+      "market_position": "Major Global Reserve Currency Pair",
+      "key_metrics": "Interest Rate Differentials, Inflation, GDP, Central Bank Policy",
+      "competitive_advantages": "USD Strength (Fed Policy), JPY Yield-seeking pressure (BoJ Policy)",
+      "main_risks": "Central Bank Intervention (BoJ), US Inflation Surprises, Geopolitical Shocks"
     },
     "news_sentiment": {
       "overall_sentiment": "Positive",
-      "sentiment_score": 0.65,
+      "sentiment_score": 0.82,
       "key_news_factors": [
-        "US interest rate expectations",
-        "Bank of Japan policy",
-        "Inflation data"
+        "US Economic Resilience",
+        "BoJ Dovish Stance",
+        "Strong Treasury Yields"
       ],
-      "social_media_buzz": "Moderate"
+      "social_media_buzz": "High"
     },
-    "detailed_explanation": "USD/JPY is experiencing strong bullish momentum driven by widening interest rate differentials between the US and Japan, coupled with robust US economic data. Technical indicators confirm the uptrend, suggesting potential for further appreciation.",
-    "trading_recommendation": "Monitor for entry opportunities on pullbacks towards support, targeting resistance levels amidst central bank policy divergence.",
-    "key_levels_to_watch": "Watch $150.50 resistance for a potential breakout, and $149.80 support for retracement levels.",
+    "detailed_explanation": "USD/JPY exhibits a strong bullish trend driven by persistent interest rate differentials favoring the USD and the Bank of Japan's continued accommodative monetary policy. Technical indicators reinforce this upward momentum, suggesting further gains are likely unless there's a significant shift in monetary policy or a major risk-off event.",
+    "trading_recommendation": "Maintain long positions or consider new buy entries on pullbacks towards support levels, with clear stop-loss orders in place. Monitor US inflation data and any potential BoJ policy shifts closely.",
+    "key_levels_to_watch": "Key resistance at $157.00 and $158.50; a break above $160.00 could signal an accelerated rally. Strong support around $153.20.",
     "scenario_analysis": {
-      "bullish_case": "Further widening of interest rate differentials or strong US economic data could drive USD/JPY towards $152.00.",
-      "bearish_case": "Unexpected dovish shift from the Federal Reserve or hawkish shift from the Bank of Japan, or significant global risk aversion, could lead to a retracement towards $148.00.",
-      "base_case": "Continued gradual appreciation as monetary policy divergence persists, with minor pullbacks due to profit-taking or minor data fluctuations."
+      "bullish_case": "US economic exceptionalism continues, Fed keeps rates higher for longer, BoJ remains dovish, leading to USD/JPY testing $160.00 and potentially higher.",
+      "bearish_case": "Unexpected dovish shift from the Fed or hawkish pivot from the BoJ, coupled with a significant global risk-off event, could trigger a sharp correction towards $150.00 or lower.",
+      "base_case": "Gradual appreciation of USD/JPY towards $157.00-$158.00 range as interest rate differentials persist, with periods of consolidation."
     },
-    "generated_at": "2025-08-14T09:00:57.798720",
+    "generated_at": "2025-08-14T13:39:52.212516",
     "analysis_type": "detailed"
   },
   "GBP/USD": {
     "symbol": "GBP/USD",
     "asset_type": "forex",
-    "current_price": "$1.2750",
-    "price_change_24h": "+0.45%",
+    "current_price": "$1.2755",
+    "price_change_24h": "+0.38%",
     "price_change_7d": "+1.25%",
-    "price_change_30d": "+2.80%",
-    "volume_24h": "USD 550B",
+    "price_change_30d": "+2.90%",
+    "volume_24h": "N/A (Global Trillions USD daily)",
+    "market_cap": "N/A (Forex has no market capitalization)",
     "technical_indicators": {
       "rsi": 68,
       "macd": "bullish crossover",
@@ -682,103 +679,106 @@
         "sma_200": "above"
       },
       "support_levels": [
-        "$1.2680",
-        "$1.2610",
-        "$1.2530"
+        "$1.2700",
+        "$1.2650",
+        "$1.2600"
       ],
       "resistance_levels": [
         "$1.2800",
-        "$1.2870",
-        "$1.2950"
+        "$1.2850",
+        "$1.2900"
       ],
-      "trend": "strong bullish"
+      "trend": "bullish"
     },
     "price_history": [
       {
-        "time": "9:00",
-        "price": 1.2705,
-        "volume": 12000
-      },
-      {
-        "time": "10:00",
+        "time": "08:00 UTC",
         "price": 1.272,
-        "volume": 15000
+        "volume": 1500
       },
       {
-        "time": "11:00",
+        "time": "09:00 UTC",
         "price": 1.2735,
-        "volume": 18000
+        "volume": 1800
       },
       {
-        "time": "12:00",
-        "price": 1.2728,
-        "volume": 14000
+        "time": "10:00 UTC",
+        "price": 1.2745,
+        "volume": 2200
       },
       {
-        "time": "13:00",
-        "price": 1.2755,
-        "volume": 21000
+        "time": "11:00 UTC",
+        "price": 1.273,
+        "volume": 1600
       },
       {
-        "time": "14:00",
-        "price": 1.274,
-        "volume": 19000
+        "time": "12:00 UTC",
+        "price": 1.276,
+        "volume": 2500
       },
       {
-        "time": "15:00",
+        "time": "13:00 UTC",
         "price": 1.275,
-        "volume": 22000
+        "volume": 2100
+      },
+      {
+        "time": "14:00 UTC",
+        "price": 1.2755,
+        "volume": 2000
       }
     ],
     "trading_signals": {
       "primary_signal": "BUY",
       "signal_strength": "Strong",
-      "entry_price": "$1.2730",
-      "stop_loss": "$1.2650",
-      "take_profit": "$1.2880",
-      "risk_reward_ratio": "1:1.875",
-      "time_horizon": "Medium-term"
+      "entry_price": "$1.2750",
+      "stop_loss": "$1.2690",
+      "take_profit": "$1.2850",
+      "risk_reward_ratio": "1:1.67",
+      "time_horizon": "Short-to-Medium Term"
     },
     "risk_metrics": {
-      "volatility": "Medium-High",
+      "volatility": "Medium",
+      "beta": "N/A (Not applicable for forex pairs)",
+      "correlation_with_market": "High (with major central bank policies)",
       "liquidity": "Very High",
       "risk_score": 7
     },
     "fundamental_analysis": {
-      "key_economic_drivers": "Interest Rate Differentials (BoE vs. Fed), Inflation Outlook (UK/US), GDP Growth (UK/US), Geopolitical Stability",
-      "key_influences": "Bank of England Monetary Policy, US Federal Reserve Monetary Policy, Relative Economic Performance (UK vs. US), Global Risk Sentiment",
-      "main_risks": "Unexpected shifts in central bank policy, Persistent inflation, Global recession fears, Geopolitical tensions"
+      "sector": "N/A (Macroeconomics/Geopolitics)",
+      "market_position": "Major Currency Pair",
+      "key_metrics": "Interest Rate Differentials, Inflation, GDP Growth, Employment Data",
+      "competitive_advantages": "UK Economic Outlook vs. US Economic Outlook",
+      "main_risks": "Central Bank Divergence, Geopolitical Tensions, Inflation Surprises, UK Political Instability"
     },
     "news_sentiment": {
       "overall_sentiment": "Positive",
-      "sentiment_score": 0.82,
+      "sentiment_score": 0.7,
       "key_news_factors": [
         "BoE Hawkish Stance",
-        "Stronger UK Wage Growth",
-        "US Economic Softening Signals",
-        "Positive UK Data Surprises"
+        "Strong UK Wage Growth",
+        "US Economic Softening Signals"
       ],
-      "social_media_buzz": "High"
+      "social_media_buzz": "Moderate-High"
     },
-    "detailed_explanation": "GBP/USD is currently supported by expectations of continued hawkishness from the Bank of England and signs of a softening U.S. labor market, potentially limiting further Fed rate hikes. Technical indicators confirm a strong bullish trend with recent price action breaking key resistance levels.",
-    "trading_recommendation": "Strong Buy with a target on the next resistance level.",
-    "key_levels_to_watch": "Watch $1.2800 resistance for breakout, and $1.2680 support for pullbacks.",
+    "detailed_explanation": "GBP/USD is showing strong bullish momentum driven by hawkish Bank of England sentiment and positive UK economic data, while the USD faces some headwinds from softer US economic indicators. Technical indicators confirm the uptrend, suggesting further potential for appreciation.",
+    "trading_recommendation": "Maintain long positions or consider new entries on dips, with strong focus on upcoming central bank speeches and key economic data releases.",
+    "key_levels_to_watch": "Immediate resistance at $1.2800, with a breakthrough potentially targeting $1.2900. Support is firm around $1.2700.",
     "scenario_analysis": {
-      "bullish_case": "BoE maintains high rates longer than expected, UK economy avoids recession, US inflation cools rapidly leading to Fed rate cuts anticipation. Target $1.30+.",
-      "bearish_case": "UK economy enters deep recession, BoE forced to cut rates aggressively, US economy shows resilience with sticky inflation requiring more Fed tightening. Target $1.25-.",
-      "base_case": "Gradual appreciation towards $1.29 as UK economic resilience holds and Fed shifts to a neutral stance. Normal volatility expected."
+      "bullish_case": "Bank of England remains hawkish, UK inflation proves sticky, US economy slows further, leading to GBP/USD targeting $1.3000.",
+      "bearish_case": "BoE pivots dovish, UK recession concerns heighten, or strong US data rekindles USD strength, pushing GBP/USD towards $1.2500.",
+      "base_case": "Gradual appreciation towards $1.2850-$1.2900 as current macroeconomic themes persist, with normal volatility."
     },
-    "generated_at": "2025-08-14T09:01:19.101157",
+    "generated_at": "2025-08-14T13:40:09.764227",
     "analysis_type": "detailed"
   },
   "AUD/USD": {
     "symbol": "AUD/USD",
     "asset_type": "forex",
-    "current_price": "0.6650",
+    "current_price": "0.6755",
     "price_change_24h": "+0.35%",
-    "price_change_7d": "+1.2%",
-    "price_change_30d": "+2.8%",
-    "volume_24h": "350B",
+    "price_change_7d": "+1.20%",
+    "price_change_30d": "+2.85%",
+    "volume_24h": "250B USD (estimated)",
     "market_cap": "N/A",
     "technical_indicators": {
       "rsi": 65,
@@ -786,112 +786,112 @@
       "moving_averages": {
         "sma_20": "above",
         "sma_50": "above",
-        "sma_200": "above"
+        "sma_200": "below"
       },
       "support_levels": [
-        "0.6620",
-        "0.6580",
-        "0.6530"
+        "0.6680",
+        "0.6630",
+        "0.6580"
       ],
       "resistance_levels": [
-        "0.6680",
-        "0.6720",
-        "0.6770"
+        "0.6800",
+        "0.6850",
+        "0.6900"
       ],
       "trend": "bullish"
     },
     "price_history": [
       {
         "time": "9:00",
-        "price": 0.6625,
-        "volume": 120000
+        "price": 0.672,
+        "volume": 1200
       },
       {
         "time": "10:00",
-        "price": 0.6632,
-        "volume": 150000
+        "price": 0.6735,
+        "volume": 1500
       },
       {
         "time": "11:00",
-        "price": 0.664,
-        "volume": 180000
+        "price": 0.675,
+        "volume": 1800
       },
       {
         "time": "12:00",
-        "price": 0.6638,
-        "volume": 140000
+        "price": 0.6745,
+        "volume": 1400
       },
       {
         "time": "13:00",
-        "price": 0.6655,
-        "volume": 210000
+        "price": 0.6765,
+        "volume": 2100
       },
       {
         "time": "14:00",
-        "price": 0.6652,
-        "volume": 190000
+        "price": 0.676,
+        "volume": 1900
       },
       {
         "time": "15:00",
-        "price": 0.665,
-        "volume": 220000
+        "price": 0.6755,
+        "volume": 2200
       }
     ],
     "trading_signals": {
       "primary_signal": "BUY",
       "signal_strength": "Strong",
-      "entry_price": "0.6650",
-      "stop_loss": "0.6600",
-      "take_profit": "0.6750",
+      "entry_price": "0.6750",
+      "stop_loss": "0.6700",
+      "take_profit": "0.6850",
       "risk_reward_ratio": "1:2",
       "time_horizon": "Medium-term"
     },
     "risk_metrics": {
       "volatility": "Medium",
       "beta": "N/A",
-      "correlation_with_market": "High",
-      "liquidity": "High",
+      "correlation_with_market": "N/A",
+      "liquidity": "Very High",
       "risk_score": 6
     },
     "fundamental_analysis": {
-      "sector": "Macroeconomics",
-      "market_position": "Relative economic strength",
-      "key_metrics": "Interest rate differentials, Commodity prices, Trade balance, Inflation, Employment data",
-      "competitive_advantages": "Strong commodity exports, Resilient economic growth, RBA policy outlook",
-      "main_risks": "Global growth slowdown, Commodity price shocks, US Fed policy divergence, Geopolitical events"
+      "sector": "Macroeconomic",
+      "market_position": "Major currency pair",
+      "key_metrics": "Interest rate differentials (RBA vs. Fed), Commodity prices, Employment data",
+      "competitive_advantages": "Commodity export reliance, Divergent central bank policies",
+      "main_risks": "Global economic slowdown, US dollar strength, Commodity price fluctuations"
     },
     "news_sentiment": {
       "overall_sentiment": "Positive",
       "sentiment_score": 0.75,
       "key_news_factors": [
-        "Higher commodity prices",
-        "Positive Australian economic data",
-        "Anticipation of Fed rate cuts"
+        "RBA hawkish tilt",
+        "Strong Australian jobs data",
+        "Weakening US economic indicators"
       ],
-      "social_media_buzz": "Medium"
+      "social_media_buzz": "Moderate"
     },
-    "detailed_explanation": "AUD/USD is showing strong bullish momentum driven by supportive Australian macroeconomic data, rising commodity prices, and expectations of a more dovish US Federal Reserve. Technical indicators largely confirm the upward trend.",
-    "trading_recommendation": "Consider long positions on pullbacks towards support levels, with targets at recent highs and beyond.",
-    "key_levels_to_watch": "Watch 0.6680 resistance for breakout confirmation and 0.6620 support for potential entries on dips.",
+    "detailed_explanation": "Positive divergence in monetary policy expectations and commodity price support for AUD, combined with weakening USD fundamentals, drives upward momentum for AUD/USD.",
+    "trading_recommendation": "Consider long position on pullbacks with defined risk management.",
+    "key_levels_to_watch": "Watch 0.6800 resistance for breakout confirmation; 0.6680 support for trend continuation.",
     "scenario_analysis": {
-      "bullish_case": "Continued strength in commodity prices and robust Australian economic data, combined with aggressive Fed rate cuts, could push AUD/USD towards 0.6800 and higher.",
-      "bearish_case": "A global economic downturn, sharp decline in commodity prices, or an unexpected hawkish shift from the RBA could see the pair retreat towards 0.6500 or lower.",
-      "base_case": "Gradual appreciation towards 0.6700-0.6750 driven by stable economic conditions and modest interest rate differential shifts."
+      "bullish_case": "RBA maintains hawkish stance, commodity prices rally significantly, US economy softens leading to Fed rate cuts.",
+      "bearish_case": "Unexpected global growth concerns, sudden significant US dollar strength, RBA pivots dovish.",
+      "base_case": "Gradual appreciation of AUD/USD driven by moderate economic data divergence and stable commodity prices."
     },
-    "generated_at": "2025-08-14T09:01:44.209450",
+    "generated_at": "2025-08-14T13:40:34.405017",
     "analysis_type": "detailed"
   },
   "USD/CAD": {
     "symbol": "USD/CAD",
     "asset_type": "forex",
-    "current_price": "1.3650",
-    "price_change_24h": "+0.22%",
-    "price_change_7d": "+0.58%",
-    "price_change_30d": "+1.25%",
-    "volume_24h": "285B",
+    "current_price": "$1.3650",
+    "price_change_24h": "+0.32%",
+    "price_change_7d": "+1.15%",
+    "price_change_30d": "+2.80%",
+    "volume_24h": "125.7B",
     "market_cap": "N/A",
     "technical_indicators": {
-      "rsi": 60,
+      "rsi": 62,
       "macd": "bullish",
       "moving_averages": {
         "sma_20": "above",
@@ -899,16 +899,16 @@
         "sma_200": "above"
       },
       "support_levels": [
-        "1.3600",
-        "1.3550",
-        "1.3500"
+        "$1.3580",
+        "$1.3500",
+        "$1.3420"
       ],
       "resistance_levels": [
-        "1.3700",
-        "1.3750",
-        "1.3800"
+        "$1.3700",
+        "$1.3780",
+        "$1.3850"
       ],
-      "trend": "bullish"
+      "trend": "mildly bullish"
     },
     "price_history": [
       {
@@ -923,22 +923,22 @@
       },
       {
         "time": "11:00",
-        "price": 1.3645,
+        "price": 1.366,
         "volume": 180000
       },
       {
         "time": "12:00",
-        "price": 1.364,
+        "price": 1.3645,
         "volume": 140000
       },
       {
         "time": "13:00",
-        "price": 1.366,
+        "price": 1.367,
         "volume": 210000
       },
       {
         "time": "14:00",
-        "price": 1.3655,
+        "price": 1.366,
         "volume": 190000
       },
       {
@@ -950,168 +950,58 @@
     "trading_signals": {
       "primary_signal": "BUY",
       "signal_strength": "Medium",
-      "entry_price": "1.3640",
-      "stop_loss": "1.3590",
-      "take_profit": "1.3740",
-      "risk_reward_ratio": "1:2",
+      "entry_price": "$1.3640",
+      "stop_loss": "$1.3590",
+      "take_profit": "$1.3750",
+      "risk_reward_ratio": "1:2.2",
       "time_horizon": "Short-term"
     },
     "risk_metrics": {
       "volatility": "Medium",
       "beta": "N/A",
-      "correlation_with_market": "N/A",
+      "correlation_with_market": "Inverse correlation with Crude Oil",
       "liquidity": "High",
       "risk_score": 5
     },
     "fundamental_analysis": {
-      "sector": "N/A",
-      "market_position": "N/A",
-      "key_metrics": "Interest rate differentials, oil prices, employment data",
-      "competitive_advantages": "N/A",
-      "main_risks": "Central bank policy shifts, commodity price fluctuations, geopolitical events"
+      "sector": "Macroeconomics",
+      "market_position": "Major Currency Pair",
+      "key_metrics": "Interest rate differentials (Fed vs. BoC), Commodity prices (Crude Oil), Economic growth (US vs. Canada), Inflation data",
+      "competitive_advantages": "Stability of both economies, Deep liquidity in interbank market",
+      "main_risks": "Global economic slowdown, US and Canadian central bank policy divergence, Geopolitical events affecting risk sentiment, Significant shifts in crude oil prices"
     },
     "news_sentiment": {
       "overall_sentiment": "Neutral to Positive",
       "sentiment_score": 0.6,
       "key_news_factors": [
-        "Strong US economic data",
-        "BoC dovish tone",
-        "Stabilizing oil prices"
+        "Recent US jobs data strength",
+        "Bank of Canada's hawkish tone",
+        "Moderate crude oil price increases"
       ],
       "social_media_buzz": "Moderate"
     },
-    "detailed_explanation": "USD/CAD exhibits a bullish bias, primarily supported by robust US economic performance and a perceived dovish stance from the Bank of Canada. While oil price stability offers some support to CAD, the interest rate differential continues to favor the USD.",
-    "trading_recommendation": "Consider long positions on USD/CAD, watching for further US economic strength and clarity on BoC monetary policy.",
-    "key_levels_to_watch": "Monitor 1.3700 for a potential breakout and 1.3600 as an immediate support level.",
+    "detailed_explanation": "USD/CAD is currently exhibiting a mildly bullish trend, supported by stronger-than-expected US economic data and a resilient Bank of Canada. However, crude oil price movements remain a key determinant, with inverse correlation generally observed. Technical indicators suggest further upward potential while respecting established resistance levels.",
+    "trading_recommendation": "Consider cautious long positions on pullbacks towards support levels, with defined risk management. Monitor US economic data and crude oil prices closely.",
+    "key_levels_to_watch": "Watch $1.3700 resistance for breakout confirmation and $1.3600 support for consolidation. A break above $1.3700 could signal further upside towards $1.3780.",
     "scenario_analysis": {
-      "bullish_case": "Stronger than expected US inflation or employment data, leading to higher US interest rate expectations or further dovish signals from BoC.",
-      "bearish_case": "Significant decline in oil prices, an unexpected hawkish shift from BoC, or weaker US economic data.",
-      "base_case": "Gradual appreciation of USD/CAD, consolidating within current ranges, influenced by minor economic data releases and central bank commentary."
+      "bullish_case": "Continued robust US economic performance leading to sustained Fed hawkishness, combined with stable or rising crude oil prices, could push USD/CAD towards $1.3800.",
+      "bearish_case": "Significant weakness in US economic indicators, a more aggressive Bank of Canada rate hike path, or a sharp decline in crude oil prices could see the pair retreat towards $1.3500.",
+      "base_case": "USD/CAD is likely to trade within a 1.3550 - 1.3750 range in the short-to-medium term, influenced by mixed economic signals and oscillating commodity prices, with a slight upward bias."
     },
-    "generated_at": "2025-08-14T09:02:04.253835",
+    "generated_at": "2025-08-14T13:41:03.985730",
     "analysis_type": "detailed"
   },
   "USD/CHF": {
     "symbol": "USD/CHF",
     "asset_type": "forex",
-    "current_price": "0.9050",
-    "price_change_24h": "+0.22%",
-    "price_change_7d": "+0.78%",
-    "price_change_30d": "+2.26%",
-    "volume_24h": "850M",
+    "current_price": "$0.9150",
+    "price_change_24h": "+0.25%",
+    "price_change_7d": "+1.20%",
+    "price_change_30d": "+2.80%",
+    "volume_24h": "150B USD",
     "market_cap": "N/A",
     "technical_indicators": {
-      "rsi": 65,
-      "macd": "bullish",
-      "moving_averages": {
-        "sma_20": "above",
-        "sma_50": "above",
-        "sma_200": "below"
-      },
-      "support_levels": [
-        "0.8980",
-        "0.8920",
-        "0.8850"
-      ],
-      "resistance_levels": [
-        "0.9100",
-        "0.9150",
-        "0.9200"
-      ],
-      "trend": "bullish"
-    },
-    "price_history": [
-      {
-        "time": "9:00",
-        "price": 0.898,
-        "volume": 1200
-      },
-      {
-        "time": "10:00",
-        "price": 0.9005,
-        "volume": 1500
-      },
-      {
-        "time": "11:00",
-        "price": 0.9025,
-        "volume": 1800
-      },
-      {
-        "time": "12:00",
-        "price": 0.9015,
-        "volume": 1400
-      },
-      {
-        "time": "13:00",
-        "price": 0.904,
-        "volume": 2100
-      },
-      {
-        "time": "14:00",
-        "price": 0.9035,
-        "volume": 1900
-      },
-      {
-        "time": "15:00",
-        "price": 0.905,
-        "volume": 2200
-      }
-    ],
-    "trading_signals": {
-      "primary_signal": "BUY",
-      "signal_strength": "Strong",
-      "entry_price": "0.9050",
-      "stop_loss": "0.9000",
-      "take_profit": "0.9150",
-      "risk_reward_ratio": "1:2",
-      "time_horizon": "Medium-term"
-    },
-    "risk_metrics": {
-      "volatility": "Medium",
-      "beta": "N/A",
-      "correlation_with_market": "Moderate",
-      "liquidity": "High",
-      "risk_score": 6
-    },
-    "fundamental_analysis": {
-      "sector": "Macroeconomics",
-      "market_position": "Influenced by economic fundamentals",
-      "key_metrics": "Interest rate differentials, Economic growth, Inflation",
-      "competitive_advantages": "Monetary policy stability, Safe-haven status (CHF)",
-      "main_risks": "Geopolitical risks, Central bank policy divergence, Inflation"
-    },
-    "news_sentiment": {
-      "overall_sentiment": "Neutral to Positive",
-      "sentiment_score": 0.65,
-      "key_news_factors": [
-        "Central bank policy expectations",
-        "Economic data releases",
-        "Geopolitical stability"
-      ],
-      "social_media_buzz": "Moderate"
-    },
-    "detailed_explanation": "USD strength driven by hawkish Fed outlook, while CHF maintains safe-haven appeal and reacts to SNB policy. Technical indicators confirm an upward trend for now.",
-    "trading_recommendation": "Consider long positions on USD/CHF, monitoring central bank communications for shifts in monetary policy. Utilize defined stop-loss and take-profit levels.",
-    "key_levels_to_watch": "Watch 0.9100 resistance for breakout or rejection, and 0.8980 support for potential bounce.",
-    "scenario_analysis": {
-      "bullish_case": "Further Fed rate hikes and strong US economic data support USD, driving USD/CHF higher towards 0.9200.",
-      "bearish_case": "SNB surprise hike or global risk-off sentiment boosts CHF's safe-haven appeal, pushing USD/CHF lower towards 0.8900.",
-      "base_case": "Range-bound trading with slight USD bias, influenced by economic data releases from both economies."
-    },
-    "generated_at": "2025-08-14T09:02:17.523131",
-    "analysis_type": "detailed"
-  },
-  "NZD/USD": {
-    "symbol": "NZD/USD",
-    "asset_type": "forex",
-    "current_price": "$0.6185",
-    "price_change_24h": "+0.35%",
-    "price_change_7d": "+1.22%",
-    "price_change_30d": "+2.85%",
-    "volume_24h": "150M lots",
-    "market_cap": "N/A (Forex pair)",
-    "technical_indicators": {
-      "rsi": 68,
+      "rsi": 60,
       "macd": "bullish",
       "moving_averages": {
         "sma_20": "above",
@@ -1119,108 +1009,217 @@
         "sma_200": "above"
       },
       "support_levels": [
-        "$0.6120",
-        "$0.6080",
-        "$0.6000"
+        "$0.9100",
+        "$0.9050",
+        "$0.9000"
       ],
       "resistance_levels": [
-        "$0.6200",
-        "$0.6240",
-        "$0.6300"
+        "$0.9200",
+        "$0.9250",
+        "$0.9300"
       ],
       "trend": "bullish"
     },
     "price_history": [
       {
         "time": "9:00",
-        "price": 0.615,
-        "volume": 12000
+        "price": 0.9125,
+        "volume": 1200000000
       },
       {
         "time": "10:00",
-        "price": 0.6165,
-        "volume": 15000
+        "price": 0.9135,
+        "volume": 1500000000
       },
       {
         "time": "11:00",
-        "price": 0.6178,
-        "volume": 18000
+        "price": 0.9148,
+        "volume": 1800000000
       },
       {
         "time": "12:00",
-        "price": 0.617,
-        "volume": 14000
+        "price": 0.9142,
+        "volume": 1400000000
       },
       {
         "time": "13:00",
-        "price": 0.6192,
-        "volume": 21000
+        "price": 0.916,
+        "volume": 2100000000
       },
       {
         "time": "14:00",
-        "price": 0.6188,
-        "volume": 19000
+        "price": 0.9155,
+        "volume": 1900000000
       },
       {
         "time": "15:00",
-        "price": 0.6185,
-        "volume": 22000
+        "price": 0.915,
+        "volume": 2200000000
       }
     ],
     "trading_signals": {
       "primary_signal": "BUY",
       "signal_strength": "Strong",
-      "entry_price": "$0.6175",
-      "stop_loss": "$0.6100",
-      "take_profit": "$0.6280",
-      "risk_reward_ratio": "1:1.4",
+      "entry_price": "$0.9150",
+      "stop_loss": "$0.9090",
+      "take_profit": "$0.9270",
+      "risk_reward_ratio": "1:2",
       "time_horizon": "Medium-term"
     },
     "risk_metrics": {
-      "volatility": "Medium-High",
-      "beta": "N/A (Forex)",
-      "correlation_with_market": "Moderate (Risk-on/off sentiment)",
+      "volatility": "Medium",
+      "beta": "N/A",
+      "correlation_with_market": "Moderate",
       "liquidity": "Very High",
-      "risk_score": 7
+      "risk_score": 5
     },
     "fundamental_analysis": {
-      "sector": "N/A",
-      "market_position": "N/A",
-      "key_metrics": "RBNZ hawkish stance, strong NZ commodity prices, recovering tourism, Fed rate path uncertainty",
-      "competitive_advantages": "Yield differential, positive terms of trade",
-      "main_risks": "Global economic slowdown, China's economic health, RBNZ dovish shift, persistent USD strength"
+      "sector": "Currency Market",
+      "market_position": "Major Pair",
+      "key_metrics": "Interest rate differentials, inflation data, central bank policies",
+      "competitive_advantages": "N/A - Driven by macroeconomics",
+      "main_risks": "Global economic slowdown, central bank divergence, geopolitical events"
     },
     "news_sentiment": {
-      "overall_sentiment": "Positive",
-      "sentiment_score": 0.68,
+      "overall_sentiment": "Neutral to Positive",
+      "sentiment_score": 0.6,
       "key_news_factors": [
-        "RBNZ interest rate outlook",
-        "NZ inflation data",
-        "US Non-Farm Payrolls",
-        "Global commodity prices"
+        "US interest rate outlook",
+        "Swiss National Bank policy",
+        "Global inflation trends"
       ],
       "social_media_buzz": "Medium"
     },
-    "detailed_explanation": "NZD/USD is currently exhibiting a strong bullish trend, supported by a hawkish RBNZ stance and improving domestic economic indicators. Technicals confirm this momentum, with key moving averages signaling an uptrend. However, global risk sentiment and potential shifts in Fed policy remain key factors.",
-    "trading_recommendation": "Maintain long positions or consider new entry on dips, with clear risk management around key support levels.",
-    "key_levels_to_watch": "Monitor $0.6200 resistance for a sustained breakout, and $0.6100 support for potential reversals.",
+    "detailed_explanation": "USD/CHF shows a medium-term bullish bias driven by expectations of US economic resilience and potential interest rate differentials. Technical indicators support this outlook, although near-term volatility is expected around key economic data releases.",
+    "trading_recommendation": "Consider a long position with tight risk management, targeting resistance levels.",
+    "key_levels_to_watch": "Monitor $0.9200 resistance for breakout potential and $0.9100 support for downside risk.",
     "scenario_analysis": {
-      "bullish_case": "RBNZ maintains hawkish stance, commodity prices remain elevated, and global risk appetite improves, pushing NZD/USD towards $0.6300-$0.6400.",
-      "bearish_case": "Global recession fears intensify, USD strengthens on safe-haven demand, or RBNZ signals a dovish pivot, leading to a drop towards $0.6000-$0.5900.",
-      "base_case": "Gradual appreciation towards $0.6250-$0.6300 as economic data from New Zealand remains robust, with intermittent pullbacks influenced by US data and risk sentiment."
+      "bullish_case": "Higher-than-expected US inflation leading to more hawkish Fed stance, widening interest rate differential in favor of USD.",
+      "bearish_case": "Soft US economic data or dovish shift from the Fed, combined with potential SNB tightening, strengthening CHF.",
+      "base_case": "Gradual appreciation of USD against CHF driven by moderate interest rate differential and stable economic outlook."
     },
-    "generated_at": "2025-08-14T09:02:36.894906",
+    "generated_at": "2025-08-14T13:41:21.546024",
+    "analysis_type": "detailed"
+  },
+  "NZD/USD": {
+    "symbol": "NZD/USD",
+    "asset_type": "forex",
+    "current_price": "$0.6150",
+    "price_change_24h": "+0.25%",
+    "price_change_7d": "+0.85%",
+    "price_change_30d": "+1.70%",
+    "volume_24h": "$15.5B (estimated daily turnover)",
+    "market_cap": "N/A (Forex does not have market capitalization)",
+    "technical_indicators": {
+      "rsi": 58,
+      "macd": "neutral",
+      "moving_averages": {
+        "sma_20": "above",
+        "sma_50": "above",
+        "sma_200": "below"
+      },
+      "support_levels": [
+        "$0.6120",
+        "$0.6085",
+        "$0.6040"
+      ],
+      "resistance_levels": [
+        "$0.6180",
+        "$0.6225",
+        "$0.6270"
+      ],
+      "trend": "mildly bullish"
+    },
+    "price_history": [
+      {
+        "time": "9:00",
+        "price": 0.6135,
+        "volume": 120
+      },
+      {
+        "time": "10:00",
+        "price": 0.6142,
+        "volume": 150
+      },
+      {
+        "time": "11:00",
+        "price": 0.6151,
+        "volume": 180
+      },
+      {
+        "time": "12:00",
+        "price": 0.6148,
+        "volume": 140
+      },
+      {
+        "time": "13:00",
+        "price": 0.6162,
+        "volume": 210
+      },
+      {
+        "time": "14:00",
+        "price": 0.6159,
+        "volume": 190
+      },
+      {
+        "time": "15:00",
+        "price": 0.615,
+        "volume": 220
+      }
+    ],
+    "trading_signals": {
+      "primary_signal": "HOLD",
+      "signal_strength": "Moderate",
+      "entry_price": "$0.6150",
+      "stop_loss": "$0.6120",
+      "take_profit": "$0.6200",
+      "risk_reward_ratio": "1:1.6",
+      "time_horizon": "Short-term"
+    },
+    "risk_metrics": {
+      "volatility": "Medium",
+      "beta": "N/A (Forex is not correlated to equity markets in the same way)",
+      "correlation_with_market": "Inverse (with USD DXY)",
+      "liquidity": "Very High",
+      "risk_score": 5
+    },
+    "fundamental_analysis": {
+      "sector": "Macroeconomics (New Zealand vs. United States)",
+      "market_position": "N/A (currency pair)",
+      "key_metrics": "Interest rate differentials, GDP growth, Inflation, Employment data, Commodity prices (dairy)",
+      "competitive_advantages": "N/A (currency pair)",
+      "main_risks": "Global economic slowdown, RBNZ/Fed policy divergence, Commodity price fluctuations, Geopolitical events"
+    },
+    "news_sentiment": {
+      "overall_sentiment": "Neutral",
+      "sentiment_score": 0.55,
+      "key_news_factors": [
+        "RBNZ rate outlook",
+        "US inflation data",
+        "Global risk appetite",
+        "Dairy prices"
+      ],
+      "social_media_buzz": "Moderate"
+    },
+    "detailed_explanation": "NZD/USD is currently consolidating, influenced by mixed economic signals from both New Zealand and the United States. Technical indicators suggest a mildly bullish short-term bias, but significant fundamental catalysts are required for a sustained directional move. RBNZ and Fed monetary policy expectations remain key drivers.",
+    "trading_recommendation": "Monitor upcoming economic releases from both economies, particularly inflation and employment data, along with central bank guidance. Consider a neutral to slightly bullish bias with strict risk management.",
+    "key_levels_to_watch": "Watch $0.6120 as immediate support and $0.6180 as immediate resistance for potential breakouts or breakdowns. A break above $0.6225 could signal stronger bullish momentum.",
+    "scenario_analysis": {
+      "bullish_case": "Stronger-than-expected New Zealand economic data (e.g., high inflation, hawkish RBNZ stance) or weaker US data (e.g., dovish Fed pivot) could push the pair higher towards $0.6270.",
+      "bearish_case": "Weaker-than-expected New Zealand data (e.g., recession concerns, dovish RBNZ) or stronger US data (e.g., resilient economy, hawkish Fed) could lead to a decline towards $0.6040.",
+      "base_case": "Continued range-bound trading between $0.6100 and $0.6200 as economic data provides mixed signals, with short-term fluctuations driven by daily news and market sentiment."
+    },
+    "generated_at": "2025-08-14T13:41:43.244753",
     "analysis_type": "detailed"
   },
   "EUR/GBP": {
     "symbol": "EUR/GBP",
     "asset_type": "forex",
     "current_price": "0.8550",
-    "price_change_24h": "+0.12%",
-    "price_change_7d": "+0.45%",
-    "price_change_30d": "+1.30%",
-    "volume_24h": "280M units",
-    "market_cap": null,
+    "price_change_24h": "+0.15%",
+    "price_change_7d": "+0.65%",
+    "price_change_30d": "+1.8%",
+    "volume_24h": "4.2M",
     "technical_indicators": {
       "rsi": 68,
       "macd": "bullish",
@@ -1231,51 +1230,51 @@
       },
       "support_levels": [
         "0.8520",
-        "0.8480",
-        "0.8420"
+        "0.8490",
+        "0.8450"
       ],
       "resistance_levels": [
         "0.8580",
-        "0.8620",
-        "0.8650"
+        "0.8610",
+        "0.8640"
       ],
       "trend": "bullish"
     },
     "price_history": [
       {
         "time": "9:00",
-        "price": 0.853,
-        "volume": 1200000
+        "price": 0.8525,
+        "volume": 125000
       },
       {
         "time": "10:00",
-        "price": 0.8542,
-        "volume": 1500000
+        "price": 0.8538,
+        "volume": 150000
       },
       {
         "time": "11:00",
-        "price": 0.8555,
-        "volume": 1800000
+        "price": 0.8549,
+        "volume": 185000
       },
       {
         "time": "12:00",
-        "price": 0.8548,
-        "volume": 1400000
+        "price": 0.8542,
+        "volume": 140000
       },
       {
         "time": "13:00",
-        "price": 0.8562,
-        "volume": 2100000
+        "price": 0.856,
+        "volume": 210000
       },
       {
         "time": "14:00",
-        "price": 0.8558,
-        "volume": 1900000
+        "price": 0.8555,
+        "volume": 195000
       },
       {
         "time": "15:00",
         "price": 0.855,
-        "volume": 2200000
+        "volume": 220000
       }
     ],
     "trading_signals": {
@@ -1289,50 +1288,45 @@
     },
     "risk_metrics": {
       "volatility": "Medium",
-      "beta": null,
-      "correlation_with_market": "High",
-      "liquidity": "High",
-      "risk_score": 6
+      "liquidity": "Very High",
+      "risk_score": 5
     },
     "fundamental_analysis": {
-      "sector": null,
-      "market_position": "Major Cross Currency",
-      "key_metrics": "Interest rate differentials, inflation data, GDP growth",
-      "competitive_advantages": "Divergent monetary policy expectations (ECB vs. BoE)",
-      "main_risks": "Geopolitical events, energy crisis impact, central bank policy shifts"
+      "key_metrics": "Interest Rate Differentials, Inflation Data, GDP Growth",
+      "main_risks": "Diverging Central Bank Policies, Geopolitical Instability, Economic Slowdown in UK/EU"
     },
     "news_sentiment": {
       "overall_sentiment": "Positive",
-      "sentiment_score": 0.7,
+      "sentiment_score": 0.75,
       "key_news_factors": [
-        "ECB hawkish commentary",
-        "UK inflation easing",
-        "Improved Eurozone economic outlook"
+        "ECB Policy Outlook",
+        "UK Inflation & Wage Growth",
+        "Eurozone Economic Sentiment"
       ],
       "social_media_buzz": "Medium"
     },
-    "detailed_explanation": "EUR/GBP shows a clear bullish bias supported by technical indicators indicating strong momentum and positive fundamental drivers stemming from divergence in monetary policy expectations and economic outlooks between the Eurozone and the UK.",
-    "trading_recommendation": "Consider long positions with tight risk management around key support levels, targeting breakout above initial resistance.",
-    "key_levels_to_watch": "Monitor 0.8600 resistance for breakout potential and 0.8500 support for invalidation of the bullish trend.",
+    "detailed_explanation": "EUR/GBP shows a clear bullish trend driven by improving Eurozone economic sentiment and expectations of a more dovish Bank of England relative to the ECB. Technical indicators support further upside, while key macroeconomic data releases will continue to influence price action.",
+    "trading_recommendation": "Consider long positions on pullbacks towards support levels, targeting resistance zones. Manage risk tightly around key macroeconomic announcements.",
+    "key_levels_to_watch": "Watch 0.8580 resistance for breakout confirmation and 0.8520 support for potential bounces.",
     "scenario_analysis": {
-      "bullish_case": "ECB maintains a hawkish stance while the Bank of England adopts a more dovish tone, widening interest rate differentials and boosting EUR.",
-      "bearish_case": "Unexpectedly strong UK economic data or a significant dovish shift from the ECB pressures EUR/GBP lower.",
-      "base_case": "Gradual appreciation of EUR driven by modest but persistent policy divergence and improving Eurozone economic sentiment."
+      "bullish_case": "Stronger than expected Eurozone economic data coupled with further evidence of UK economic softening leads to a rally towards 0.8650.",
+      "bearish_case": "Unexpectedly hawkish comments from the Bank of England or significant downside surprises in Eurozone data could trigger a reversal towards 0.8450.",
+      "base_case": "Gradual appreciation of EUR against GBP as the monetary policy divergence between ECB and BoE becomes more pronounced, with moderate volatility."
     },
-    "generated_at": "2025-08-14T09:02:54.487389",
+    "generated_at": "2025-08-14T13:42:05.335997",
     "analysis_type": "detailed"
   },
   "EUR/JPY": {
     "symbol": "EUR/JPY",
     "asset_type": "forex",
-    "current_price": "\u00a5165.50",
-    "price_change_24h": "+0.35%",
-    "price_change_7d": "+1.20%",
-    "price_change_30d": "+2.85%",
-    "volume_24h": "1.2T",
-    "market_cap": "N/A",
+    "current_price": "165.45",
+    "price_change_24h": "+0.7%",
+    "price_change_7d": "+2.1%",
+    "price_change_30d": "+4.5%",
+    "volume_24h": "5.2M (estimated trades)",
+    "market_cap": "N/A (Forex Pair)",
     "technical_indicators": {
-      "rsi": 68,
+      "rsi": 72,
       "macd": "bullish",
       "moving_averages": {
         "sma_20": "above",
@@ -1340,549 +1334,218 @@
         "sma_200": "above"
       },
       "support_levels": [
-        "\u00a5164.00",
-        "\u00a5163.20",
-        "\u00a5161.80"
+        "164.80",
+        "163.20",
+        "161.50"
       ],
       "resistance_levels": [
-        "\u00a5166.50",
-        "\u00a5167.80",
-        "\u00a5169.00"
+        "166.00",
+        "167.50",
+        "169.20"
       ],
-      "trend": "bullish"
+      "trend": "strong bullish"
     },
     "price_history": [
       {
         "time": "9:00",
         "price": 164.1,
-        "volume": 12000
+        "volume": 280000
       },
       {
         "time": "10:00",
         "price": 164.55,
-        "volume": 15000
+        "volume": 350000
       },
       {
         "time": "11:00",
         "price": 164.9,
-        "volume": 18000
+        "volume": 320000
       },
       {
         "time": "12:00",
-        "price": 164.75,
-        "volume": 14000
+        "price": 165.15,
+        "volume": 410000
       },
       {
         "time": "13:00",
-        "price": 165.2,
-        "volume": 21000
+        "price": 165.3,
+        "volume": 390000
       },
       {
         "time": "14:00",
-        "price": 165.35,
-        "volume": 19000
+        "price": 165.4,
+        "volume": 450000
       },
       {
         "time": "15:00",
-        "price": 165.5,
-        "volume": 22000
+        "price": 165.45,
+        "volume": 420000
       }
     ],
     "trading_signals": {
       "primary_signal": "BUY",
       "signal_strength": "Strong",
-      "entry_price": "\u00a5165.20",
-      "stop_loss": "\u00a5164.00",
-      "take_profit": "\u00a5167.50",
-      "risk_reward_ratio": "1:2",
+      "entry_price": "165.20",
+      "stop_loss": "163.80",
+      "take_profit": "168.50",
+      "risk_reward_ratio": "1:2.4",
       "time_horizon": "Medium-term"
     },
     "risk_metrics": {
       "volatility": "Medium-High",
-      "beta": "N/A",
-      "correlation_with_market": "High",
+      "beta": "N/A (Forex Pair)",
+      "correlation_with_market": "Influenced by global risk sentiment and interest rate differentials",
       "liquidity": "Very High",
       "risk_score": 7
     },
     "fundamental_analysis": {
-      "sector": "N/A",
-      "market_position": "N/A",
-      "key_metrics": "Widening interest rate differential favoring EUR, solid Eurozone economic data, dovish Bank of Japan policy.",
-      "competitive_advantages": "N/A",
-      "main_risks": "BOJ policy shift, Eurozone inflation concerns, global recession fears impacting risk appetite."
+      "sector": "Macroeconomic Factors (Eurozone & Japan)",
+      "market_position": "N/A (Currency Pair)",
+      "key_metrics": "Monetary policy divergence (ECB hawkish vs. BoJ dovish), Interest rate differentials, economic growth outlook",
+      "competitive_advantages": "N/A (Currency Pair)",
+      "main_risks": "Sudden shifts in central bank policy, unexpected economic data, geopolitical events impacting risk sentiment"
     },
     "news_sentiment": {
       "overall_sentiment": "Positive",
-      "sentiment_score": 0.72,
+      "sentiment_score": 0.68,
       "key_news_factors": [
-        "ECB hawkish stance",
-        "Solid Eurozone economic data",
-        "BOJ maintaining loose policy"
+        "ECB maintaining higher rates",
+        "BoJ cautious stance on tightening",
+        "Strong Eurozone economic data"
       ],
       "social_media_buzz": "Moderate"
     },
-    "detailed_explanation": "EUR/JPY is currently experiencing strong bullish momentum primarily driven by the widening interest rate differential between the Eurozone and Japan. The ECB's hawkish stance contrasts sharply with the BOJ's ultra-loose monetary policy, making the Euro more attractive for carry trades. Technical indicators confirm this trend, with the pair trading above key moving averages.",
-    "trading_recommendation": "Long positions favored, watch for dips as potential entry points.",
-    "key_levels_to_watch": "Monitor \u00a5166.50 resistance; a breakout could target \u00a5167.80. Support at \u00a5164.00 is crucial.",
+    "detailed_explanation": "EUR/JPY exhibits a strong bullish trend driven by significant monetary policy divergence between the ECB and the BoJ. Technical indicators confirm robust upward momentum, while fundamental factors continue to support the Euro's strength against the Yen.",
+    "trading_recommendation": "Consider long positions, monitoring for potential pullbacks. Maintain strict risk management due to inherent forex volatility.",
+    "key_levels_to_watch": "Watch the 166.00 resistance for a potential breakout towards 167.50, and 164.80 as immediate support.",
     "scenario_analysis": {
-      "bullish_case": "ECB maintains hawkish tone, Eurozone economy strengthens, BOJ remains dovish, geopolitical stability.",
-      "bearish_case": "BOJ unexpectedly tightens policy, Eurozone inflation spikes leading to recession fears, global risk-off sentiment increases JPY safe-haven demand.",
-      "base_case": "Gradual appreciation of EUR against JPY driven by persistent rate differentials, with intermittent corrections."
+      "bullish_case": "Continued hawkish rhetoric from ECB and weaker Japanese economic data could push EUR/JPY towards 170.00.",
+      "bearish_case": "A surprise dovish shift by the ECB or an unexpected hawkish move by the BoJ could trigger a sharp reversal, targeting 162.00.",
+      "base_case": "Gradual appreciation of EUR/JPY as interest rate differentials remain wide, with periodic profit-taking corrections."
     },
-    "generated_at": "2025-08-14T09:03:15.752499",
+    "generated_at": "2025-08-14T13:42:23.063296",
     "analysis_type": "detailed"
   },
   "GBP/JPY": {
     "symbol": "GBP/JPY",
     "asset_type": "forex",
-    "current_price": "195.50",
-    "price_change_24h": "+0.7%",
-    "price_change_7d": "+2.5%",
-    "price_change_30d": "+5.8%",
-    "volume_24h": "15.7B",
+    "current_price": "\u00a5190.50",
+    "price_change_24h": "+0.8%",
+    "price_change_7d": "+2.1%",
+    "price_change_30d": "+4.5%",
+    "volume_24h": "6.5T (USD Equiv)",
     "market_cap": "N/A",
     "technical_indicators": {
       "rsi": 68,
-      "macd": "bullish",
+      "macd": "bullish crossover",
       "moving_averages": {
         "sma_20": "above",
         "sma_50": "above",
         "sma_200": "above"
       },
       "support_levels": [
-        "192.80",
-        "190.10",
-        "187.50"
+        "\u00a5188.00",
+        "\u00a5186.50",
+        "\u00a5184.20"
       ],
       "resistance_levels": [
-        "198.00",
-        "200.50",
-        "203.00"
+        "\u00a5192.00",
+        "\u00a5194.50",
+        "\u00a5197.00"
       ],
-      "trend": "bullish"
+      "trend": "strong bullish"
     },
     "price_history": [
       {
         "time": "9:00",
-        "price": 194.2,
-        "volume": 120000
+        "price": 189.8,
+        "volume": 15000
       },
       {
         "time": "10:00",
-        "price": 194.85,
-        "volume": 150000
+        "price": 190.1,
+        "volume": 18000
       },
       {
         "time": "11:00",
-        "price": 195.3,
-        "volume": 180000
+        "price": 190.6,
+        "volume": 22000
       },
       {
         "time": "12:00",
-        "price": 195.05,
-        "volume": 140000
+        "price": 190.3,
+        "volume": 16000
       },
       {
         "time": "13:00",
-        "price": 195.65,
-        "volume": 210000
+        "price": 190.9,
+        "volume": 25000
       },
       {
         "time": "14:00",
-        "price": 195.4,
-        "volume": 190000
+        "price": 190.7,
+        "volume": 20000
       },
       {
         "time": "15:00",
-        "price": 195.5,
-        "volume": 220000
+        "price": 190.5,
+        "volume": 23000
       }
     ],
     "trading_signals": {
       "primary_signal": "BUY",
       "signal_strength": "Strong",
-      "entry_price": "195.30",
-      "stop_loss": "192.50",
-      "take_profit": "200.00",
-      "risk_reward_ratio": "1:1.7",
-      "time_horizon": "Medium-term"
+      "entry_price": "\u00a5190.30",
+      "stop_loss": "\u00a5188.50",
+      "take_profit": "\u00a5195.00",
+      "risk_reward_ratio": "1:2.5",
+      "time_horizon": "Short-to-Medium term"
     },
     "risk_metrics": {
       "volatility": "High",
-      "beta": "1.5",
-      "correlation_with_market": "High",
-      "liquidity": "High",
+      "beta": "N/A",
+      "correlation_with_market": "Highly Sensitive to Global Risk Appetite",
+      "liquidity": "Very High",
       "risk_score": 8
     },
     "fundamental_analysis": {
-      "sector": "Currency Market",
-      "market_position": "Major Cross Pair",
-      "key_metrics": "Interest Rate Differentials, Economic Growth (UK/Japan), Inflation Outlook, Monetary Policy Divergence",
-      "competitive_advantages": "Highly Liquid, Major Reserve Currencies",
-      "main_risks": "BoJ Policy Shifts, UK Inflation Surprises, Global Risk-Off Sentiment, Geopolitical Events"
+      "sector": "N/A",
+      "market_position": "N/A",
+      "key_metrics": "Interest Rate Differentials, Central Bank Policy Divergence (BoE vs. BoJ), Economic Growth Outlook (UK vs. Japan), Inflation Trends",
+      "competitive_advantages": "N/A",
+      "main_risks": "Unexpected BoJ policy shift, UK inflation undershoot, Global economic downturn, Geopolitical tensions affecting safe-haven demand for JPY"
     },
     "news_sentiment": {
       "overall_sentiment": "Positive",
       "sentiment_score": 0.82,
       "key_news_factors": [
-        "BoE Hawkish Stance",
-        "Strong UK Economic Data",
-        "Yen Weakness from BoJ Dovishness"
+        "Persistent UK inflation data",
+        "Hawkish BoE rhetoric",
+        "Japan's continued ultra-loose monetary policy",
+        "Yen's weakness against major currencies"
       ],
       "social_media_buzz": "High"
     },
-    "detailed_explanation": "Strong technical momentum driven by positive interest rate differentials and a dovish Bank of Japan, further supported by robust UK economic indicators.",
-    "trading_recommendation": "Consider long positions on pullbacks towards support levels, targeting key resistance levels.",
-    "key_levels_to_watch": "Watch 198.00 and 200.00 for potential resistance, and 192.80 for support on any dips.",
+    "detailed_explanation": "GBP/JPY exhibits strong bullish momentum driven by significant interest rate differentials favoring GBP and persistent weakness in the JPY due to the Bank of Japan's dovish stance. Technical indicators align with an upward trend, suggesting further appreciation.",
+    "trading_recommendation": "Initiate long positions on dips, targeting key resistance levels, with strict risk management.",
+    "key_levels_to_watch": "Monitor \u00a5192.00 for a potential breakout and \u00a5188.00 as critical support.",
     "scenario_analysis": {
-      "bullish_case": "Further widening of interest rate differentials or an acceleration in UK economic growth strengthens GBP, pushing GBP/JPY higher towards 205.00.",
-      "bearish_case": "Unexpected hawkish shift by BoJ or significant deterioration in UK economic outlook could lead to a sharp correction towards 190.00 or lower.",
-      "base_case": "Gradual appreciation towards 200.00 as current macroeconomic trends persist, with occasional volatility."
+      "bullish_case": "Further widening of interest rate differentials (BoE hikes, BoJ remains dovish) or stronger-than-expected UK economic data. Price could target \u00a5195.00 - \u00a5197.00.",
+      "bearish_case": "Unexpected hawkish pivot by the BoJ, significant deterioration in UK economic data, or a global risk-off event increasing JPY safe-haven demand. Price could retest \u00a5186.50 - \u00a5184.20.",
+      "base_case": "Gradual appreciation driven by ongoing monetary policy divergence, with potential pullbacks on short-term news. Price is expected to consolidate above \u00a5189.00 and test \u00a5192.00."
     },
-    "generated_at": "2025-08-14T09:03:37.138387",
+    "generated_at": "2025-08-14T13:42:43.312556",
     "analysis_type": "detailed"
   },
   "XAG/USD": {
     "symbol": "XAG/USD",
     "asset_type": "forex",
     "current_price": "$25.50",
-    "price_change_24h": "+1.8%",
+    "price_change_24h": "+1.2%",
     "price_change_7d": "+3.5%",
-    "price_change_30d": "+8.2%",
-    "volume_24h": "2.8M contracts",
-    "market_cap": "$80.0B (Notional Daily Turnover)",
-    "technical_indicators": {
-      "rsi": 68,
-      "macd": "bullish",
-      "moving_averages": {
-        "sma_20": "above",
-        "sma_50": "above",
-        "sma_200": "approaching"
-      },
-      "support_levels": [
-        "$24.80",
-        "$24.20",
-        "$23.50"
-      ],
-      "resistance_levels": [
-        "$26.30",
-        "$27.00",
-        "$27.80"
-      ],
-      "trend": "bullish"
-    },
-    "price_history": [
-      {
-        "time": "9:00",
-        "price": 24.5,
-        "volume": 120000
-      },
-      {
-        "time": "10:00",
-        "price": 24.8,
-        "volume": 150000
-      },
-      {
-        "time": "11:00",
-        "price": 25.1,
-        "volume": 180000
-      },
-      {
-        "time": "12:00",
-        "price": 25.0,
-        "volume": 140000
-      },
-      {
-        "time": "13:00",
-        "price": 25.3,
-        "volume": 210000
-      },
-      {
-        "time": "14:00",
-        "price": 25.45,
-        "volume": 190000
-      },
-      {
-        "time": "15:00",
-        "price": 25.5,
-        "volume": 220000
-      }
-    ],
-    "trading_signals": {
-      "primary_signal": "BUY",
-      "signal_strength": "Strong",
-      "entry_price": "$25.00",
-      "stop_loss": "$24.00",
-      "take_profit": "$27.00",
-      "risk_reward_ratio": "1:2",
-      "time_horizon": "Medium-term"
-    },
-    "risk_metrics": {
-      "volatility": "Medium-High",
-      "beta": "1.1 (relative to commodity index)",
-      "correlation_with_market": "High (with inflation expectations and USD inverse)",
-      "liquidity": "High",
-      "risk_score": 7
-    },
-    "fundamental_analysis": {
-      "sector": "Precious Metals & Commodities",
-      "market_position": "Key Global Commodity",
-      "key_metrics": "Industrial demand, Investment demand, USD strength, Inflation expectations",
-      "competitive_advantages": "Dual role (industrial & safe haven), Supply constraints, Store of value",
-      "main_risks": "USD appreciation, Global economic slowdown, Interest rate hikes impacting non-yield assets"
-    },
-    "news_sentiment": {
-      "overall_sentiment": "Positive",
-      "sentiment_score": 0.8,
-      "key_news_factors": [
-        "Rising inflation concerns",
-        "Weakening USD outlook",
-        "Increased industrial demand projections",
-        "Geopolitical tensions"
-      ],
-      "social_media_buzz": "High"
-    },
-    "detailed_explanation": "Silver (XAG/USD) is experiencing strong upward momentum, driven by persistent inflation concerns and a weaker US Dollar outlook. Its dual role as a critical industrial metal and a safe-haven asset provides robust underlying demand. Technical indicators consistently confirm the bullish trend, suggesting further appreciation in the near to medium term.",
-    "trading_recommendation": "Consider long positions, capitalizing on inflation hedges and industrial demand. Strict risk management is advised due to commodity volatility.",
-    "key_levels_to_watch": "Watch the $26.30 resistance level for a potential breakout, which could open the path towards $27.00. Key support is identified at $24.80.",
-    "scenario_analysis": {
-      "bullish_case": "Sustained inflation, continued USD weakness, and robust industrial demand drive price towards $28.00 and potentially higher.",
-      "bearish_case": "An unexpected strong USD recovery, more aggressive than anticipated interest rate hikes, or a significant global economic slowdown could push price towards $23.00.",
-      "base_case": "Gradual appreciation towards $27.00, influenced by ongoing inflation concerns and moderate industrial growth, with normal volatility."
-    },
-    "generated_at": "2025-08-14T09:04:01.511935",
-    "analysis_type": "detailed"
-  },
-  "BTC/USD": {
-    "symbol": "BTC/USD",
-    "asset_type": "crypto",
-    "current_price": "$68,500.00",
-    "price_change_24h": "+1.5%",
-    "price_change_7d": "+4.2%",
-    "price_change_30d": "-2.8%",
-    "volume_24h": "28.5B",
-    "market_cap": "1.34T",
-    "technical_indicators": {
-      "rsi": 58,
-      "macd": "neutral",
-      "moving_averages": {
-        "sma_20": "above",
-        "sma_50": "above",
-        "sma_200": "above"
-      },
-      "support_levels": [
-        "$67,500.00",
-        "$66,000.00",
-        "$64,800.00"
-      ],
-      "resistance_levels": [
-        "$69,000.00",
-        "$70,500.00",
-        "$72,000.00"
-      ],
-      "trend": "neutral-bullish"
-    },
-    "price_history": [
-      {
-        "time": "9:00",
-        "price": 67800.0,
-        "volume": 1200000000
-      },
-      {
-        "time": "10:00",
-        "price": 68100.0,
-        "volume": 1500000000
-      },
-      {
-        "time": "11:00",
-        "price": 68350.0,
-        "volume": 1800000000
-      },
-      {
-        "time": "12:00",
-        "price": 68200.0,
-        "volume": 1400000000
-      },
-      {
-        "time": "13:00",
-        "price": 68600.0,
-        "volume": 2100000000
-      },
-      {
-        "time": "14:00",
-        "price": 68450.0,
-        "volume": 1900000000
-      },
-      {
-        "time": "15:00",
-        "price": 68500.0,
-        "volume": 2200000000
-      }
-    ],
-    "trading_signals": {
-      "primary_signal": "BUY",
-      "signal_strength": "Medium",
-      "entry_price": "$67,500.00",
-      "stop_loss": "$66,000.00",
-      "take_profit": "$70,000.00",
-      "risk_reward_ratio": "1:1.7",
-      "time_horizon": "Short-term"
-    },
-    "risk_metrics": {
-      "volatility": "High",
-      "beta": "1.5",
-      "correlation_with_market": "High",
-      "liquidity": "Very High",
-      "risk_score": 8
-    },
-    "fundamental_analysis": {
-      "sector": "Cryptocurrency / Digital Gold",
-      "market_position": "Dominant Global Digital Store of Value",
-      "key_metrics": "Network Hash Rate, On-chain Transaction Volume, Institutional Adoption, Halving Cycle",
-      "competitive_advantages": "Decentralization, Scarcity (21M cap), First-mover advantage, Strongest Network Effect, Global Accessibility",
-      "main_risks": "Regulatory Uncertainty, Macroeconomic Headwinds, Quantum Computing Threats (long-term), Exchange Security Breaches"
-    },
-    "news_sentiment": {
-      "overall_sentiment": "Neutral-Positive",
-      "sentiment_score": 0.6,
-      "key_news_factors": [
-        "Spot ETF Inflows",
-        "Halving Anticipation",
-        "Geopolitical Tensions (flight to safety)",
-        "Regulatory Discussions"
-      ],
-      "social_media_buzz": "High"
-    },
-    "detailed_explanation": "Bitcoin is consolidating after a significant rally, showing resilience above key support levels. Fundamental drivers like ETF inflows and the upcoming halving continue to provide underlying strength. Technical indicators are mixed, suggesting potential for either a breakout or further consolidation.",
-    "trading_recommendation": "Consider accumulating on dips towards established support, with a focus on short-to-medium term growth as halving approaches. Maintain strict risk management.",
-    "key_levels_to_watch": "Monitor $69,000 resistance for a breakout towards new highs, and $66,000 support to prevent further downside consolidation.",
-    "scenario_analysis": {
-      "bullish_case": "Strong ETF inflows combine with post-halving supply shock to propel BTC past all-time highs towards $75,000 - $80,000.",
-      "bearish_case": "Unexpected negative regulatory news or a broader macroeconomic downturn leads to a correction, potentially testing $60,000 or lower.",
-      "base_case": "Price consolidates around current levels for a few weeks, with gradual appreciation towards $70,000 - $72,000 driven by continued demand and diminishing supply."
-    },
-    "generated_at": "2025-08-14T09:04:17.816976",
-    "analysis_type": "detailed"
-  },
-  "ETH/USD": {
-    "symbol": "ETH/USD",
-    "asset_type": "crypto",
-    "current_price": "$3850.50",
-    "price_change_24h": "+2.7%",
-    "price_change_7d": "+7.0%",
-    "price_change_30d": "+16.7%",
-    "volume_24h": "$12.5B",
-    "market_cap": "$465.0B",
-    "technical_indicators": {
-      "rsi": 68,
-      "macd": "bullish",
-      "moving_averages": {
-        "sma_20": "above",
-        "sma_50": "above",
-        "sma_200": "above"
-      },
-      "support_levels": [
-        "$3780.00",
-        "$3720.00",
-        "$3650.00"
-      ],
-      "resistance_levels": [
-        "$3900.00",
-        "$3980.00",
-        "$4050.00"
-      ],
-      "trend": "bullish"
-    },
-    "price_history": [
-      {
-        "time": "9:00",
-        "price": 3820.0,
-        "volume": 1250000
-      },
-      {
-        "time": "10:00",
-        "price": 3835.5,
-        "volume": 1400000
-      },
-      {
-        "time": "11:00",
-        "price": 3848.0,
-        "volume": 1600000
-      },
-      {
-        "time": "12:00",
-        "price": 3842.0,
-        "volume": 1300000
-      },
-      {
-        "time": "13:00",
-        "price": 3855.0,
-        "volume": 1750000
-      },
-      {
-        "time": "14:00",
-        "price": 3849.5,
-        "volume": 1600000
-      },
-      {
-        "time": "15:00",
-        "price": 3850.5,
-        "volume": 1800000
-      }
-    ],
-    "trading_signals": {
-      "primary_signal": "BUY",
-      "signal_strength": "Strong",
-      "entry_price": "$3845.00",
-      "stop_loss": "$3750.00",
-      "take_profit": "$4000.00",
-      "risk_reward_ratio": "1:1.6",
-      "time_horizon": "Short-to-Medium-term"
-    },
-    "risk_metrics": {
-      "volatility": "High",
-      "beta": "1.8",
-      "correlation_with_market": "High (within crypto ecosystem)",
-      "liquidity": "Very High",
-      "risk_score": 8
-    },
-    "fundamental_analysis": {
-      "sector": "Decentralized Finance (DeFi) & Web3 Infrastructure",
-      "market_position": "Dominant Smart Contract Platform",
-      "key_metrics": "Growing network adoption, high TVL (Total Value Locked), successful EIP-4844 implementation",
-      "competitive_advantages": "Largest developer ecosystem, strong network effect, established trust and security",
-      "main_risks": "Regulatory uncertainty, ongoing scalability demands, competition from other L1s/L2s"
-    },
-    "news_sentiment": {
-      "overall_sentiment": "Positive",
-      "sentiment_score": 0.85,
-      "key_news_factors": [
-        "Potential Spot ETH ETF approval",
-        "Successful Dencun upgrade",
-        "Institutional interest growth"
-      ],
-      "social_media_buzz": "Very High"
-    },
-    "detailed_explanation": "Ethereum exhibits a strong bullish technical posture, supported by significant on-chain metrics and positive market sentiment. Recent upgrades and the prospect of institutional adoption are key drivers.",
-    "trading_recommendation": "Consider accumulating ETH on dips, targeting further upside with defined risk parameters. Long-term outlook remains robust.",
-    "key_levels_to_watch": "Monitor $3900 and $4000 for breakout confirmation; $3720 and $3650 for potential support retests.",
-    "scenario_analysis": {
-      "bullish_case": "Spot ETH ETF approval drives significant institutional inflows, pushing price towards new all-time highs above $4500.",
-      "bearish_case": "Broader crypto market correction, regulatory headwinds, or unexpected technical issues cause a pull-back to $3500-$3400 range.",
-      "base_case": "Gradual appreciation fueled by continued DeFi and Web3 adoption, with price ranging between $3700 and $4200 in the short-to-medium term."
-    },
-    "generated_at": "2025-08-14T09:04:35.162397",
-    "analysis_type": "detailed"
-  },
-  "SOL/USD": {
-    "symbol": "SOL/USD",
-    "asset_type": "crypto",
-    "current_price": "$155.50",
-    "price_change_24h": "+3.1%",
-    "price_change_7d": "+7.2%",
-    "price_change_30d": "+18.5%",
-    "volume_24h": "1.5B",
-    "market_cap": "69.5B",
+    "price_change_30d": "+8.0%",
+    "volume_24h": "$750M",
+    "market_cap": "N/A",
     "technical_indicators": {
       "rsi": 68,
       "macd": "bullish",
@@ -1892,9 +1555,340 @@
         "sma_200": "below"
       },
       "support_levels": [
+        "$24.80",
+        "$24.30",
+        "$23.70"
+      ],
+      "resistance_levels": [
+        "$26.10",
+        "$26.50",
+        "$27.20"
+      ],
+      "trend": "bullish"
+    },
+    "price_history": [
+      {
+        "time": "9:00",
+        "price": 24.9,
+        "volume": 12000
+      },
+      {
+        "time": "10:00",
+        "price": 25.1,
+        "volume": 15000
+      },
+      {
+        "time": "11:00",
+        "price": 25.35,
+        "volume": 18000
+      },
+      {
+        "time": "12:00",
+        "price": 25.2,
+        "volume": 14000
+      },
+      {
+        "time": "13:00",
+        "price": 25.6,
+        "volume": 21000
+      },
+      {
+        "time": "14:00",
+        "price": 25.45,
+        "volume": 19000
+      },
+      {
+        "time": "15:00",
+        "price": 25.5,
+        "volume": 22000
+      }
+    ],
+    "trading_signals": {
+      "primary_signal": "BUY",
+      "signal_strength": "Strong",
+      "entry_price": "$25.40",
+      "stop_loss": "$24.50",
+      "take_profit": "$26.80",
+      "risk_reward_ratio": "1:1.5",
+      "time_horizon": "Medium-term"
+    },
+    "risk_metrics": {
+      "volatility": "Medium-High",
+      "beta": "1.1",
+      "correlation_with_market": "Inverse with USD Strength, Positive with Inflation Expectations",
+      "liquidity": "High",
+      "risk_score": 7
+    },
+    "fundamental_analysis": {
+      "sector": "Precious Metals / Commodities",
+      "market_position": "Global Store of Value & Industrial Metal",
+      "key_metrics": "Inflation expectations, interest rate outlook, USD strength, industrial demand trends, geopolitical risk",
+      "competitive_advantages": "Inflation hedge, industrial utility, safe-haven appeal",
+      "main_risks": "Strong USD, rising real yields, economic slowdown impacting industrial demand, subdued inflation"
+    },
+    "news_sentiment": {
+      "overall_sentiment": "Positive",
+      "sentiment_score": 0.7,
+      "key_news_factors": [
+        "Inflationary concerns",
+        "Industrial demand recovery",
+        "Geopolitical tensions",
+        "Fed's dovish stance"
+      ],
+      "social_media_buzz": "Moderate"
+    },
+    "detailed_explanation": "Silver is showing strong technical momentum supported by growing inflation expectations and recovering industrial demand. Its role as a safe-haven asset also provides a floor amidst global uncertainties.",
+    "trading_recommendation": "Consider building long positions on pullbacks, targeting key resistance levels, with tight risk management.",
+    "key_levels_to_watch": "Watch $26.10 resistance for breakout confirmation; $24.80 support on pullbacks.",
+    "scenario_analysis": {
+      "bullish_case": "Persistent inflation, weaker USD, strong industrial demand drives price towards $28-$30.",
+      "bearish_case": "Aggressive Fed tightening, stronger USD, global recession fears push price back to $23-$22.",
+      "base_case": "Gradual appreciation towards $27, driven by balanced inflation and industrial demand, with normal volatility."
+    },
+    "generated_at": "2025-08-14T13:43:05.634219",
+    "analysis_type": "detailed"
+  },
+  "BTC/USD": {
+    "symbol": "BTC/USD",
+    "asset_type": "crypto",
+    "current_price": "$68,575.50",
+    "price_change_24h": "+1.8%",
+    "price_change_7d": "+4.5%",
+    "price_change_30d": "+15.0%",
+    "volume_24h": "$25.5B",
+    "market_cap": "$1.35T",
+    "technical_indicators": {
+      "rsi": 60,
+      "macd": "bullish",
+      "moving_averages": {
+        "sma_20": "above",
+        "sma_50": "above",
+        "sma_200": "above"
+      },
+      "support_levels": [
+        "$67,000.00",
+        "$65,500.00",
+        "$64,000.00"
+      ],
+      "resistance_levels": [
+        "$69,500.00",
+        "$71,000.00",
+        "$73,000.00"
+      ],
+      "trend": "bullish"
+    },
+    "price_history": [
+      {
+        "time": "9:00",
+        "price": 68000.0,
+        "volume": 1250000000
+      },
+      {
+        "time": "10:00",
+        "price": 68250.75,
+        "volume": 1520000000
+      },
+      {
+        "time": "11:00",
+        "price": 68450.25,
+        "volume": 1810000000
+      },
+      {
+        "time": "12:00",
+        "price": 68300.9,
+        "volume": 1450000000
+      },
+      {
+        "time": "13:00",
+        "price": 68650.1,
+        "volume": 2100000000
+      },
+      {
+        "time": "14:00",
+        "price": 68500.8,
+        "volume": 1950000000
+      },
+      {
+        "time": "15:00",
+        "price": 68575.5,
+        "volume": 2200000000
+      }
+    ],
+    "trading_signals": {
+      "primary_signal": "BUY",
+      "signal_strength": "Strong",
+      "entry_price": "$68,500.00",
+      "stop_loss": "$66,000.00",
+      "take_profit": "$75,000.00",
+      "risk_reward_ratio": "1:2.6",
+      "time_horizon": "Medium-term"
+    },
+    "risk_metrics": {
+      "volatility": "High",
+      "beta": "2.0",
+      "correlation_with_market": "Moderate",
+      "liquidity": "Very High",
+      "risk_score": 8
+    },
+    "fundamental_analysis": {
+      "sector": "Cryptocurrency / Digital Asset",
+      "market_position": "Global Leader",
+      "key_metrics": "Network adoption, halving cycle effects, institutional interest",
+      "competitive_advantages": "Decentralized, largest network effect, store of value narrative",
+      "main_risks": "Regulatory crackdown, quantum computing, significant miner centralization"
+    },
+    "news_sentiment": {
+      "overall_sentiment": "Positive",
+      "sentiment_score": 0.82,
+      "key_news_factors": [
+        "Spot ETF inflows",
+        "Macro economic tailwinds",
+        "Technological advancements"
+      ],
+      "social_media_buzz": "Very High"
+    },
+    "detailed_explanation": "Bitcoin maintains a strong market position, driven by increasing institutional adoption and positive macro-economic indicators. Technicals suggest a bullish continuation, with key support levels holding firm.",
+    "trading_recommendation": "Accumulate on dips, targeting new all-time highs with disciplined risk management.",
+    "key_levels_to_watch": "Watch $70,000 for a decisive breakout towards new highs.",
+    "scenario_analysis": {
+      "bullish_case": "Spot ETF inflows continue, pushing price above $75,000 towards $80,000.",
+      "bearish_case": "Unexpected negative regulatory news or significant macro downturn could lead to a correction towards $60,000.",
+      "base_case": "Consolidation around current levels with gradual upside as institutional demand persists."
+    },
+    "generated_at": "2025-08-14T13:43:20.389436",
+    "analysis_type": "detailed"
+  },
+  "ETH/USD": {
+    "symbol": "ETH/USD",
+    "asset_type": "crypto",
+    "current_price": "$3550.75",
+    "price_change_24h": "+3.2%",
+    "price_change_7d": "+7.5%",
+    "price_change_30d": "+18.9%",
+    "volume_24h": "12.5B",
+    "market_cap": "426.0B",
+    "technical_indicators": {
+      "rsi": 68,
+      "macd": "bullish",
+      "moving_averages": {
+        "sma_20": "above",
+        "sma_50": "above",
+        "sma_200": "above"
+      },
+      "support_levels": [
+        "$3480.20",
+        "$3420.50",
+        "$3350.80"
+      ],
+      "resistance_levels": [
+        "$3620.10",
+        "$3680.70",
+        "$3750.00"
+      ],
+      "trend": "bullish"
+    },
+    "price_history": [
+      {
+        "time": "9:00",
+        "price": 3525.1,
+        "volume": 1250000000
+      },
+      {
+        "time": "10:00",
+        "price": 3538.45,
+        "volume": 1400000000
+      },
+      {
+        "time": "11:00",
+        "price": 3552.9,
+        "volume": 1600000000
+      },
+      {
+        "time": "12:00",
+        "price": 3548.6,
+        "volume": 1350000000
+      },
+      {
+        "time": "13:00",
+        "price": 3560.15,
+        "volume": 1800000000
+      },
+      {
+        "time": "14:00",
+        "price": 3555.3,
+        "volume": 1700000000
+      },
+      {
+        "time": "15:00",
+        "price": 3550.75,
+        "volume": 1950000000
+      }
+    ],
+    "trading_signals": {
+      "primary_signal": "BUY",
+      "signal_strength": "Strong",
+      "entry_price": "$3540.00",
+      "stop_loss": "$3450.00",
+      "take_profit": "$3700.00",
+      "risk_reward_ratio": "1:1.77",
+      "time_horizon": "Medium-term"
+    },
+    "risk_metrics": {
+      "volatility": "High",
+      "beta": "1.8",
+      "correlation_with_market": "High",
+      "liquidity": "High",
+      "risk_score": 8
+    },
+    "fundamental_analysis": {
+      "sector": "Blockchain / Decentralized Applications",
+      "market_position": "Platform Leader",
+      "key_metrics": "Strong network growth, dApp adoption",
+      "competitive_advantages": "First-mover advantage, largest developer ecosystem, high decentralization",
+      "main_risks": "Regulatory uncertainty, scalability challenges, competition"
+    },
+    "news_sentiment": {
+      "overall_sentiment": "Positive",
+      "sentiment_score": 0.82,
+      "key_news_factors": [
+        "Upcoming Dencun upgrade",
+        "Institutional adoption",
+        "DeFi growth"
+      ],
+      "social_media_buzz": "Very High"
+    },
+    "detailed_explanation": "Ethereum continues to demonstrate robust on-chain activity and strong developer interest, fueled by ongoing network upgrades and increasing institutional adoption.",
+    "trading_recommendation": "Accumulate on dips, targeting long-term growth as ecosystem matures",
+    "key_levels_to_watch": "Monitor $3600 for a decisive breakout, as well as $3400 for strong support retests",
+    "scenario_analysis": {
+      "bullish_case": "Successful network upgrades and wider enterprise adoption propel ETH to new all-time highs.",
+      "bearish_case": "Broader crypto market downturn or unexpected regulatory pressures lead to significant price corrections.",
+      "base_case": "Gradual appreciation driven by consistent dApp innovation and continued institutional interest."
+    },
+    "generated_at": "2025-08-14T13:43:32.800949",
+    "analysis_type": "detailed"
+  },
+  "SOL/USD": {
+    "symbol": "SOL/USD",
+    "asset_type": "crypto",
+    "current_price": "$155.50",
+    "price_change_24h": "+3.1%",
+    "price_change_7d": "+7.2%",
+    "price_change_30d": "+15.5%",
+    "volume_24h": "3.5B",
+    "market_cap": "69.5B",
+    "technical_indicators": {
+      "rsi": 68,
+      "macd": "bullish",
+      "moving_averages": {
+        "sma_20": "above",
+        "sma_50": "above",
+        "sma_200": "above"
+      },
+      "support_levels": [
         "$152.00",
-        "$148.00",
-        "$143.00"
+        "$149.00",
+        "$145.00"
       ],
       "resistance_levels": [
         "$158.00",
@@ -1906,38 +1900,38 @@
     "price_history": [
       {
         "time": "9:00",
-        "price": 152.1,
-        "volume": 125000000
+        "price": 152.8,
+        "volume": 850000
       },
       {
         "time": "10:00",
-        "price": 153.8,
-        "volume": 155000000
+        "price": 153.6,
+        "volume": 1100000
       },
       {
         "time": "11:00",
-        "price": 154.5,
-        "volume": 140000000
+        "price": 154.9,
+        "volume": 1300000
       },
       {
         "time": "12:00",
-        "price": 153.9,
-        "volume": 130000000
+        "price": 154.5,
+        "volume": 950000
       },
       {
         "time": "13:00",
-        "price": 155.1,
-        "volume": 180000000
+        "price": 155.8,
+        "volume": 1500000
       },
       {
         "time": "14:00",
-        "price": 155.8,
-        "volume": 170000000
+        "price": 155.1,
+        "volume": 1200000
       },
       {
         "time": "15:00",
         "price": 155.5,
-        "volume": 165000000
+        "volume": 1400000
       }
     ],
     "trading_signals": {
@@ -1945,43 +1939,44 @@
       "signal_strength": "Strong",
       "entry_price": "$155.00",
       "stop_loss": "$150.00",
-      "take_profit": "$170.00",
-      "risk_reward_ratio": "3:1",
+      "take_profit": "$165.00",
+      "risk_reward_ratio": "1:2",
       "time_horizon": "Medium-term"
     },
     "risk_metrics": {
       "volatility": "High",
-      "beta": "1.8",
+      "beta": "1.3",
       "correlation_with_market": "High",
-      "liquidity": "Very High",
+      "liquidity": "High",
       "risk_score": 7
     },
     "fundamental_analysis": {
-      "sector": "Blockchain Ecosystem",
-      "market_position": "Top Tier L1 Blockchain",
-      "key_metrics": "Transaction speed, TVL growth, Developer activity",
-      "competitive_advantages": "Scalability, low fees, growing dApp ecosystem",
-      "main_risks": "Network outages, regulatory uncertainty, competitor innovation"
+      "sector": "Smart Contract Platform",
+      "market_position": "Top 5 Cryptocurrency by Market Cap, Leading Layer-1",
+      "key_metrics": "High TPS (Transactions Per Second), Low Transaction Fees, Growing Developer Ecosystem",
+      "competitive_advantages": "Scalability, Proof-of-History Consensus, Strong Decentralized Application (dApp) Growth",
+      "main_risks": "Network Stability Concerns, Centralization Debate, Regulatory Scrutiny, Competition from Ethereum L2s"
     },
     "news_sentiment": {
-      "overall_sentiment": "Positive",
-      "sentiment_score": 0.82,
+      "overall_sentiment": "Strongly Positive",
+      "sentiment_score": 0.85,
       "key_news_factors": [
-        "Ecosystem expansion",
-        "Institutional adoption",
-        "Technical upgrades"
+        "Ecosystem Development",
+        "Major Partnerships",
+        "High Network Activity",
+        "NFT and DeFi Growth"
       ],
-      "social_media_buzz": "High"
+      "social_media_buzz": "Very High"
     },
-    "detailed_explanation": "Solana exhibits strong short-term bullish momentum with key technical indicators aligning, though it remains below its long-term average. Fundamental growth, particularly in its ecosystem and dApp adoption, provides a strong foundation. Positive market sentiment and institutional interest further bolster its outlook.",
-    "trading_recommendation": "Consider a long position, targeting resistance levels, with close monitoring of the 200-day moving average as a potential long-term trend reversal confirmation.",
-    "key_levels_to_watch": "Watch $158 for a breakout, with strong support at $152. A sustained move above the 200-day SMA would signal a significant long-term uptrend.",
+    "detailed_explanation": "Solana exhibits strong technical momentum, consistently trading above key moving averages with a robust RSI. Fundamental growth driven by expanding ecosystem, high transaction throughput, and increasing developer adoption underscores its potential for continued appreciation despite some past network stability concerns.",
+    "trading_recommendation": "Accumulate on dips, targeting breakout above resistance.",
+    "key_levels_to_watch": "Monitor $158.00 as immediate resistance; sustained break could target $168.00. Key support at $152.00.",
     "scenario_analysis": {
-      "bullish_case": "Sustained breakthrough of the 200-day SMA, coupled with increasing institutional flows and a wider crypto market rally, pushing SOL towards $200.",
-      "bearish_case": "Significant macro-economic downturn, regulatory crackdown, or major network incident leading to a retest of $130 support.",
-      "base_case": "Gradual appreciation within a channel, with price consolidating above short-term SMAs and slowly challenging the 200-day SMA, reaching $170-180 in the medium term."
+      "bullish_case": "Increased dApp adoption, successful network upgrades, favorable regulatory environment drive new ATH.",
+      "bearish_case": "Prolonged network outages, significant dApp exodus, broader crypto market downturn leads to retest of key support levels ($140-$130).",
+      "base_case": "Gradual appreciation driven by consistent ecosystem growth and minor volatility, consolidating around current levels before next leg up."
     },
-    "generated_at": "2025-08-14T09:04:56.129876",
+    "generated_at": "2025-08-14T13:43:49.118566",
     "analysis_type": "detailed"
   }
 }
