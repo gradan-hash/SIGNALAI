@@ -2,6 +2,27 @@
   "current_reports": [
     {
       "id": 11,
+      "title": "Pre-Market Intelligence",
+      "description": "Latest AI-powered market analysis with global discovery insights",
+      "date": "August 15, 2025",
+      "pdf_url": "/reports/SignalAI_Report_20250815_0902.pdf",
+      "market_direction": "Bullish",
+      "confidence": 70,
+      "total_assets": 18,
+      "opportunity_score": 75,
+      "key_highlights": [
+        "Market Direction: Bullish (70% confidence)",
+        "Top Catalyst: Continued strong performance and positive sentiment surrounding AI innovation and mega-cap technology earnings. Favorable inflation data (PCE upcoming) further reinforcing rate-cut expectations.",
+        "Assets Analyzed: 18 across all categories"
+      ],
+      "preview_available": true,
+      "download_size": "~2.5MB",
+      "generated_time": "09:02 UTC",
+      "is_current": true,
+      "generated_at": "2025-08-15T08:56:47.573285"
+    },
+    {
+      "id": 11,
       "title": "Market Opening Intelligence",
       "description": "Latest AI-powered market analysis with global discovery insights",
       "date": "August 14, 2025",
@@ -18,7 +39,7 @@
       "preview_available": true,
       "download_size": "~2.5MB",
       "generated_time": "13:43 UTC",
-      "is_current": true,
+      "is_current": false,
       "generated_at": "2025-08-14T13:38:11.917611"
     },
     {
@@ -188,31 +209,10 @@
       "generated_time": "09:04 UTC",
       "is_current": false,
       "generated_at": "2025-08-11T08:58:57.460515"
-    },
-    {
-      "id": 5,
-      "title": "Market Report - August 10, 2025",
-      "description": "Professional market analysis from August 10, 2025",
-      "date": "August 10, 2025",
-      "pdf_url": "/reports/SignalAI_Report_20250810_1956.pdf",
-      "market_direction": "Bullish",
-      "confidence": 70,
-      "total_assets": 21,
-      "opportunity_score": 70,
-      "key_highlights": [
-        "Market Direction: Bullish (70% confidence)",
-        "Top Catalyst: US Non-Farm Payrolls (NFP) report (June 7th), followed by the Consumer Price Index (CPI) data (June 12th) and the Federal Open Market Committee (FOMC) meeting (June 11-12th).",
-        "Assets Analyzed: 21 across all categories"
-      ],
-      "preview_available": true,
-      "download_size": "~2.5MB",
-      "generated_time": "19:56 UTC",
-      "is_current": false,
-      "generated_at": "2025-08-10T19:50:06.703132"
     }
   ],
   "total_reports": 10,
-  "generated_at": "2025-08-14T13:43:49.433106",
+  "generated_at": "2025-08-15T09:02:12.417506",
   "description": "Current market analysis reports with real-time insights",
   "data_source": "live_market_analysis"
 }

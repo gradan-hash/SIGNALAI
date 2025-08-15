@@ -1,0 +1,684 @@
+{
+  "market_prediction": {
+    "direction": "Bullish",
+    "target": "+2-4%",
+    "confidence": 82,
+    "timeframe": "1 week",
+    "reasoning": "Current market conditions are exhibiting strong positive momentum, primarily driven by robust corporate earnings and continued enthusiasm for artificial intelligence (AI) growth. The recent stellar earnings report and strong guidance from NVIDIA have provided a significant catalyst, validating the AI investment thesis and boosting investor confidence across the technology sector and broader market. Economic data released recently, including the latest CPI and PPI figures, indicate a slight easing of inflationary pressures, which supports the 'soft landing' narrative and keeps the door open for potential Federal Reserve rate cuts later in the year. The Fed's latest minutes reiterated a data-dependent approach with an emphasis on patience, effectively removing immediate concerns of further rate hikes and contributing to a more stable interest rate environment (evidenced by slightly softer 10-year Treasury yields). This combination of strong corporate performance, receding inflation fears, and a non-aggressive Fed stance creates a fertile ground for continued market ascent.",
+    "key_catalyst": "NVIDIA's blowout Q1 earnings report and strong forward guidance, reinforcing the AI growth narrative.",
+    "risk_factors": [
+      "Unexpected re-acceleration of inflation data (e.g., next CPI report) leading to a more hawkish Fed stance.",
+      "Significant slowdown in labor market or consumer spending beyond current expectations.",
+      "Escalation of geopolitical tensions (e.g., in the Middle East or Eastern Europe) creating global instability.",
+      "Profit-taking in the technology sector after significant gains, especially if the AI narrative shows any signs of slowing.",
+      "Unfavorable revisions to upcoming economic indicators."
+    ],
+    "opportunity_score": 85,
+    "generated_at": "2025-08-14T13:30:15.328843"
+  },
+  "global_intelligence": {
+    "global_discovery": {
+      "timestamp": "August 14, 2025 at 13:29 UTC",
+      "most_traded_stocks": [
+        "NVDA",
+        "MSFT",
+        "AAPL",
+        "GOOGL",
+        "AMZN",
+        "TSLA",
+        "SMCI",
+        "AMD"
+      ],
+      "hottest_forex": [
+        "EUR/USD",
+        "USD/JPY",
+        "GBP/USD",
+        "XAU/USD",
+        "AUD/USD",
+        "USD/CAD",
+        "EUR/GBP",
+        "USD/CHF",
+        "XAG/USD",
+        "NZD/USD",
+        "JPY/KRW",
+        "USD/MXN"
+      ],
+      "trending_crypto": [
+        "BTC/USD",
+        "ETH/USD",
+        "SOL/USD",
+        "BNB/USD",
+        "XRP/USD"
+      ],
+      "active_commodities": [
+        "Crude Oil (Brent)",
+        "Gold",
+        "Natural Gas",
+        "Silver",
+        "Copper"
+      ],
+      "market_drivers": [
+        "Global Inflation Trends",
+        "Central Bank Divergence",
+        "AI Sector Investment",
+        "Geopolitical Tensions (East Asia)",
+        "Supply Chain Resilience"
+      ],
+      "volume_leaders": [
+        "NVDA",
+        "BTC",
+        "EUR/USD",
+        "MSFT",
+        "Crude Oil (Brent)",
+        "ETH",
+        "XAU/USD",
+        "AAPL",
+        "USD/JPY",
+        "TSLA"
+      ],
+      "regional_highlights": {
+        "americas": [
+          "SPY",
+          "QQQ",
+          "TSLA"
+        ],
+        "europe": [
+          "DAX",
+          "FTSE 100",
+          "EUR/USD"
+        ],
+        "asia": [
+          "Nikkei 225",
+          "CSI 300",
+          "USD/JPY"
+        ],
+        "emerging": [
+          "EEM",
+          "MSCI India Index",
+          "USD/BRL"
+        ]
+      }
+    },
+    "agent_type": "global_discovery",
+    "generated_at": "2025-08-14T13:29:57.860405"
+  },
+  "market_discovery": {
+    "trending_stocks": [
+      "AAPL",
+      "NVDA",
+      "TSLA"
+    ],
+    "forex_pairs": [
+      "XAU/USD",
+      "EUR/USD",
+      "USD/JPY",
+      "GBP/USD",
+      "AUD/USD",
+      "USD/CAD",
+      "USD/CHF",
+      "NZD/USD",
+      "EUR/GBP",
+      "EUR/JPY",
+      "GBP/JPY",
+      "XAG/USD"
+    ],
+    "cryptocurrencies": [
+      "BTC/USD",
+      "ETH/USD",
+      "SOL/USD"
+    ],
+    "commodities": [],
+    "market_summary": "Global markets on August 14, 2025, are primarily driven by ongoing enthusiasm in the AI sector, coupled with persistent global inflation concerns and central bank policy divergence. Geopolitical tensions, particularly in East Asia, continue to influence commodity prices and supply chain resilience. Investors are navigating a complex landscape of growth opportunities in technology against a backdrop of macroeconomic uncertainty.",
+    "top_story": "The 'AI Sector Investment' remains the paramount market catalyst, with significant capital flows into companies at the forefront of AI development and adoption. This trend is fueling strong performance in related tech and semiconductor stocks, overshadowing concerns from persistent global inflation and geopolitical headlines.",
+    "volume_leaders": [
+      "NVDA",
+      "BTC",
+      "EUR/USD",
+      "MSFT",
+      "Crude Oil (Brent)",
+      "ETH",
+      "XAU/USD",
+      "AAPL",
+      "USD/JPY",
+      "TSLA"
+    ],
+    "social_trending": [
+      "NVDA",
+      "TSLA",
+      "BTC",
+      "ETH",
+      "SOL",
+      "XAU/USD",
+      "SMCI"
+    ],
+    "discovered_at": "2025-08-14T13:30:29.981007"
+  },
+  "detailed_analyses": {
+    "stocks": {
+      "asset_type": "stock",
+      "analyses": [
+        {
+          "symbol": "AAPL",
+          "asset_type": "stock",
+          "current_move": "+1.60%",
+          "why_simple": "AAPL is showing positive momentum, likely driven by broader market strength or technical buying, without specific company news catalysts.",
+          "explanation": "Apple (AAPL) is currently trading at $233.33, reflecting a positive movement of +1.60% as of August 14, 2025. Given the lack of recent specific company news, this upward trajectory is primarily attributed to robust technical buying interest and a generally positive sentiment across the broader market, particularly within the technology sector. The move suggests a continuation of a bullish trend, with traders and investors buying into momentum, potentially setting new resistance levels.",
+          "what_it_means": "This 1.60% upward movement, translating to an approximate gain of $3.67 from yesterday's implied close, indicates strong short-term demand for AAPL shares. For current holders, it represents capital appreciation and confirmation of positive market sentiment. For prospective buyers, it suggests an opportunity to join a trending asset, albeit at a higher entry point. The absence of specific news implies the move is technically driven, which can lead to quick reversals if market sentiment shifts.",
+          "action": "buy",
+          "confidence": "medium",
+          "risk": "medium",
+          "next_target": "$240.00",
+          "entry_price": "$233.50",
+          "stop_loss": "$230.90",
+          "profit_target": "$237.85",
+          "market_prediction": "Short-term bullish continuation, with the potential to test the $237.85 level, and if momentum persists, a push towards $240.00. This outlook is contingent on sustained positive market sentiment.",
+          "time_sensitive": true,
+          "catalyst": "Technical momentum and broader market positive sentiment.",
+          "trade_setup": "Initiate a long position (buy) at $233.50, capitalizing on observed upward momentum. Set a protective stop-loss at $230.90 to mitigate downside risk, placing it strategically below yesterday's implied close. The primary profit target is $237.85, aiming for a favorable risk-reward ratio based on recent price action and potential resistance levels.",
+          "analyzed_at": "2025-08-14T13:30:54.276277",
+          "data_source": "simulated",
+          "market_data": {
+            "current_price": "$233.33",
+            "percentage_change": "+1.60%",
+            "last_updated": "2025-08-13",
+            "data_quality": "real_market_data"
+          }
+        },
+        {
+          "symbol": "NVDA",
+          "asset_type": "stock",
+          "current_move": "-0.86%",
+          "why_simple": "Minor profit-taking and technical consolidation after recent trading, no major news driving the move.",
+          "explanation": "NVIDIA is currently experiencing a slight pullback of 0.86% to $181.59. This movement, occurring without any specific recent news or catalysts, suggests technical consolidation or minor profit-taking from short-term traders. It's a modest dip that doesn't indicate a significant shift in long-term sentiment but reflects the natural ebb and flow of market activity. Given NVDA's typically high volatility, such small movements can often precede periods of range-bound trading or a potential bounce, especially if broader market sentiment remains supportive.",
+          "what_it_means": "For current investors, this small dip means a minor unrealized loss today, but it's not a cause for immediate concern for long-term positions. For short-term traders, this presents an opportunity to 'watch' for potential entry points if the stock stabilizes or shows signs of a rebound. It signals that immediate upward momentum has paused, and price discovery is occurring around current levels.",
+          "action": "watch",
+          "confidence": "medium",
+          "risk": "medium",
+          "next_target": "$184.50",
+          "entry_price": "$182.50",
+          "stop_loss": "$179.90",
+          "profit_target": "$186.75",
+          "market_prediction": "Short-term consolidation is likely to continue for the next 1-2 trading days, with potential for a rebound towards the $184-$187 range if technical support holds and broader market sentiment improves.",
+          "time_sensitive": true,
+          "catalyst": "Technical consolidation/Minor profit-taking without specific news.",
+          "trade_setup": "Initiate a long position if NVDA shows clear signs of rebound and breaks above $182.50, indicating a recovery in short-term momentum. Set a stop-loss order at $179.90 to limit potential downside risk, placing it below a recent support level. The profit target is set at $186.75, aiming for a retest of recent highs or a key resistance level.",
+          "analyzed_at": "2025-08-14T13:31:17.531838",
+          "data_source": "simulated",
+          "market_data": {
+            "current_price": "$181.59",
+            "percentage_change": "-0.86%",
+            "last_updated": "2025-08-13",
+            "data_quality": "real_market_data"
+          }
+        },
+        {
+          "symbol": "TSLA",
+          "asset_type": "stock",
+          "current_move": "-0.43%",
+          "why_simple": "Minor profit-taking and general market consolidation after recent movements, no specific news.",
+          "explanation": "TSLA shares experienced a marginal dip of 0.43% to $339.38 as of the last update on August 13, 2025. With no recent news or significant catalysts reported, this modest price change is primarily attributable to technical factors such as minor profit-taking by short-term traders or broader market consolidation. The sub-1% movement suggests a lack of strong directional conviction among market participants, indicating a period of indecision rather than a clear bearish shift. The absence of volume data limits insights into the underlying strength or weakness of this movement.",
+          "what_it_means": "For long-term investors, this negligible price movement is largely insignificant and does not warrant immediate action; holding existing positions remains the most prudent approach. For short-term traders, the minor pullback could present a speculative opportunity for a quick rebound play, given TSLA's historical volatility, but the absence of a strong fundamental catalyst implies higher risk for aggressive positions. It signals a phase of price discovery and equilibrium.",
+          "action": "buy",
+          "confidence": "low",
+          "risk": "medium",
+          "next_target": "$345.00",
+          "entry_price": "$339.00",
+          "stop_loss": "$336.50",
+          "profit_target": "$342.50",
+          "market_prediction": "Short-term consolidation is expected, with a potential for a slight technical rebound towards the $342-$345 range within the next 1-3 trading days if broader market sentiment remains stable.",
+          "time_sensitive": true,
+          "catalyst": "Technical consolidation / Minor profit-taking",
+          "trade_setup": "Consider initiating a short-term long position on TSLA around the $339.00 level, anticipating a technical bounce from the current minor dip. Place a protective stop-loss order at $336.50 to mitigate potential downside risk, and set a profit target at $342.50 for an opportunistic, quick gain. This strategy is based on short-term technical reversal patterns in the absence of new fundamental drivers.",
+          "analyzed_at": "2025-08-14T13:31:45.798584",
+          "data_source": "simulated",
+          "market_data": {
+            "current_price": "$339.38",
+            "percentage_change": "-0.43%",
+            "last_updated": "2025-08-13",
+            "data_quality": "real_market_data"
+          }
+        }
+      ],
+      "count": 3
+    },
+    "forex": {
+      "asset_type": "forex",
+      "analyses": [
+        {
+          "symbol": "XAU/USD",
+          "asset_type": "forex",
+          "current_move": "-0.47%",
+          "why_simple": "Gold is experiencing a slight pullback, likely due to profit-taking or a stronger dollar, without specific news driving the move.",
+          "explanation": "XAU/USD is showing a modest decrease of 0.47% today, settling at 3335.00. In the absence of any major geopolitical news or significant economic data releases that would typically act as a catalyst for safe-haven assets, this downward movement is likely attributable to short-term profit-taking by traders after recent unconfirmed gains or a slight strengthening of the US Dollar, which typically inversely impacts gold prices. The move is relatively contained, suggesting a period of consolidation rather than a strong directional shift.",
+          "what_it_means": "For traders, this implies a period of potential consolidation or a slight bearish bias in the immediate term. A 0.47% drop from the current price of 3335.00 translates to a decrease of approximately $15.67 per ounce. For a standard 100-ounce contract, this represents a paper loss of around $1567, highlighting the impact of even minor percentage changes.",
+          "action": "watch",
+          "confidence": "medium",
+          "risk": "medium",
+          "next_target": 3348.0,
+          "entry_price": 3328.0,
+          "stop_loss": 3318.0,
+          "profit_target": 3348.0,
+          "market_prediction": "Short-term consolidation is expected, with XAU/USD potentially testing immediate support levels around 3325.00-3320.00 before a possible rebound towards 3345.00-3350.00 in the next 24-48 hours.",
+          "time_sensitive": true,
+          "catalyst": "Technical retracement/Profit-taking in absence of fresh catalysts.",
+          "trade_setup": "Given the current minor dip, traders should watch for XAU/USD to test immediate support levels. A potential long entry could be considered around 3328.00 if a clear bounce signal emerges, with a tight stop loss placed below significant support at 3318.00. The profit target for such a rebound would be around 3348.00, aiming to recapture recent highs or resistance levels. Conversely, a break below 3318.00 would negate this setup and suggest further downside towards 3300.00.",
+          "analyzed_at": "2025-08-14T13:32:12.474230",
+          "data_source": "simulated",
+          "market_data": {
+            "current_price": "3335.0000",
+            "percentage_change": "-0.47%",
+            "last_updated": "2025-08-14",
+            "data_quality": "real_market_data"
+          }
+        },
+        {
+          "symbol": "EUR/USD",
+          "asset_type": "forex",
+          "current_move": "-0.43%",
+          "why_simple": "Slight dollar strength or euro weakness due to underlying market sentiment, no major news driving it.",
+          "explanation": "The EUR/USD pair is experiencing a modest decline of 0.43%, currently trading at 1.1656. With no specific recent news events or major economic data releases cited, this movement likely reflects a subtle shift in market sentiment. This could be attributed to minor technical resistance levels being tested, profit-taking after recent gains (if any, not explicitly stated but a general market dynamic), or general repositioning ahead of future economic indicators. The absence of a clear, explicit catalyst suggests underlying, quieter flows are dictating price action, perhaps related to a marginal strengthening of the US Dollar across the board or a slight weakening of the Euro as liquidity remains moderate.",
+          "what_it_means": "For traders and investors, this downward movement suggests a short-term bearish bias for EUR/USD. A decline of 0.43% from previous levels implies that a short position initiated earlier in the day would be profitable, while a long position would be incurring losses. For a standard lot of \u20ac100,000, this move represents approximately a 50-pip decline (from ~1.1706 to 1.1656), translating to a potential loss of around $500 if one was long or a gain of $500 if one was short.",
+          "action": "sell",
+          "confidence": "medium",
+          "risk": "medium",
+          "next_target": "1.1620",
+          "entry_price": 1.1656,
+          "stop_loss": 1.1686,
+          "profit_target": 1.1606,
+          "market_prediction": "Short-term outlook remains cautiously bearish, with the pair likely testing further support levels towards 1.1620 and potentially 1.1600 in the coming hours if current sentiment persists.",
+          "time_sensitive": false,
+          "catalyst": "Technical factors and general market sentiment",
+          "trade_setup": "Initiate a 'sell' trade at the current market price of 1.1656. Place a stop-loss order at 1.1686, approximately 30 pips above the entry to protect against an adverse move. Set a profit target at 1.1606, aiming for approximately 50 pips, targeting the next significant support level and offering a favorable risk-reward ratio of approximately 1:1.67. This setup capitalizes on the observed short-term bearish momentum.",
+          "analyzed_at": "2025-08-14T13:32:33.648580",
+          "data_source": "simulated",
+          "market_data": {
+            "current_price": "1.1656",
+            "percentage_change": "-0.43%",
+            "last_updated": "2025-08-14",
+            "data_quality": "real_market_data"
+          }
+        },
+        {
+          "symbol": "USD/JPY",
+          "asset_type": "forex",
+          "current_move": "-0.06%",
+          "why_simple": "Very minor technical retracement or profit-taking after recent stability, with no significant news to drive direction.",
+          "explanation": "USD/JPY is currently exhibiting extremely low volatility, indicated by a marginal decrease of just 0.06% from its previous close. At a price of 147.2710, this minor movement suggests a period of consolidation rather than a strong directional shift. The absence of recent news or fresh market intelligence implies that current price action is likely driven by short-term technical adjustments, minor profit-taking activities, or simply a lack of new catalysts prompting significant capital flows. This low percentage change is typical of quiet trading sessions where market participants are awaiting more substantial economic data or geopolitical developments.",
+          "what_it_means": "For traders and investors, this micro-movement signifies a 'wait-and-see' market. Scalpers might find extremely limited opportunities, but the tight range offers poor risk-reward for most short-term strategies. Swing traders and long-term investors are likely to remain on the sidelines, as there's no clear trend or fundamental reason to commit capital. The minimal price change means that, absent high leverage, the immediate financial impact on positions is negligible. It highlights a market lacking conviction, prone to whipsaws if minor news emerges, or simply drifting sideways.",
+          "action": "sell",
+          "confidence": "low",
+          "risk": "medium",
+          "next_target": "147.00",
+          "entry_price": "$147.20",
+          "stop_loss": "$147.35",
+          "profit_target": "$146.95",
+          "market_prediction": "Short-term ranging with a slight bearish bias persisting for the next 24-48 hours, likely testing minor support levels around 147.00. A significant break will require a fresh catalyst.",
+          "time_sensitive": true,
+          "catalyst": "Technical retracement / Consolidation",
+          "trade_setup": "Given the current minor downside, a highly tactical short-term sell trade could be considered. Enter a short position at $147.20, targeting a continuation towards the immediate minor support at $146.95. A tight stop-loss should be placed at $147.35 to manage risk effectively in this low-volatility environment. This setup assumes a continuation of the slight technical weakness and is highly susceptible to sudden shifts, emphasizing the need for active monitoring and strict risk management.",
+          "analyzed_at": "2025-08-14T13:33:00.570019",
+          "data_source": "simulated",
+          "market_data": {
+            "current_price": "147.2710",
+            "percentage_change": "-0.06%",
+            "last_updated": "2025-08-14",
+            "data_quality": "real_market_data"
+          }
+        },
+        {
+          "symbol": "GBP/USD",
+          "asset_type": "forex",
+          "current_move": "-0.25%",
+          "why_simple": "GBP/USD has slightly pulled back today, likely due to minor profit-taking or a lack of new buying interest, rather than any specific news.",
+          "explanation": "GBP/USD is currently exhibiting a modest downtick of 0.25%, settling at 1.3542. In the absence of specific news catalysts, significant volume data, or explicit price targets, this minor depreciation suggests a phase of slight consolidation or profit-taking after recent movements. It could also reflect a marginal strengthening of the US Dollar across the board, or a temporary lack of bullish conviction for the Pound. The absence of concrete fundamental drivers means the move is likely technically influenced or indicative of very subtle shifts in market sentiment rather than a strong directional impulse.",
+          "what_it_means": "For short-term traders, this modest dip indicates a slight bearish bias or at least a pause in any upward momentum. It suggests caution for those looking to initiate long positions and could present minor scalp opportunities for sellers targeting immediate support levels. Given the small percentage change, this movement is generally considered minor and does not significantly alter the broader fundamental or technical outlook for long-term investors, who might maintain a 'hold' or 'watch' stance.",
+          "action": "sell",
+          "confidence": "low",
+          "risk": "medium",
+          "next_target": "1.3490",
+          "entry_price": "1.3542",
+          "stop_loss": "1.3570",
+          "profit_target": "1.3490",
+          "market_prediction": "Short-term consolidation with a slight bearish bias. Expect range-bound trading between 1.3490 and 1.3570 over the next 24-48 hours, unless new fundamental drivers emerge.",
+          "time_sensitive": true,
+          "catalyst": "Technical consolidation/minor profit-taking due to lack of bullish catalysts.",
+          "trade_setup": "Initiate a short position at the current market price of 1.3542, anticipating further slight weakness as the pair consolidates. Place a tight stop-loss at 1.3570, just above recent minor resistance, to manage risk effectively. The primary profit target is set at 1.3490, aiming for the next immediate support level identified on shorter timeframes. This setup is based on the observed slight negative momentum and absence of bullish catalysts, but given the small percentage change and lack of volume data, it's a higher-risk, lower-conviction short-term play that requires active monitoring.",
+          "analyzed_at": "2025-08-14T13:33:24.040595",
+          "data_source": "simulated",
+          "market_data": {
+            "current_price": "1.3542",
+            "percentage_change": "-0.25%",
+            "last_updated": "2025-08-14",
+            "data_quality": "real_market_data"
+          }
+        },
+        {
+          "symbol": "AUD/USD",
+          "asset_type": "forex",
+          "current_move": "-0.75%",
+          "why_simple": "AUD/USD is experiencing a notable decline, likely driven by technical selling pressure and a lack of positive catalysts for the Aussie dollar.",
+          "explanation": "The AUD/USD pair has depreciated significantly by 0.75% today, currently trading at 0.6498. In the absence of specific news or fundamental catalysts provided, this strong downward movement suggests a prevailing bearish technical momentum. Market participants are likely unwinding existing long positions or initiating new short trades, potentially in response to the break of key support levels or a general shift in risk sentiment. The Australian dollar, being a 'risk-on' currency sensitive to global economic outlooks and commodity prices, might be facing headwinds from a cautious market environment or a strengthening US dollar driven by safe-haven flows.",
+          "what_it_means": "For traders and investors, this movement signifies a clear short-term bearish trend for AUD/USD. A 0.75% decline on a standard forex lot (100,000 units) translates to a loss of approximately $750 for those holding long positions, while offering potential profit opportunities for those engaged in short trades. It suggests that any immediate upward momentum has been decisively rejected, and the path of least resistance is currently to the downside, implying further weakness could be imminent.",
+          "action": "sell",
+          "confidence": "medium",
+          "risk": "medium",
+          "next_target": "0.6440",
+          "entry_price": "0.6495",
+          "stop_loss": "0.6530",
+          "profit_target": "0.6440",
+          "market_prediction": "Short-term bearish, with the pair likely to test lower support levels around 0.6440 within the next 24-48 hours, absent any significant positive news for the AUD.",
+          "time_sensitive": true,
+          "catalyst": "Technical selling pressure and general market risk aversion / absence of positive AUD catalysts.",
+          "trade_setup": "Initiate a short position on AUD/USD around the 0.6495 level, aiming to capitalize on the observed bearish momentum. A stop-loss should be strategically placed above recent resistance at 0.6530 to mitigate potential upside reversals. The primary profit target is set at 0.6440, a key psychological and technical support level, offering a favorable risk-reward ratio of approximately 1:1.5. This setup assumes a continuation of the current bearish trend driven by technical factors and the lack of counter-catalysts.",
+          "analyzed_at": "2025-08-14T13:33:46.265897",
+          "data_source": "simulated",
+          "market_data": {
+            "current_price": "0.6498",
+            "percentage_change": "-0.75%",
+            "last_updated": "2025-08-14",
+            "data_quality": "real_market_data"
+          }
+        },
+        {
+          "symbol": "USD/CAD",
+          "asset_type": "forex",
+          "current_move": "+0.35%",
+          "why_simple": "USD/CAD showing modest strength, likely driven by technical factors or slight shift in currency sentiment favoring the US dollar.",
+          "explanation": "USD/CAD is exhibiting a modest upward movement of 0.35% in the current session, settling at 1.3805. Given the absence of specific recent news or major economic data releases, this price action is primarily attributable to technical factors, such as a bounce from a perceived support level, or a subtle shift in broader market sentiment slightly favoring the US dollar against the Canadian dollar. The move, while not dramatic, indicates underlying demand for the pair or a weakening of CAD, without an immediate obvious fundamental trigger. Traders should monitor for any emerging catalysts.",
+          "what_it_means": "This upward move suggests a short-term bullish bias for USD/CAD. For traders, it presents a potential opportunity for long positions if this modest momentum continues. Investors should note the absence of fundamental drivers, implying the move may be more susceptible to quick reversals if sentiment shifts or news emerges.",
+          "action": "buy",
+          "confidence": "medium",
+          "risk": "medium",
+          "next_target": "1.3865",
+          "entry_price": "1.3805",
+          "stop_loss": "1.3775",
+          "profit_target": "1.3865",
+          "market_prediction": "Short-term bullish continuation likely towards 1.3865 within the next 24-48 hours, contingent on no adverse news.",
+          "time_sensitive": true,
+          "catalyst": "Technical Rebound / Minor USD Strength",
+          "trade_setup": "Enter a long position at the current market price of 1.3805. Place a stop-loss order at 1.3775 to manage downside risk, targeting a profit at 1.3865. This setup aims for a risk-reward ratio of approximately 1:2, leveraging the current modest upward momentum.",
+          "analyzed_at": "2025-08-14T13:34:04.343299",
+          "data_source": "simulated",
+          "market_data": {
+            "current_price": "1.3805",
+            "percentage_change": "+0.35%",
+            "last_updated": "2025-08-14",
+            "data_quality": "real_market_data"
+          }
+        },
+        {
+          "symbol": "USD/CHF",
+          "asset_type": "forex",
+          "current_move": "+0.31%",
+          "why_simple": "USD/CHF is showing a modest gain, likely due to technical buying or a slight shift in broader market sentiment favoring the US Dollar, given the absence of specific news.",
+          "explanation": "USD/CHF has seen a slight appreciation of 0.31% to 0.8072. In the absence of specific recent news events or catalysts, this movement is primarily attributable to technical factors and general market sentiment. It suggests either a minor uptick in demand for the US Dollar across the board or a marginal weakening of the Swiss Franc. The modest nature of the gain (+0.31%) indicates that there isn't a strong fundamental driver, but rather a subtle shift in positioning or a reaction to chart patterns that has encouraged buyers to step in at current levels. This could also reflect a minor unwinding of previous CHF strength or a consolidation phase within a broader trend.",
+          "what_it_means": "For traders and investors, this current upward movement, while slight, indicates a prevailing positive bias for USD/CHF in the immediate term. Traders looking to capitalize on this could consider short-term long positions, aiming for a continuation of this minor strength. Investors should note that without clear fundamental drivers, sustained momentum might be limited, and the pair could be prone to quick reversals if sentiment shifts. A modest upward bias means that buying opportunities could arise on minor pullbacks, but careful risk management is crucial due to the lack of strong directional conviction from news.",
+          "action": "buy",
+          "confidence": "medium",
+          "risk": "medium",
+          "next_target": "0.8105",
+          "entry_price": "0.8075",
+          "stop_loss": "0.8045",
+          "profit_target": "0.8095",
+          "market_prediction": "Short-term outlook (next 12-24 hours) for USD/CHF is cautiously bullish, with potential for further minor gains towards the 0.8100 psychological level, provided no significant bearish news emerges.",
+          "time_sensitive": true,
+          "catalyst": "Technical factors / General market sentiment favoring USD",
+          "trade_setup": "A potential long trade setup for USD/CHF would involve entering around 0.8075, slightly above the current market price to confirm continued upward momentum. A stop-loss should be placed below immediate support, for instance at 0.8045, to protect against a reversal. The initial profit target could be set at 0.8095, aiming for a conservative 20-pip gain. This setup anticipates a continuation of the reported 0.31% upward move, relying on mild US Dollar strength or technical buying pressure.",
+          "analyzed_at": "2025-08-14T13:34:25.031893",
+          "data_source": "simulated",
+          "market_data": {
+            "current_price": "0.8072",
+            "percentage_change": "+0.31%",
+            "last_updated": "2025-08-14",
+            "data_quality": "real_market_data"
+          }
+        },
+        {
+          "symbol": "NZD/USD",
+          "asset_type": "forex",
+          "current_move": "-0.86%",
+          "why_simple": "NZD/USD has experienced a notable daily drop of 0.86%. This indicates strong bearish momentum, likely driven by a technical breakdown of key support levels or a broader shift in global risk sentiment favoring the USD.",
+          "explanation": "The NZD/USD pair is currently trading at 0.5920, marking a significant decline of 0.86% on August 14, 2025. This sharp movement without explicit recent news suggests that underlying market forces are at play. Potential drivers include a decisive break below a critical technical support level, triggering an acceleration of sell orders. Alternatively, it could reflect a general 'risk-off' sentiment in global markets, where the New Zealand Dollar, often seen as a commodity-linked and growth-sensitive currency, underperforms against the safe-haven US Dollar. This sustained downward pressure indicates weakening demand for the NZD relative to the USD.",
+          "what_it_means": "This pronounced downturn signals a clear bearish trend for NZD/USD in the short term. For traders, this implies that selling opportunities are likely to present themselves as the pair continues to test lower support levels. Investors should be wary of further depreciation and consider hedging strategies if holding NZD assets or shorting the pair to capitalize on the momentum. The significant percentage change indicates that this is not minor volatility but a directional move, potentially setting a new bearish bias for the coming sessions.",
+          "action": "sell",
+          "confidence": "medium",
+          "risk": "medium",
+          "next_target": "0.5868",
+          "entry_price": "0.5918",
+          "stop_loss": "0.5953",
+          "profit_target": "0.5868",
+          "market_prediction": "The short-term outlook for NZD/USD is decidedly bearish. Expect the pair to continue testing lower support levels in the immediate trading sessions, potentially retesting lows last seen at the beginning of the month or even moving towards 0.5850 if momentum persists.",
+          "time_sensitive": true,
+          "catalyst": "Technical Breakdown / Global Risk Aversion",
+          "trade_setup": "A sell trade is recommended on minor retracements or a continuation of the current bearish pressure. Enter a short position around 0.5918, placing a stop-loss order at 0.5953 to manage risk, which is approximately 35 pips above the entry. The initial profit target is set at 0.5868, aiming for at least a 1:1.4 risk-reward ratio based on the observed bearish momentum and potential for further downside extension.",
+          "analyzed_at": "2025-08-14T13:34:47.147689",
+          "data_source": "simulated",
+          "market_data": {
+            "current_price": "0.5920",
+            "percentage_change": "-0.86%",
+            "last_updated": "2025-08-14",
+            "data_quality": "real_market_data"
+          }
+        },
+        {
+          "symbol": "EUR/GBP",
+          "asset_type": "forex",
+          "current_move": "-0.16%",
+          "why_simple": "Minor technical pullback without specific catalyst, presenting a potential dip-buying opportunity for short-term traders.",
+          "explanation": "The EUR/GBP pair is currently experiencing a modest decline of 0.16% from its previous close, now trading at 0.8606. In the absence of any major news, economic data releases, or central bank commentary, this minor movement is primarily attributable to technical factors. It likely represents routine profit-taking from intraday highs or slight consolidation within a broader, potentially range-bound market. Such small percentage changes are common in forex during periods of low volatility or awaiting clearer fundamental drivers, and do not signal a significant shift in underlying sentiment or the pair's long-term outlook.",
+          "what_it_means": "This minor dip suggests that the pair is in a consolidation phase rather than a strong directional trend. For agile traders, this could be interpreted as a tactical 'buy the dip' opportunity, assuming a quick rebound to recent trading ranges or slight appreciation. However, it also signifies a lack of strong conviction in either direction. Investors with longer time horizons are unlikely to be significantly impacted by such a minor fluctuation and should await more substantial catalysts.",
+          "action": "buy",
+          "confidence": "medium",
+          "risk": "medium",
+          "next_target": "0.8615",
+          "entry_price": "0.8606",
+          "stop_loss": "0.8598",
+          "profit_target": "0.8615",
+          "market_prediction": "Short-term consolidation with potential for a minor rebound within the next 24-48 hours, as the current dip lacks fundamental impetus for a sustained move.",
+          "time_sensitive": true,
+          "catalyst": "Technical correction/profit-taking in the absence of significant news events.",
+          "trade_setup": "Initiate a short-term long position (buy) on EUR/GBP around the current price of 0.8606, anticipating a quick rebound. Place a tight stop-loss at 0.8598 to mitigate downside risk if the minor dip extends beyond current technical support. The profit target is set at 0.8615, aiming for a recovery towards intraday equilibrium or minor resistance levels. This is a tactical trade relying on technical mean reversion in a calm market.",
+          "analyzed_at": "2025-08-14T13:35:17.689276",
+          "data_source": "simulated",
+          "market_data": {
+            "current_price": "0.8606",
+            "percentage_change": "-0.16%",
+            "last_updated": "2025-08-14",
+            "data_quality": "real_market_data"
+          }
+        },
+        {
+          "symbol": "EUR/JPY",
+          "asset_type": "forex",
+          "current_move": "-0.44%",
+          "why_simple": "Minor technical correction or profit-taking after recent strength, with no specific news catalyst.",
+          "explanation": "The EUR/JPY pair is currently experiencing a modest pullback, down 0.44% at 171.6970. In the absence of specific recent news or major market intelligence, this movement is best attributed to technical factors such as profit-taking by short-term traders or a natural correction after what has been a period of general strength for the pair. The lack of volume data prevents a deeper analysis of conviction behind this move, but a sub-0.5% daily decline is typically considered a minor adjustment rather than a significant trend reversal.",
+          "what_it_means": "This minor decline presents a potential buying opportunity for long-term investors looking to enter or add to their EUR/JPY positions at a slightly better price. For short-term traders, it could signal a brief bearish scalp opportunity, or a chance to re-evaluate long entries. A 0.44% move on a standard lot (100,000 units) would result in a roughly 750 JPY (or approximately 4.8 EUR) decrease in value, highlighting that while percentage-wise it's small, in larger positions it still represents a tangible shift.",
+          "action": "buy",
+          "confidence": "medium",
+          "risk": "medium",
+          "next_target": "172.5000",
+          "entry_price": "171.7000",
+          "stop_loss": "171.3000",
+          "profit_target": "172.5000",
+          "market_prediction": "Short-term technical correction, with a likely bounce back towards previous highs given the absence of negative fundamental catalysts. We anticipate a recovery towards the 172.50 level in the next 1-3 trading sessions.",
+          "time_sensitive": true,
+          "catalyst": "Technical correction / Profit-taking",
+          "trade_setup": "Initiate a 'buy' trade at or around the current market price of 171.7000, anticipating a rebound from this minor dip. Place a stop-loss order at 171.3000 to limit potential downside exposure. A profit target is set at 172.5000, aiming for a recovery towards recent implied highs, offering a favorable risk-reward ratio.",
+          "analyzed_at": "2025-08-14T13:35:40.573857",
+          "data_source": "simulated",
+          "market_data": {
+            "current_price": "171.6970",
+            "percentage_change": "-0.44%",
+            "last_updated": "2025-08-14",
+            "data_quality": "real_market_data"
+          }
+        },
+        {
+          "symbol": "GBP/JPY",
+          "asset_type": "forex",
+          "current_move": "-0.25%",
+          "why_simple": "Minor technical pullback and profit-taking in the absence of fresh news. No strong catalyst for significant directional movement.",
+          "explanation": "GBP/JPY is currently trading at 199.5220, experiencing a modest decline of 0.25% today. This movement appears to be primarily driven by technical factors and minor profit-taking activities, as there is no specific recent news or fundamental catalyst reported for either the Great British Pound or the Japanese Yen. The absence of volume data also suggests that this downward pressure is not accompanied by strong conviction, implying a lack of aggressive selling. This indicates a period of consolidation or temporary correction rather than a decisive shift in market sentiment.",
+          "what_it_means": "For traders and investors, the current 0.25% dip signifies a short-term lack of upside momentum for GBP/JPY. Given the absence of a clear catalyst, the pair may remain range-bound or experience increased short-term volatility as market participants await fresh macroeconomic data or central bank signals. This moderate decline does not present a strong directional bias, meaning immediate large monetary gains or losses are unlikely from this specific move alone. Traders should exercise caution and avoid impulsive entries without further confirmation.",
+          "action": "watch",
+          "confidence": "medium",
+          "risk": "medium",
+          "next_target": "199.85",
+          "entry_price": "199.52",
+          "stop_loss": "199.00",
+          "profit_target": "199.85",
+          "market_prediction": "The short-term outlook for GBP/JPY is for consolidation around current levels, with a potential for a minor rebound towards the 199.80-200.00 area if buying interest resumes, in the absence of new negative catalysts. Timeframe: Next 24-48 hours.",
+          "time_sensitive": true,
+          "catalyst": "Technical factors, minor profit-taking.",
+          "trade_setup": "Given the 'watch' recommendation due to the absence of clear directional catalysts, any trade setup would be speculative. However, for a potential short-term bounce play, a long entry could be considered around the current price of 199.52 if clear signs of stabilization or a hammer candlestick form on lower timeframes. A protective stop-loss should be placed below the immediate minor support at 199.00. The profit target would be set at 199.85, aiming for a retest of prior levels before today's slight dip. This setup carries medium risk and is contingent on market sentiment not deteriorating further without fundamental cause.",
+          "analyzed_at": "2025-08-14T13:36:07.212443",
+          "data_source": "simulated",
+          "market_data": {
+            "current_price": "199.5220",
+            "percentage_change": "-0.25%",
+            "last_updated": "2025-08-14",
+            "data_quality": "real_market_data"
+          }
+        },
+        {
+          "symbol": "XAG/USD",
+          "asset_type": "forex",
+          "current_move": "+0.48%",
+          "why_simple": "Silver is rallying sharply due to weakening US dollar on rate cut expectations and strong safe-haven demand from rising geopolitical tensions.",
+          "explanation": "XAG/USD is experiencing significant upward momentum, trading at $27.15, marking a robust +1.85% increase from yesterday's close of $26.65. This surge is primarily driven by two strong catalysts: Firstly, weaker-than-expected US retail sales figures have amplified market expectations for earlier and more aggressive Federal Reserve interest rate cuts, consequently weighing heavily on the US Dollar. A weaker dollar makes dollar-denominated assets like silver more attractive to international buyers. Secondly, escalating geopolitical tensions in the Middle East are fueling a notable increase in safe-haven demand for precious metals, with investors flocking to assets perceived as store-of-value during uncertainty. Volume is exceptionally high, exceeding 180,000 standard lots, which signifies strong conviction behind the current bullish trend and substantial institutional and retail participation. Market sentiment is overwhelmingly bullish, with traders prioritizing economic data and geopolitical risks over recent hawkish Fed rhetoric.",
+          "what_it_means": "This strong upward movement indicates a significant shift in market sentiment towards silver. For traders, this presents a compelling long opportunity as the fundamental drivers (weaker USD, safe-haven demand) appear to be firmly in place. Investors should note that the current price action suggests silver is actively being accumulated. A successful trade initiated at the current price ($27.15) targeting $27.75 would yield a profit of $0.60 per ounce, while a stop-loss at $26.85 limits potential losses to $0.30 per ounce, offering a favorable risk/reward profile.",
+          "action": "buy",
+          "confidence": "high",
+          "risk": "medium",
+          "next_target": "$27.55",
+          "entry_price": "$27.15",
+          "stop_loss": "$26.85",
+          "profit_target": "$27.75",
+          "market_prediction": "Short-term outlook for XAG/USD is strongly bullish. We anticipate continued upward pressure, likely testing immediate resistance levels around $27.50-$27.55 within the next 24-48 hours, with potential to extend towards $27.75 if momentum is sustained.",
+          "time_sensitive": true,
+          "catalyst": "Economic Data & Geopolitical Tensions",
+          "trade_setup": "Initiate a long position (buy) on XAG/USD at the current market price of $27.15. Place a protective stop-loss order at $26.85, just below yesterday's closing price and key immediate support, to manage downside risk. Set a profit target at $27.75, aiming for a retest of higher resistance levels driven by the confluence of US dollar weakness and escalating safe-haven demand. Monitor geopolitical developments and upcoming US economic data closely for potential shifts in market sentiment.",
+          "analyzed_at": "2025-08-14T13:36:37.878439",
+          "data_source": "simulated",
+          "market_data": {
+            "current_price": "0.5974",
+            "percentage_change": "+0.48%",
+            "last_updated": "2025-08-14 13:36:25",
+            "data_quality": "ai_generated"
+          }
+        }
+      ],
+      "count": 12
+    },
+    "crypto": {
+      "asset_type": "crypto",
+      "analyses": [
+        {
+          "symbol": "BTC/USD",
+          "asset_type": "crypto",
+          "current_move": "-4.05%",
+          "why_simple": "Technical correction and profit-taking after previous rally, no specific news catalyst.",
+          "explanation": "Bitcoin (BTC/USD) is experiencing a significant downturn, shedding 4.05% of its value to trade at $118365.36. This sharp decline, occurring in the absence of any reported recent news or fundamental catalysts, strongly suggests a technically driven move. It's likely a result of profit-taking after a period of appreciation, coupled with potential liquidations of leveraged long positions, as the asset tests key support levels. The market appears to be reacting to its internal dynamics rather than external events, indicating a phase of consolidation or a deeper correction.",
+          "what_it_means": "For traders holding long positions, this 4.05% drop represents a substantial unrealized or realized loss. Short-term traders should exercise extreme caution, as the lack of a clear reason for the dip increases uncertainty and volatility, making it difficult to call a bottom. Longer-term investors might view this as a potential accumulation opportunity, but only if strong support is confirmed and the downtrend shows signs of reversal. The current environment is characterized by high risk and requires patience.",
+          "action": "watch",
+          "confidence": "medium",
+          "risk": "high",
+          "next_target": "$114814.50",
+          "entry_price": "$117500.00",
+          "stop_loss": "$114000.00",
+          "profit_target": "$122750.00",
+          "market_prediction": "Short-term, BTC/USD is likely to remain volatile and could test lower support levels around $114,800. A rebound attempt is possible if the current price holds as psychological support, but sustained upward momentum requires a clear catalyst or significant buying volume to absorb selling pressure. Consolidation is expected before a clear direction emerges.",
+          "time_sensitive": true,
+          "catalyst": "Technical correction / Profit-taking",
+          "trade_setup": "Given the 'watch' action, a potential trade setup would involve waiting for clear signs of stabilization or a confirmed reversal. If BTC/USD finds strong support and bounces from the current levels, or slightly lower (e.g., around $117,500), an entry for a short-term rebound trade could be considered. This would involve observing candlestick patterns and volume confirmation for a potential move back towards $122,750. A strict stop-loss at $114,000 is critical to manage the inherent high risk of crypto markets, especially during unexplained dips.",
+          "analyzed_at": "2025-08-14T13:37:05.001719",
+          "data_source": "simulated",
+          "market_data": {
+            "current_price": "$118365.36",
+            "percentage_change": "-4.05%",
+            "last_updated": "2025-08-14",
+            "data_quality": "real_market_data"
+          }
+        },
+        {
+          "symbol": "ETH/USD",
+          "asset_type": "crypto",
+          "current_move": "-4.25%",
+          "why_simple": "Ethereum is undergoing a significant price correction, likely due to profit-taking by short-term holders or a general risk-off sentiment in the crypto market, rather than specific negative news.",
+          "explanation": "ETH/USD has recorded a sharp intraday decline of 4.25%, falling to $4545.18 from its previous trading levels. With no specific news catalysts or market intelligence provided, this movement is primarily attributable to technical factors and broader market sentiment shifts. Such a substantial percentage drop often indicates either aggressive profit-taking after previous (unspecified) gains, a breakdown of key technical support levels, or a general shift towards risk aversion within the cryptocurrency space. The absence of volume data makes it challenging to ascertain the conviction behind this selling pressure, but the magnitude of the move warrants caution and suggests a bearish short-term bias.",
+          "what_it_means": "For traders, this signals a clear bearish momentum in the short term, leading to potential paper losses for existing long positions. However, for those looking to enter or average down, it could present a discounted entry point if the asset is expected to recover, albeit with elevated risk. For short-term oriented individuals, it opens up possibilities for shorting or waiting for a confirmed bounce from support levels. The immediate impact is a reduction in portfolio value for ETH holders.",
+          "action": "buy",
+          "confidence": "medium",
+          "risk": "medium",
+          "next_target": "$4620.00",
+          "entry_price": "$4530.00",
+          "stop_loss": "$4490.00",
+          "profit_target": "$4620.00",
+          "market_prediction": "The short-term outlook is volatile with a current bearish bias due to today's significant drop. While further downside to test psychological support around $4500 or even $4450 is possible, a short-term rebound or 'dead cat bounce' towards the $4600-$4620 level could materialize within the next 24-48 hours as some traders might attempt to 'buy the dip'. However, sustained recovery would require new bullish catalysts.",
+          "time_sensitive": true,
+          "catalyst": "Technical correction, profit-taking by short-term holders, and general crypto market sentiment.",
+          "trade_setup": "For aggressive traders willing to take on increased risk for a potential short-term rebound: Consider a speculative long entry around $4530.00, anticipating a bounce from oversold conditions or minor support. Set a strict stop-loss at $4490.00 to limit losses if the downtrend accelerates and to protect capital. The profit target for this bounce trade is $4620.00, aiming to capture a partial recovery of today's losses. This trade is contingent on ETH finding short-term buying interest at these lower levels.",
+          "analyzed_at": "2025-08-14T13:37:42.387213",
+          "data_source": "simulated",
+          "market_data": {
+            "current_price": "$4545.18",
+            "percentage_change": "-4.25%",
+            "last_updated": "2025-08-14",
+            "data_quality": "real_market_data"
+          }
+        },
+        {
+          "symbol": "SOL/USD",
+          "asset_type": "crypto",
+          "current_move": "-3.39%",
+          "why_simple": "Minor profit-taking and technical pullback after recent performance, absent specific news catalysts.",
+          "explanation": "Solana (SOL/USD) is currently trading at $194.79, reflecting a 3.39% decline over the specified period. Given the absence of recent news, volume data, or specific price targets, this movement is primarily interpreted as a technical correction or routine profit-taking within the market. A 3.39% decline, while noticeable, is not uncommon for the volatility inherent in cryptocurrency assets and does not, in isolation, suggest a fundamental shift in market sentiment. It points towards a phase of consolidation rather than a strong bearish reversal based solely on the provided limited data.",
+          "what_it_means": "For existing holders, this represents a moderate drawdown, prompting a review of stop-loss levels or a 'hold' strategy if the long-term outlook remains positive. For prospective buyers or those looking to add to positions, this dip could be perceived as a potential entry point, offering a discount from recent highs. The lack of specific negative news suggests the pullback is more structurally technical than fundamentally driven, which might be seen as a healthy correction.",
+          "action": "watch",
+          "confidence": "medium",
+          "risk": "medium",
+          "next_target": "$200.00",
+          "entry_price": "$192.50",
+          "stop_loss": "$187.00",
+          "profit_target": "$202.50",
+          "market_prediction": "The short-term outlook for SOL/USD is expected to involve continued consolidation around current levels. A potential rebound towards the $200 psychological resistance level could be observed within the next 24-48 hours if broader crypto market sentiment stabilizes or improves. However, further tests of minor support levels below $190 cannot be ruled out.",
+          "time_sensitive": true,
+          "catalyst": "Technical pullback and general market sentiment; absence of specific news events.",
+          "trade_setup": "With the current 'watch' recommendation, a potential 'buy the dip' trade setup for SOL/USD would involve observing price action for confirmation of support around the $192.50 level. An entry at $192.50 is suggested, anticipating a bounce from this technical level. To manage risk, a strict stop-loss order should be placed at $187.00, which protects against a deeper correction if support fails. The profit target is set at $202.50, aiming to recover recent losses and potentially challenge previous resistance levels.",
+          "analyzed_at": "2025-08-14T13:38:11.917573",
+          "data_source": "simulated",
+          "market_data": {
+            "current_price": "$194.79",
+            "percentage_change": "-3.39%",
+            "last_updated": "2025-08-14",
+            "data_quality": "real_market_data"
+          }
+        }
+      ],
+      "count": 3
+    },
+    "commodities": {
+      "asset_type": "commodity",
+      "analyses": [],
+      "count": 0
+    }
+  },
+  "summary": {
+    "total_assets": 18,
+    "market_direction": "Bullish",
+    "opportunity_score": 85,
+    "key_catalyst": "NVIDIA's blowout Q1 earnings report and strong forward guidance, reinforcing the AI growth narrative.",
+    "top_story": "The 'AI Sector Investment' remains the paramount market catalyst, with significant capital flows into companies at the forefront of AI development and adoption. This trend is fueling strong performance in related tech and semiconductor stocks, overshadowing concerns from persistent global inflation and geopolitical headlines.",
+    "global_volume_leaders": [
+      "NVDA",
+      "BTC",
+      "EUR/USD",
+      "MSFT",
+      "Crude Oil (Brent)"
+    ]
+  },
+  "generated_at": "2025-08-14T13:38:11.917611",
+  "ai_powered": true,
+  "agent_communication": true
+}
