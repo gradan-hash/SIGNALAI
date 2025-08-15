@@ -2,6 +2,27 @@
   "current_reports": [
     {
       "id": 11,
+      "title": "Market Opening Intelligence",
+      "description": "Latest AI-powered market analysis with global discovery insights",
+      "date": "August 15, 2025",
+      "pdf_url": "/reports/SignalAI_Report_20250815_1337.pdf",
+      "market_direction": "Bullish",
+      "confidence": 70,
+      "total_assets": 18,
+      "opportunity_score": 75,
+      "key_highlights": [
+        "Market Direction: Bullish (70% confidence)",
+        "Top Catalyst: Continued disinflationary economic data (CPI, PPI) validating the path towards Federal Reserve rate cuts.",
+        "Assets Analyzed: 18 across all categories"
+      ],
+      "preview_available": true,
+      "download_size": "~2.5MB",
+      "generated_time": "13:37 UTC",
+      "is_current": true,
+      "generated_at": "2025-08-15T13:32:26.604633"
+    },
+    {
+      "id": 11,
       "title": "Pre-Market Intelligence",
       "description": "Latest AI-powered market analysis with global discovery insights",
       "date": "August 15, 2025",
@@ -18,7 +39,7 @@
       "preview_available": true,
       "download_size": "~2.5MB",
       "generated_time": "09:02 UTC",
-      "is_current": true,
+      "is_current": false,
       "generated_at": "2025-08-15T08:56:47.573285"
     },
     {
@@ -188,31 +209,10 @@
       "generated_time": "13:52 UTC",
       "is_current": false,
       "generated_at": "2025-08-11T13:47:11.501895"
-    },
-    {
-      "id": 6,
-      "title": "Today's Market Intelligence",
-      "description": "Latest AI-powered market analysis with global discovery insights",
-      "date": "August 11, 2025",
-      "pdf_url": "/reports/SignalAI_Report_20250811_0904.pdf",
-      "market_direction": "Sideways",
-      "confidence": 65,
-      "total_assets": 20,
-      "opportunity_score": 60,
-      "key_highlights": [
-        "Market Direction: Sideways (65% confidence)",
-        "Top Catalyst: Upcoming key inflation data (e.g., PCE price index, July 2024 CPI); further commentary from Federal Reserve officials; Q2 corporate earnings season outlooks (starting mid-July).",
-        "Assets Analyzed: 20 across all categories"
-      ],
-      "preview_available": true,
-      "download_size": "~2.5MB",
-      "generated_time": "09:04 UTC",
-      "is_current": false,
-      "generated_at": "2025-08-11T08:58:57.460515"
     }
   ],
   "total_reports": 10,
-  "generated_at": "2025-08-15T09:02:12.417506",
+  "generated_at": "2025-08-15T13:37:22.427085",
   "description": "Current market analysis reports with real-time insights",
   "data_source": "live_market_analysis"
 }
